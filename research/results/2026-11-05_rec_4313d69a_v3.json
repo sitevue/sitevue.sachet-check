@@ -1,0 +1,8736 @@
+{
+ "summary": {
+  "sets_est": 757,
+  "drops": 762,
+  "stretches": 496,
+  "missing_sets": 7,
+  "extra_drops": 5,
+  "double_sets": 2,
+  "flagged_stretches": 14,
+  "orphan_drops": 7,
+  "oversized_orphans_ignored": []
+ },
+ "stretches": [
+  {
+   "t0": 12.0,
+   "t1": 14.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    12.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 19.0,
+   "t1": 21.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    19.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 22.8,
+   "t1": 24.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    23.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 26.6,
+   "t1": 28.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    27.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 32.6,
+   "t1": 34.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    33.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 35.2,
+   "t1": 37.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    36.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 38.8,
+   "t1": 40.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    39.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 42.4,
+   "t1": 47.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    43.4,
+    45.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.37
+   ]
+  },
+  {
+   "t0": 52.4,
+   "t1": 56.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    53.4,
+    55.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.3
+   ]
+  },
+  {
+   "t0": 58.1,
+   "t1": 60.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    58.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 60.8,
+   "t1": 62.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.1,
+   "status": "ok",
+   "drop_times": [
+    61.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 65.5,
+   "t1": 67.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    66.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 70.8,
+   "t1": 72.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.1,
+   "status": "ok",
+   "drop_times": [
+    71.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 74.1,
+   "t1": 76.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    75.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 77.5,
+   "t1": 81.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    78.3,
+    80.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54,
+    0.36
+   ]
+  },
+  {
+   "t0": 82.7,
+   "t1": 84.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    83.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 87.3,
+   "t1": 89.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    88.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 90.0,
+   "t1": 92.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    90.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 96.6,
+   "t1": 98.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    97.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 103.0,
+   "t1": 105.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    104.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 161.7,
+   "t1": 163.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    162.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 165.2,
+   "t1": 167.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    166.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3
+   ]
+  },
+  {
+   "t0": 168.1,
+   "t1": 170.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    168.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54
+   ]
+  },
+  {
+   "t0": 170.8,
+   "t1": 172.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    171.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 173.3,
+   "t1": 179.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    174.2,
+    176.1,
+    178.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31,
+    0.55,
+    0.43
+   ]
+  },
+  {
+   "t0": 180.4,
+   "t1": 182.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    181.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 183.0,
+   "t1": 185.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    184.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 186.1,
+   "t1": 188.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    187.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54
+   ]
+  },
+  {
+   "t0": 188.8,
+   "t1": 193.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    189.7,
+    192.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.53
+   ]
+  },
+  {
+   "t0": 193.8,
+   "t1": 200.6,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    194.8,
+    197.2,
+    199.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3,
+    0.33,
+    0.35
+   ]
+  },
+  {
+   "t0": 201.2,
+   "t1": 203.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    201.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 203.8,
+   "t1": 210.6,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    204.7,
+    207.0,
+    209.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.32,
+    0.44
+   ]
+  },
+  {
+   "t0": 211.0,
+   "t1": 213.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    212.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 213.8,
+   "t1": 215.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    214.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 217.6,
+   "t1": 219.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    218.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 220.5,
+   "t1": 222.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    221.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 223.1,
+   "t1": 229.3,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    224.0,
+    226.2,
+    228.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55,
+    0.41,
+    0.37
+   ]
+  },
+  {
+   "t0": 230.4,
+   "t1": 232.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    231.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 234.3,
+   "t1": 236.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    235.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 236.8,
+   "t1": 241.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    237.7,
+    240.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.54
+   ]
+  },
+  {
+   "t0": 242.0,
+   "t1": 246.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    242.9,
+    245.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.56,
+    0.0
+   ]
+  },
+  {
+   "t0": 246.7,
+   "t1": 256.1,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    247.4,
+    250.0,
+    252.4,
+    254.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55,
+    0.35,
+    0.35,
+    0.31
+   ]
+  },
+  {
+   "t0": 256.5,
+   "t1": 263.2,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    257.5,
+    259.6,
+    262.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.53,
+    0.53
+   ]
+  },
+  {
+   "t0": 265.5,
+   "t1": 274.9,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    266.5,
+    268.7,
+    271.0,
+    273.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.54,
+    0.54,
+    0.44
+   ]
+  },
+  {
+   "t0": 275.6,
+   "t1": 277.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    276.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 278.2,
+   "t1": 280.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    279.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 282.6,
+   "t1": 291.9,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    283.6,
+    285.9,
+    288.7,
+    290.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.54,
+    0.15,
+    0.53
+   ]
+  },
+  {
+   "t0": 292.3,
+   "t1": 296.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    293.2,
+    295.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.43
+   ]
+  },
+  {
+   "t0": 297.3,
+   "t1": 301.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    298.3,
+    300.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.29
+   ]
+  },
+  {
+   "t0": 302.4,
+   "t1": 304.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    303.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 306.8,
+   "t1": 313.8,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    307.8,
+    310.1,
+    312.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.54,
+    0.46
+   ]
+  },
+  {
+   "t0": 314.4,
+   "t1": 318.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    315.2,
+    317.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.56,
+    0.41
+   ]
+  },
+  {
+   "t0": 319.4,
+   "t1": 335.9,
+   "sets": 7,
+   "drops": 7,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    320.3,
+    322.8,
+    325.1,
+    327.5,
+    330.0,
+    332.4,
+    334.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.29,
+    0.31,
+    0.36,
+    0.53,
+    0.33,
+    0.43,
+    0.34
+   ]
+  },
+  {
+   "t0": 336.6,
+   "t1": 338.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    337.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 340.6,
+   "t1": 345.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    341.5,
+    344.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51,
+    0.37
+   ]
+  },
+  {
+   "t0": 345.7,
+   "t1": 347.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    346.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 348.4,
+   "t1": 350.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    349.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 350.9,
+   "t1": 360.0,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    351.8,
+    354.2,
+    356.4,
+    358.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.33,
+    0.34,
+    0.34
+   ]
+  },
+  {
+   "t0": 360.4,
+   "t1": 362.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    361.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 364.3,
+   "t1": 371.3,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    365.3,
+    367.8,
+    370.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.31,
+    0.36
+   ]
+  },
+  {
+   "t0": 371.8,
+   "t1": 381.2,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    372.7,
+    375.1,
+    377.6,
+    379.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.44,
+    0.36,
+    0.53
+   ]
+  },
+  {
+   "t0": 381.7,
+   "t1": 386.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    382.7,
+    385.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.38
+   ]
+  },
+  {
+   "t0": 387.0,
+   "t1": 389.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    387.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 390.7,
+   "t1": 397.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    391.5,
+    394.2,
+    396.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55,
+    0.31,
+    0.46
+   ]
+  },
+  {
+   "t0": 398.3,
+   "t1": 400.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    399.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 400.9,
+   "t1": 409.9,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    401.8,
+    404.0,
+    406.6,
+    408.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.29,
+    0.54,
+    0.33,
+    0.35
+   ]
+  },
+  {
+   "t0": 412.3,
+   "t1": 414.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    413.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 414.9,
+   "t1": 417.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    415.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 417.5,
+   "t1": 424.4,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    418.5,
+    420.8,
+    423.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.41,
+    0.43
+   ]
+  },
+  {
+   "t0": 424.8,
+   "t1": 438.8,
+   "sets": 6,
+   "drops": 6,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    425.8,
+    428.2,
+    430.4,
+    433.0,
+    435.1,
+    437.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.42,
+    0.34,
+    0.02,
+    0.36,
+    0.17
+   ]
+  },
+  {
+   "t0": 439.2,
+   "t1": 443.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    440.2,
+    442.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3,
+    0.32
+   ]
+  },
+  {
+   "t0": 444.2,
+   "t1": 448.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    445.1,
+    447.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53,
+    0.4
+   ]
+  },
+  {
+   "t0": 449.2,
+   "t1": 451.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    450.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 453.8,
+   "t1": 456.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    454.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 456.5,
+   "t1": 458.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    457.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 459.5,
+   "t1": 461.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    460.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 463.1,
+   "t1": 465.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    464.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 488.7,
+   "t1": 490.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    489.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 493.6,
+   "t1": 495.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    494.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 505.1,
+   "t1": 507.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.95,
+   "status": "ok",
+   "drop_times": [
+    506.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 509.5,
+   "t1": 511.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    510.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 513.0,
+   "t1": 515.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.95,
+   "status": "ok",
+   "drop_times": [
+    513.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 518.7,
+   "t1": 520.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    519.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 523.4,
+   "t1": 525.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    524.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 526.9,
+   "t1": 538.8,
+   "sets": 4,
+   "drops": 5,
+   "period": 3.45,
+   "status": "EXTRA",
+   "drop_times": [
+    527.9,
+    530.0,
+    532.4,
+    534.9,
+    537.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31,
+    0.31,
+    0.53,
+    0.31,
+    0.34
+   ]
+  },
+  {
+   "t0": 544.0,
+   "t1": 546.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.25,
+   "status": "ok",
+   "drop_times": [
+    544.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 548.2,
+   "t1": 550.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    548.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 550.9,
+   "t1": 552.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.0,
+   "status": "ok",
+   "drop_times": [
+    551.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 554.0,
+   "t1": 556.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.95,
+   "status": "ok",
+   "drop_times": [
+    554.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 559.1,
+   "t1": 561.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    560.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31
+   ]
+  },
+  {
+   "t0": 571.4,
+   "t1": 573.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    572.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.29
+   ]
+  },
+  {
+   "t0": 578.6,
+   "t1": 587.7,
+   "sets": 3,
+   "drops": 4,
+   "period": 3.35,
+   "status": "EXTRA",
+   "drop_times": [
+    579.5,
+    581.7,
+    584.1,
+    586.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.42,
+    0.38,
+    0.38
+   ]
+  },
+  {
+   "t0": 595.7,
+   "t1": 597.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    596.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 599.4,
+   "t1": 601.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    600.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 610.4,
+   "t1": 612.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    611.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5
+   ]
+  },
+  {
+   "t0": 612.9,
+   "t1": 615.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    613.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 617.1,
+   "t1": 619.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    618.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 620.0,
+   "t1": 622.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    621.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 622.5,
+   "t1": 624.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    623.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 625.1,
+   "t1": 627.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    626.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 627.8,
+   "t1": 630.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    628.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 631.3,
+   "t1": 633.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    632.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 633.8,
+   "t1": 635.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    634.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 636.4,
+   "t1": 638.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    637.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 639.2,
+   "t1": 648.4,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    640.1,
+    642.6,
+    644.9,
+    647.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.29,
+    0.45,
+    0.55
+   ]
+  },
+  {
+   "t0": 649.0,
+   "t1": 651.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    649.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 651.5,
+   "t1": 653.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    652.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 654.3,
+   "t1": 656.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    655.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1170.9,
+   "t1": 1173.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    1171.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.27
+   ]
+  },
+  {
+   "t0": 1177.0,
+   "t1": 1179.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    1178.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1180.7,
+   "t1": 1182.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.25,
+   "status": "ok",
+   "drop_times": [
+    1181.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31
+   ]
+  },
+  {
+   "t0": 1191.2,
+   "t1": 1197.8,
+   "sets": 2,
+   "drops": 3,
+   "period": 4.0,
+   "status": "EXTRA",
+   "drop_times": [
+    1192.2,
+    1194.4,
+    1196.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3,
+    0.28,
+    0.32
+   ]
+  },
+  {
+   "t0": 1198.4,
+   "t1": 1200.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    1199.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 1201.1,
+   "t1": 1203.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    1202.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3
+   ]
+  },
+  {
+   "t0": 1209.3,
+   "t1": 1211.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    1210.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1214.1,
+   "t1": 1216.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.15,
+   "status": "ok",
+   "drop_times": [
+    1215.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 1219.1,
+   "t1": 1221.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    1220.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 1223.8,
+   "t1": 1225.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    1224.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1227.7,
+   "t1": 1229.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    1228.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.29
+   ]
+  },
+  {
+   "t0": 1230.5,
+   "t1": 1232.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.05,
+   "status": "ok",
+   "drop_times": [
+    1231.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 1233.0,
+   "t1": 1237.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    1234.0,
+    1236.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31,
+    0.53
+   ]
+  },
+  {
+   "t0": 1239.4,
+   "t1": 1241.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    1240.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 1242.8,
+   "t1": 1251.9,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1243.7,
+    1246.1,
+    1248.3,
+    1250.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.28,
+    0.44,
+    0.29
+   ]
+  },
+  {
+   "t0": 1252.3,
+   "t1": 1254.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    1253.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 1255.0,
+   "t1": 1257.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    1255.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.29
+   ]
+  },
+  {
+   "t0": 1260.7,
+   "t1": 1262.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1261.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1263.3,
+   "t1": 1265.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1264.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 1266.6,
+   "t1": 1268.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1267.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54
+   ]
+  },
+  {
+   "t0": 1269.5,
+   "t1": 1271.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1270.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 1272.0,
+   "t1": 1280.4,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "DOUBLE",
+   "drop_times": [
+    1272.9,
+    1275.1,
+    1277.0,
+    1279.4
+   ],
+   "double_strip_times": [
+    1279.4
+   ],
+   "sachet_size": [
+    0.38,
+    0.29,
+    0.52,
+    0.68
+   ]
+  },
+  {
+   "t0": 1281.0,
+   "t1": 1283.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    1281.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52
+   ]
+  },
+  {
+   "t0": 1283.9,
+   "t1": 1286.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1284.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5
+   ]
+  },
+  {
+   "t0": 1286.5,
+   "t1": 1298.5,
+   "sets": 5,
+   "drops": 5,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1287.4,
+    1289.9,
+    1292.2,
+    1294.8,
+    1297.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49,
+    0.46,
+    0.36,
+    0.46,
+    0.46
+   ]
+  },
+  {
+   "t0": 1299.3,
+   "t1": 1303.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1300.2,
+    1302.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.54
+   ]
+  },
+  {
+   "t0": 1328.0,
+   "t1": 1330.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1328.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 1331.5,
+   "t1": 1338.3,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1332.5,
+    1335.0,
+    1337.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.43,
+    0.45
+   ]
+  },
+  {
+   "t0": 1338.8,
+   "t1": 1340.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1339.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 1341.5,
+   "t1": 1343.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1342.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 1346.1,
+   "t1": 1348.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1347.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1350.3,
+   "t1": 1352.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1351.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 1352.9,
+   "t1": 1355.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1353.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1378.6,
+   "t1": 1380.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.15,
+   "status": "ok",
+   "drop_times": [
+    1379.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 1389.5,
+   "t1": 1391.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    1390.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 1394.5,
+   "t1": 1396.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.15,
+   "status": "ok",
+   "drop_times": [
+    1395.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 1397.6,
+   "t1": 1399.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    1398.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 1400.2,
+   "t1": 1402.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    1401.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 1403.1,
+   "t1": 1405.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.6,
+   "status": "ok",
+   "drop_times": [
+    1404.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 1406.2,
+   "t1": 1408.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    1407.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1412.2,
+   "t1": 1414.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    1413.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 1416.7,
+   "t1": 1421.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.35,
+   "status": "ok",
+   "drop_times": [
+    1417.7,
+    1420.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.4
+   ]
+  },
+  {
+   "t0": 1422.0,
+   "t1": 1424.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.15,
+   "status": "ok",
+   "drop_times": [
+    1423.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 1428.1,
+   "t1": 1430.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    1429.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 1432.1,
+   "t1": 1434.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    1433.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 1435.6,
+   "t1": 1437.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    1436.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 1438.2,
+   "t1": 1440.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    1439.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 1442.8,
+   "t1": 1444.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    1443.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 1445.5,
+   "t1": 1447.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    1446.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 1450.1,
+   "t1": 1459.2,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    1451.0,
+    1453.3,
+    1455.7,
+    1458.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48,
+    0.35,
+    0.36,
+    0.43
+   ]
+  },
+  {
+   "t0": 1459.7,
+   "t1": 1464.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    1460.7,
+    1463.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.37
+   ]
+  },
+  {
+   "t0": 1465.0,
+   "t1": 1467.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    1465.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 1475.1,
+   "t1": 1477.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    1476.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 1494.1,
+   "t1": 1496.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    1495.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 1498.1,
+   "t1": 1500.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1499.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 1530.6,
+   "t1": 1532.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    1531.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 1533.5,
+   "t1": 1535.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    1534.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 1537.7,
+   "t1": 1539.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.85,
+   "status": "ok",
+   "drop_times": [
+    1538.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 1540.4,
+   "t1": 1542.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.85,
+   "status": "ok",
+   "drop_times": [
+    1541.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 1545.7,
+   "t1": 1547.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    1546.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1550.7,
+   "t1": 1552.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.1,
+   "status": "ok",
+   "drop_times": [
+    1551.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1553.4,
+   "t1": 1562.5,
+   "sets": 3,
+   "drops": 4,
+   "period": 2.9,
+   "status": "EXTRA",
+   "drop_times": [
+    1554.3,
+    1556.9,
+    1559.0,
+    1561.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53,
+    0.41,
+    0.45,
+    0.44
+   ]
+  },
+  {
+   "t0": 1565.0,
+   "t1": 1567.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    1565.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 1569.0,
+   "t1": 1573.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    1569.9,
+    1572.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.39
+   ]
+  },
+  {
+   "t0": 1574.6,
+   "t1": 1576.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    1575.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 1580.2,
+   "t1": 1584.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    1581.0,
+    1583.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53,
+    0.47
+   ]
+  },
+  {
+   "t0": 1585.1,
+   "t1": 1587.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1585.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 1588.0,
+   "t1": 1590.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1588.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 1590.8,
+   "t1": 1592.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1591.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 1593.3,
+   "t1": 1595.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1594.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 1595.8,
+   "t1": 1597.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1596.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 1598.4,
+   "t1": 1604.7,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1599.2,
+    1601.4,
+    1603.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.4,
+    0.49
+   ]
+  },
+  {
+   "t0": 1605.3,
+   "t1": 1609.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1606.2,
+    1608.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.5
+   ]
+  },
+  {
+   "t0": 1610.3,
+   "t1": 1614.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1611.2,
+    1613.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.52
+   ]
+  },
+  {
+   "t0": 1615.2,
+   "t1": 1619.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1616.1,
+    1618.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48,
+    0.36
+   ]
+  },
+  {
+   "t0": 1620.4,
+   "t1": 1624.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1621.2,
+    1623.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54,
+    0.49
+   ]
+  },
+  {
+   "t0": 1625.5,
+   "t1": 1630.1,
+   "sets": 2,
+   "drops": 1,
+   "period": 2.5,
+   "status": "MISSING",
+   "drop_times": [
+    1628.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 1637.2,
+   "t1": 1638.3,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.5,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 1642.0,
+   "t1": 1642.8,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.5,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 1648.0,
+   "t1": 1648.6,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.5,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 1650.3,
+   "t1": 1651.0,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.7,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 1750.3,
+   "t1": 1752.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.85,
+   "status": "ok",
+   "drop_times": [
+    1751.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 1754.2,
+   "t1": 1756.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.9,
+   "status": "ok",
+   "drop_times": [
+    1755.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 1758.3,
+   "t1": 1760.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.8,
+   "status": "ok",
+   "drop_times": [
+    1759.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 1762.1,
+   "t1": 1764.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    1762.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52
+   ]
+  },
+  {
+   "t0": 1765.1,
+   "t1": 1767.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    1766.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 1767.6,
+   "t1": 1771.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.8,
+   "status": "ok",
+   "drop_times": [
+    1768.5,
+    1770.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48,
+    0.42
+   ]
+  },
+  {
+   "t0": 1775.2,
+   "t1": 1777.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.85,
+   "status": "ok",
+   "drop_times": [
+    1776.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 1780.2,
+   "t1": 1782.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.9,
+   "status": "ok",
+   "drop_times": [
+    1781.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 1784.1,
+   "t1": 1788.5,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.8,
+   "status": "ok",
+   "drop_times": [
+    1785.0,
+    1787.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44,
+    0.44
+   ]
+  },
+  {
+   "t0": 1789.0,
+   "t1": 1793.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.85,
+   "status": "ok",
+   "drop_times": [
+    1789.9,
+    1792.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.45
+   ]
+  },
+  {
+   "t0": 1798.2,
+   "t1": 1800.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1799.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54
+   ]
+  },
+  {
+   "t0": 1802.3,
+   "t1": 1804.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1803.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1806.7,
+   "t1": 1808.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1807.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 1810.9,
+   "t1": 1814.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1811.8,
+    1813.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.5
+   ]
+  },
+  {
+   "t0": 1815.4,
+   "t1": 1819.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1816.3,
+    1818.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.44
+   ]
+  },
+  {
+   "t0": 1820.4,
+   "t1": 1831.9,
+   "sets": 5,
+   "drops": 5,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    1821.1,
+    1823.5,
+    1825.9,
+    1828.3,
+    1830.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53,
+    0.44,
+    0.36,
+    0.39,
+    0.37
+   ]
+  },
+  {
+   "t0": 1832.5,
+   "t1": 1846.5,
+   "sets": 6,
+   "drops": 6,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1833.5,
+    1835.8,
+    1838.3,
+    1840.7,
+    1842.9,
+    1845.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.36,
+    0.34,
+    0.4,
+    0.39,
+    0.39
+   ]
+  },
+  {
+   "t0": 1846.9,
+   "t1": 1849.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1847.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 1849.8,
+   "t1": 1851.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1850.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1861.7,
+   "t1": 1863.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1862.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 1879.1,
+   "t1": 1881.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.7,
+   "status": "ok",
+   "drop_times": [
+    1879.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 1897.6,
+   "t1": 1901.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1898.5,
+    1900.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.47
+   ]
+  },
+  {
+   "t0": 1902.5,
+   "t1": 1904.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1903.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 1905.4,
+   "t1": 1907.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1906.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 1909.0,
+   "t1": 1911.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1910.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 1911.7,
+   "t1": 1913.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    1912.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 1914.5,
+   "t1": 1921.2,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1915.4,
+    1917.7,
+    1920.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.46,
+    0.36
+   ]
+  },
+  {
+   "t0": 1921.6,
+   "t1": 1926.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1922.5,
+    1924.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.47
+   ]
+  },
+  {
+   "t0": 1926.6,
+   "t1": 1928.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1927.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 1930.4,
+   "t1": 1932.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1931.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 1933.0,
+   "t1": 1935.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    1933.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 1935.5,
+   "t1": 1937.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1936.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 1938.1,
+   "t1": 1942.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1938.9,
+    1941.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47,
+    0.48
+   ]
+  },
+  {
+   "t0": 1943.0,
+   "t1": 1954.6,
+   "sets": 5,
+   "drops": 5,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1943.9,
+    1946.3,
+    1948.5,
+    1950.8,
+    1953.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.45,
+    0.53,
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "t0": 1955.2,
+   "t1": 1962.0,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1956.1,
+    1958.4,
+    1960.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.44,
+    0.48
+   ]
+  },
+  {
+   "t0": 1962.6,
+   "t1": 1970.9,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1963.4,
+    1965.6,
+    1967.7,
+    1969.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52,
+    0.36,
+    0.49,
+    0.32
+   ]
+  },
+  {
+   "t0": 1971.4,
+   "t1": 1973.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1972.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 1974.1,
+   "t1": 1983.0,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1974.9,
+    1977.1,
+    1979.5,
+    1981.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.48,
+    0.4,
+    0.43
+   ]
+  },
+  {
+   "t0": 1983.4,
+   "t1": 1987.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1984.2,
+    1986.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.52
+   ]
+  },
+  {
+   "t0": 1988.4,
+   "t1": 1990.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1989.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 1990.8,
+   "t1": 1992.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1991.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 1993.2,
+   "t1": 2002.2,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    1994.1,
+    1996.5,
+    1998.9,
+    2001.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.42,
+    0.42,
+    0.38
+   ]
+  },
+  {
+   "t0": 2002.6,
+   "t1": 2004.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2003.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 2005.2,
+   "t1": 2007.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2006.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2007.8,
+   "t1": 2009.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2008.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 2010.3,
+   "t1": 2014.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2011.3,
+    2013.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.34
+   ]
+  },
+  {
+   "t0": 2015.2,
+   "t1": 2019.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2016.0,
+    2018.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.48
+   ]
+  },
+  {
+   "t0": 2020.0,
+   "t1": 2022.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2020.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 2024.4,
+   "t1": 2026.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2025.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 2026.9,
+   "t1": 2036.0,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2027.7,
+    2030.1,
+    2032.4,
+    2034.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.41,
+    0.49,
+    0.4
+   ]
+  },
+  {
+   "t0": 2036.4,
+   "t1": 2043.0,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2037.2,
+    2039.7,
+    2041.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.39,
+    0.53
+   ]
+  },
+  {
+   "t0": 2043.9,
+   "t1": 2057.3,
+   "sets": 6,
+   "drops": 6,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2044.8,
+    2047.1,
+    2049.5,
+    2051.7,
+    2053.8,
+    2056.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.36,
+    0.5,
+    0.37,
+    0.49,
+    0.38
+   ]
+  },
+  {
+   "t0": 2057.7,
+   "t1": 2062.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2058.6,
+    2060.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.43
+   ]
+  },
+  {
+   "t0": 2062.7,
+   "t1": 2066.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2063.5,
+    2065.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.45
+   ]
+  },
+  {
+   "t0": 2072.3,
+   "t1": 2074.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    2073.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2084.6,
+   "t1": 2086.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    2085.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 2088.1,
+   "t1": 2090.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.65,
+   "status": "ok",
+   "drop_times": [
+    2089.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 2091.9,
+   "t1": 2094.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2092.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 2096.3,
+   "t1": 2098.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2097.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2144.0,
+   "t1": 2146.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2145.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 2161.6,
+   "t1": 2163.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2162.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2242.7,
+   "t1": 2244.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2243.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 2249.3,
+   "t1": 2251.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2250.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 2260.9,
+   "t1": 2263.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2261.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2314.0,
+   "t1": 2316.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2314.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 2320.4,
+   "t1": 2322.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2321.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 2324.1,
+   "t1": 2326.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2325.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2332.2,
+   "t1": 2334.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2333.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2342.8,
+   "t1": 2344.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2344.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2361.3,
+   "t1": 2363.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    2362.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 2365.2,
+   "t1": 2367.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.0,
+   "status": "ok",
+   "drop_times": [
+    2366.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 2368.6,
+   "t1": 2370.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.1,
+   "status": "ok",
+   "drop_times": [
+    2369.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2371.4,
+   "t1": 2373.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.1,
+   "status": "ok",
+   "drop_times": [
+    2372.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2377.2,
+   "t1": 2379.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.95,
+   "status": "ok",
+   "drop_times": [
+    2378.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 2381.5,
+   "t1": 2383.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    2382.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55
+   ]
+  },
+  {
+   "t0": 2384.3,
+   "t1": 2391.0,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    2385.0,
+    2387.5,
+    2389.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54,
+    0.47,
+    0.35
+   ]
+  },
+  {
+   "t0": 2391.9,
+   "t1": 2394.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    2392.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2394.8,
+   "t1": 2396.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    2395.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 2398.0,
+   "t1": 2399.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    2398.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2402.6,
+   "t1": 2404.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2403.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2405.2,
+   "t1": 2409.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2406.1,
+    2408.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.4
+   ]
+  },
+  {
+   "t0": 2410.1,
+   "t1": 2412.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2411.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 2412.9,
+   "t1": 2414.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2413.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2415.4,
+   "t1": 2417.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2416.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2418.9,
+   "t1": 2425.7,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2419.8,
+    2422.2,
+    2424.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.38,
+    0.43
+   ]
+  },
+  {
+   "t0": 2426.3,
+   "t1": 2428.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2427.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2428.8,
+   "t1": 2433.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2429.6,
+    2432.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.37
+   ]
+  },
+  {
+   "t0": 2434.0,
+   "t1": 2436.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2434.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 2438.3,
+   "t1": 2440.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2439.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 2441.0,
+   "t1": 2443.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2441.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2443.5,
+   "t1": 2450.2,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2444.4,
+    2446.8,
+    2449.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.43,
+    0.34
+   ]
+  },
+  {
+   "t0": 2450.6,
+   "t1": 2452.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2451.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 2453.1,
+   "t1": 2457.5,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2454.0,
+    2456.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.31
+   ]
+  },
+  {
+   "t0": 2458.2,
+   "t1": 2460.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2459.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2460.8,
+   "t1": 2467.6,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2461.7,
+    2464.0,
+    2466.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32,
+    0.46,
+    0.4
+   ]
+  },
+  {
+   "t0": 2468.0,
+   "t1": 2476.5,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2468.5,
+    2471.1,
+    2473.6,
+    2475.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.38,
+    0.4,
+    0.38
+   ]
+  },
+  {
+   "t0": 2485.1,
+   "t1": 2486.8,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.65,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 2494.3,
+   "t1": 2496.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.3,
+   "status": "ok",
+   "drop_times": [
+    2495.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 2497.7,
+   "t1": 2499.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    2498.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2501.0,
+   "t1": 2503.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2501.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52
+   ]
+  },
+  {
+   "t0": 2505.3,
+   "t1": 2507.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2506.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 2509.5,
+   "t1": 2511.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2510.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2514.0,
+   "t1": 2516.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2514.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 2516.5,
+   "t1": 2518.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2517.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 2521.4,
+   "t1": 2523.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2522.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 2528.9,
+   "t1": 2530.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2529.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2538.4,
+   "t1": 2540.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2539.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2558.4,
+   "t1": 2560.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    2559.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2565.1,
+   "t1": 2567.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    2566.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.28
+   ]
+  },
+  {
+   "t0": 2569.4,
+   "t1": 2571.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    2570.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 2572.4,
+   "t1": 2574.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    2573.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.28
+   ]
+  },
+  {
+   "t0": 2575.6,
+   "t1": 2586.3,
+   "sets": 4,
+   "drops": 5,
+   "period": 2.6,
+   "status": "EXTRA",
+   "drop_times": [
+    2576.4,
+    2578.6,
+    2580.9,
+    2583.1,
+    2585.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38,
+    0.47,
+    0.38,
+    0.43,
+    0.55
+   ]
+  },
+  {
+   "t0": 2587.0,
+   "t1": 2591.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2587.7,
+    2589.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.39
+   ]
+  },
+  {
+   "t0": 2591.7,
+   "t1": 2593.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    2592.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 2595.8,
+   "t1": 2600.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2596.8,
+    2599.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33,
+    0.36
+   ]
+  },
+  {
+   "t0": 2601.1,
+   "t1": 2603.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2601.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2603.8,
+   "t1": 2605.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2604.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 2606.3,
+   "t1": 2608.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2607.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 2609.0,
+   "t1": 2612.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2609.8,
+    2612.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.55,
+    0.46
+   ]
+  },
+  {
+   "t0": 2613.7,
+   "t1": 2617.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2614.5,
+    2616.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47,
+    0.46
+   ]
+  },
+  {
+   "t0": 2618.3,
+   "t1": 2624.4,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2619.1,
+    2621.2,
+    2623.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48,
+    0.38,
+    0.34
+   ]
+  },
+  {
+   "t0": 2625.3,
+   "t1": 2627.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2626.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 2627.8,
+   "t1": 2629.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2628.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 2630.4,
+   "t1": 2632.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2631.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 2634.0,
+   "t1": 2636.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2634.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 2636.6,
+   "t1": 2638.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2637.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 2639.1,
+   "t1": 2643.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2639.9,
+    2642.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.39
+   ]
+  },
+  {
+   "t0": 2644.2,
+   "t1": 2646.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2645.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 2646.6,
+   "t1": 2648.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2647.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 2649.2,
+   "t1": 2655.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2650.1,
+    2652.4,
+    2654.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.4,
+    0.42
+   ]
+  },
+  {
+   "t0": 2656.8,
+   "t1": 2658.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2657.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 2660.4,
+   "t1": 2664.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2661.3,
+    2663.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.31
+   ]
+  },
+  {
+   "t0": 2665.4,
+   "t1": 2669.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2666.2,
+    2668.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.44
+   ]
+  },
+  {
+   "t0": 2670.1,
+   "t1": 2672.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2670.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2672.5,
+   "t1": 2677.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2673.3,
+    2675.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.34
+   ]
+  },
+  {
+   "t0": 2677.4,
+   "t1": 2679.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2678.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 2679.9,
+   "t1": 2682.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2680.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2682.5,
+   "t1": 2684.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2683.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2685.1,
+   "t1": 2687.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2685.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 2689.1,
+   "t1": 2693.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2690.0,
+    2692.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.34
+   ]
+  },
+  {
+   "t0": 2694.2,
+   "t1": 2696.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2695.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5
+   ]
+  },
+  {
+   "t0": 2696.7,
+   "t1": 2701.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2697.6,
+    2700.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54,
+    0.33
+   ]
+  },
+  {
+   "t0": 2701.7,
+   "t1": 2703.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2702.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2704.2,
+   "t1": 2712.8,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2705.0,
+    2707.2,
+    2709.4,
+    2711.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.53,
+    0.41,
+    0.41
+   ]
+  },
+  {
+   "t0": 2713.6,
+   "t1": 2717.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2714.4,
+    2716.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.56
+   ]
+  },
+  {
+   "t0": 2718.3,
+   "t1": 2720.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2719.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 2720.8,
+   "t1": 2722.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2721.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2723.3,
+   "t1": 2727.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2724.2,
+    2726.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.47
+   ]
+  },
+  {
+   "t0": 2728.1,
+   "t1": 2730.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2728.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2730.6,
+   "t1": 2732.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2731.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2734.7,
+   "t1": 2739.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2735.7,
+    2737.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44,
+    0.35
+   ]
+  },
+  {
+   "t0": 2739.5,
+   "t1": 2744.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2740.3,
+    2742.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.33
+   ]
+  },
+  {
+   "t0": 2744.7,
+   "t1": 2751.5,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2745.6,
+    2747.9,
+    2750.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.4,
+    0.36
+   ]
+  },
+  {
+   "t0": 2752.4,
+   "t1": 2754.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2753.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 2756.3,
+   "t1": 2770.0,
+   "sets": 6,
+   "drops": 6,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2757.2,
+    2759.5,
+    2761.9,
+    2764.3,
+    2766.6,
+    2768.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.52,
+    0.36,
+    0.37,
+    0.46,
+    0.31
+   ]
+  },
+  {
+   "t0": 2770.5,
+   "t1": 2775.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2771.3,
+    2773.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.39
+   ]
+  },
+  {
+   "t0": 2775.5,
+   "t1": 2784.4,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2776.3,
+    2778.6,
+    2780.9,
+    2783.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.42,
+    0.37,
+    0.46
+   ]
+  },
+  {
+   "t0": 2784.8,
+   "t1": 2789.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2785.6,
+    2788.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.33
+   ]
+  },
+  {
+   "t0": 2789.6,
+   "t1": 2791.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2790.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2794.7,
+   "t1": 2796.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2795.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2797.2,
+   "t1": 2801.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2798.2,
+    2800.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.45
+   ]
+  },
+  {
+   "t0": 2802.9,
+   "t1": 2804.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2803.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 2806.7,
+   "t1": 2815.7,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2807.5,
+    2809.9,
+    2812.2,
+    2814.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.49,
+    0.31,
+    0.48
+   ]
+  },
+  {
+   "t0": 2816.1,
+   "t1": 2818.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2816.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 2818.6,
+   "t1": 2822.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    2819.5,
+    2821.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.44
+   ]
+  },
+  {
+   "t0": 2823.6,
+   "t1": 2825.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    2824.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2827.8,
+   "t1": 2831.9,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2828.6,
+    2830.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47,
+    0.39
+   ]
+  },
+  {
+   "t0": 2833.1,
+   "t1": 2837.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2833.9,
+    2836.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.39
+   ]
+  },
+  {
+   "t0": 2838.2,
+   "t1": 2842.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    2839.0,
+    2841.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32,
+    0.35
+   ]
+  },
+  {
+   "t0": 2844.6,
+   "t1": 2846.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "ok",
+   "drop_times": [
+    2845.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2846.9,
+   "t1": 2849.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    2847.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2849.5,
+   "t1": 2853.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2850.3,
+    2852.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.51
+   ]
+  },
+  {
+   "t0": 2854.2,
+   "t1": 2856.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2855.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3
+   ]
+  },
+  {
+   "t0": 2856.7,
+   "t1": 2858.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2857.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2859.7,
+   "t1": 2861.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2860.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2862.3,
+   "t1": 2864.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2863.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 2864.8,
+   "t1": 2866.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2865.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 2867.4,
+   "t1": 2871.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2868.2,
+    2870.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.47
+   ]
+  },
+  {
+   "t0": 2872.4,
+   "t1": 2876.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2873.3,
+    2875.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33,
+    0.32
+   ]
+  },
+  {
+   "t0": 2877.1,
+   "t1": 2880.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2877.8,
+    2880.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.39
+   ]
+  },
+  {
+   "t0": 2881.4,
+   "t1": 2885.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    2882.2,
+    2884.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33,
+    0.35
+   ]
+  },
+  {
+   "t0": 2893.3,
+   "t1": 2895.1,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.4,
+   "status": "MISSING",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  },
+  {
+   "t0": 2914.6,
+   "t1": 2916.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    2915.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 2918.0,
+   "t1": 2920.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    2918.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2921.7,
+   "t1": 2923.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    2922.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 2924.4,
+   "t1": 2926.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    2925.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 2927.8,
+   "t1": 2929.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    2928.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 2931.7,
+   "t1": 2933.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.45,
+   "status": "ok",
+   "drop_times": [
+    2932.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 2934.7,
+   "t1": 2936.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    2935.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2938.1,
+   "t1": 2940.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.5,
+   "status": "ok",
+   "drop_times": [
+    2939.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 2956.7,
+   "t1": 2958.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2957.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2973.3,
+   "t1": 2975.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2974.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 2980.1,
+   "t1": 2982.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2981.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 2985.8,
+   "t1": 2987.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2986.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 2995.0,
+   "t1": 2997.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    2995.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3005.7,
+   "t1": 3007.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    3006.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3016.9,
+   "t1": 3019.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 4.0,
+   "status": "ok",
+   "drop_times": [
+    3017.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3027.7,
+   "t1": 3029.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3028.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3062.5,
+   "t1": 3064.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    3063.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 3071.0,
+   "t1": 3073.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3071.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 3075.9,
+   "t1": 3077.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    3076.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 3080.0,
+   "t1": 3082.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3080.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 3082.7,
+   "t1": 3084.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3083.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 3085.1,
+   "t1": 3089.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3085.9,
+    3088.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.51
+   ]
+  },
+  {
+   "t0": 3090.0,
+   "t1": 3092.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3090.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3092.6,
+   "t1": 3094.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3093.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3095.0,
+   "t1": 3099.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3095.8,
+    3098.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31,
+    0.37
+   ]
+  },
+  {
+   "t0": 3099.6,
+   "t1": 3104.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3100.4,
+    3102.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38,
+    0.36
+   ]
+  },
+  {
+   "t0": 3104.4,
+   "t1": 3117.8,
+   "sets": 6,
+   "drops": 6,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3105.2,
+    3107.4,
+    3109.7,
+    3112.0,
+    3114.3,
+    3116.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.5,
+    0.36,
+    0.47,
+    0.4,
+    0.39
+   ]
+  },
+  {
+   "t0": 3118.4,
+   "t1": 3120.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3119.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 3120.7,
+   "t1": 3122.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3121.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 3123.4,
+   "t1": 3129.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3124.2,
+    3126.5,
+    3128.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47,
+    0.42,
+    0.36
+   ]
+  },
+  {
+   "t0": 3130.3,
+   "t1": 3132.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3131.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3132.9,
+   "t1": 3134.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3133.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3135.2,
+   "t1": 3137.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3136.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 3137.7,
+   "t1": 3146.7,
+   "sets": 4,
+   "drops": 4,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3138.5,
+    3140.8,
+    3143.2,
+    3145.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4,
+    0.42,
+    0.4,
+    0.46
+   ]
+  },
+  {
+   "t0": 3147.1,
+   "t1": 3149.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3147.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3149.7,
+   "t1": 3151.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3150.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3152.2,
+   "t1": 3154.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3153.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3182.7,
+   "t1": 3184.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3183.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5
+   ]
+  },
+  {
+   "t0": 3204.4,
+   "t1": 3206.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    3205.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 3219.1,
+   "t1": 3221.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    3220.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 3223.7,
+   "t1": 3225.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    3224.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3226.3,
+   "t1": 3228.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    3227.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 3229.2,
+   "t1": 3233.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    3230.0,
+    3232.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.45
+   ]
+  },
+  {
+   "t0": 3233.9,
+   "t1": 3235.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    3234.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3236.7,
+   "t1": 3238.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3237.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3240.2,
+   "t1": 3242.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.65,
+   "status": "ok",
+   "drop_times": [
+    3241.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 3243.6,
+   "t1": 3247.8,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3244.4,
+    3246.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.43
+   ]
+  },
+  {
+   "t0": 3248.5,
+   "t1": 3254.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3249.4,
+    3251.6,
+    3253.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.48,
+    0.46
+   ]
+  },
+  {
+   "t0": 3257.0,
+   "t1": 3259.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3257.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 3259.5,
+   "t1": 3261.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3260.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3262.1,
+   "t1": 3268.5,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3262.9,
+    3265.0,
+    3267.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.55,
+    0.41
+   ]
+  },
+  {
+   "t0": 3270.0,
+   "t1": 3271.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3271.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3272.3,
+   "t1": 3274.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3273.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 3275.1,
+   "t1": 3279.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3276.0,
+    3278.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.31,
+    0.32
+   ]
+  },
+  {
+   "t0": 3280.1,
+   "t1": 3287.0,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3280.9,
+    3283.2,
+    3285.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46,
+    0.48,
+    0.45
+   ]
+  },
+  {
+   "t0": 3288.1,
+   "t1": 3292.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3289.0,
+    3291.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41,
+    0.46
+   ]
+  },
+  {
+   "t0": 3293.0,
+   "t1": 3295.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3293.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3295.5,
+   "t1": 3297.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    3296.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 3298.2,
+   "t1": 3300.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3299.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3300.6,
+   "t1": 3305.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3301.4,
+    3303.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.36
+   ]
+  },
+  {
+   "t0": 3306.2,
+   "t1": 3308.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3307.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 3308.9,
+   "t1": 3313.5,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3309.8,
+    3312.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47,
+    0.46
+   ]
+  },
+  {
+   "t0": 3316.0,
+   "t1": 3320.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3316.8,
+    3318.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.32
+   ]
+  },
+  {
+   "t0": 3320.4,
+   "t1": 3326.9,
+   "sets": 3,
+   "drops": 3,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3321.3,
+    3323.4,
+    3325.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37,
+    0.45,
+    0.46
+   ]
+  },
+  {
+   "t0": 3327.3,
+   "t1": 3331.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3328.1,
+    3330.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.33
+   ]
+  },
+  {
+   "t0": 3332.2,
+   "t1": 3334.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3333.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34
+   ]
+  },
+  {
+   "t0": 3334.6,
+   "t1": 3336.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.35,
+   "status": "ok",
+   "drop_times": [
+    3335.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 3337.2,
+   "t1": 3352.5,
+   "sets": 7,
+   "drops": 7,
+   "period": 2.3,
+   "status": "ok",
+   "drop_times": [
+    3337.9,
+    3340.1,
+    3342.4,
+    3344.6,
+    3346.9,
+    3349.0,
+    3351.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5,
+    0.53,
+    0.5,
+    0.53,
+    0.36,
+    0.54,
+    0.38
+   ]
+  },
+  {
+   "t0": 3353.1,
+   "t1": 3357.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.35,
+   "status": "ok",
+   "drop_times": [
+    3353.9,
+    3356.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.43
+   ]
+  },
+  {
+   "t0": 3357.9,
+   "t1": 3359.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.3,
+   "status": "ok",
+   "drop_times": [
+    3358.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3360.5,
+   "t1": 3362.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.35,
+   "status": "ok",
+   "drop_times": [
+    3361.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.44
+   ]
+  },
+  {
+   "t0": 3363.3,
+   "t1": 3367.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.35,
+   "status": "ok",
+   "drop_times": [
+    3364.2,
+    3366.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35,
+    0.36
+   ]
+  },
+  {
+   "t0": 3367.7,
+   "t1": 3369.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3368.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 3370.2,
+   "t1": 3374.5,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.4,
+   "status": "ok",
+   "drop_times": [
+    3371.1,
+    3373.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.34,
+    0.38
+   ]
+  },
+  {
+   "t0": 3374.9,
+   "t1": 3376.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3375.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52
+   ]
+  },
+  {
+   "t0": 3377.4,
+   "t1": 3381.7,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3378.2,
+    3380.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43,
+    0.32
+   ]
+  },
+  {
+   "t0": 3382.6,
+   "t1": 3384.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3383.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3385.0,
+   "t1": 3389.0,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3385.9,
+    3387.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39,
+    0.38
+   ]
+  },
+  {
+   "t0": 3389.6,
+   "t1": 3391.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3390.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.3
+   ]
+  },
+  {
+   "t0": 3393.2,
+   "t1": 3395.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.45,
+   "status": "ok",
+   "drop_times": [
+    3394.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.27
+   ]
+  },
+  {
+   "t0": 3398.7,
+   "t1": 3400.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3399.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54
+   ]
+  },
+  {
+   "t0": 3403.7,
+   "t1": 3405.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    3404.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.46
+   ]
+  },
+  {
+   "t0": 3438.3,
+   "t1": 3440.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.7,
+   "status": "ok",
+   "drop_times": [
+    3439.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.32
+   ]
+  },
+  {
+   "t0": 3442.7,
+   "t1": 3444.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    3443.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.27
+   ]
+  },
+  {
+   "t0": 3445.5,
+   "t1": 3447.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    3446.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3449.5,
+   "t1": 3451.5,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.85,
+   "status": "ok",
+   "drop_times": [
+    3450.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3452.1,
+   "t1": 3454.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    3452.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3454.8,
+   "t1": 3456.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.15,
+   "status": "ok",
+   "drop_times": [
+    3455.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3457.4,
+   "t1": 3461.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    3458.2,
+    3460.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.33
+   ]
+  },
+  {
+   "t0": 3463.2,
+   "t1": 3465.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.2,
+   "status": "ok",
+   "drop_times": [
+    3463.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 3467.1,
+   "t1": 3469.1,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.4,
+   "status": "ok",
+   "drop_times": [
+    3467.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36
+   ]
+  },
+  {
+   "t0": 3469.8,
+   "t1": 3471.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.0,
+   "status": "ok",
+   "drop_times": [
+    3470.7
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 3472.9,
+   "t1": 3474.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 3.0,
+   "status": "ok",
+   "drop_times": [
+    3473.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 3477.3,
+   "t1": 3479.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.95,
+   "status": "ok",
+   "drop_times": [
+    3478.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38
+   ]
+  },
+  {
+   "t0": 3481.9,
+   "t1": 3483.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    3482.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.39
+   ]
+  },
+  {
+   "t0": 3485.5,
+   "t1": 3487.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.85,
+   "status": "ok",
+   "drop_times": [
+    3486.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.5
+   ]
+  },
+  {
+   "t0": 3489.7,
+   "t1": 3491.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.9,
+   "status": "ok",
+   "drop_times": [
+    3490.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45
+   ]
+  },
+  {
+   "t0": 3492.7,
+   "t1": 3494.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.8,
+   "status": "ok",
+   "drop_times": [
+    3493.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.48
+   ]
+  },
+  {
+   "t0": 3496.3,
+   "t1": 3500.4,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.75,
+   "status": "ok",
+   "drop_times": [
+    3497.1,
+    3499.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.45,
+    0.43
+   ]
+  },
+  {
+   "t0": 3501.4,
+   "t1": 3503.4,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3502.2
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 3504.0,
+   "t1": 3506.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3504.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 3506.6,
+   "t1": 3508.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3507.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3509.1,
+   "t1": 3520.6,
+   "sets": 5,
+   "drops": 5,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3510.0,
+    3512.4,
+    3514.8,
+    3517.0,
+    3519.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.36,
+    0.39,
+    0.45,
+    0.47,
+    0.47
+   ]
+  },
+  {
+   "t0": 3521.0,
+   "t1": 3523.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3521.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.47
+   ]
+  },
+  {
+   "t0": 3525.4,
+   "t1": 3529.6,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3526.1,
+    3528.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.52,
+    0.3
+   ]
+  },
+  {
+   "t0": 3530.3,
+   "t1": 3532.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3531.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.33
+   ]
+  },
+  {
+   "t0": 3532.8,
+   "t1": 3534.8,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3533.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.4
+   ]
+  },
+  {
+   "t0": 3535.2,
+   "t1": 3537.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3536.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 3537.6,
+   "t1": 3539.6,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3538.4
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3540.0,
+   "t1": 3542.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3540.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.41
+   ]
+  },
+  {
+   "t0": 3542.9,
+   "t1": 3547.5,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3543.7,
+    3546.3
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.54,
+    0.44
+   ]
+  },
+  {
+   "t0": 3548.1,
+   "t1": 3552.3,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3548.8,
+    3551.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.38
+   ]
+  },
+  {
+   "t0": 3553.0,
+   "t1": 3555.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3553.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 3555.9,
+   "t1": 3557.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3556.6
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.53
+   ]
+  },
+  {
+   "t0": 3558.3,
+   "t1": 3560.3,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3559.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.43
+   ]
+  },
+  {
+   "t0": 3561.3,
+   "t1": 3563.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3562.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.49
+   ]
+  },
+  {
+   "t0": 3564.9,
+   "t1": 3569.2,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3565.7,
+    3568.1
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42,
+    0.43
+   ]
+  },
+  {
+   "t0": 3569.7,
+   "t1": 3571.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.55,
+   "status": "DOUBLE",
+   "drop_times": [
+    3570.6
+   ],
+   "double_strip_times": [
+    3570.6
+   ],
+   "sachet_size": [
+    0.64
+   ]
+  },
+  {
+   "t0": 3572.1,
+   "t1": 3574.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3573.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3574.7,
+   "t1": 3576.7,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3575.5
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.51
+   ]
+  },
+  {
+   "t0": 3577.1,
+   "t1": 3579.2,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3578.0
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.42
+   ]
+  },
+  {
+   "t0": 3579.9,
+   "t1": 3584.1,
+   "sets": 2,
+   "drops": 2,
+   "period": 2.6,
+   "status": "ok",
+   "drop_times": [
+    3580.8,
+    3582.9
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.38,
+    0.52
+   ]
+  },
+  {
+   "t0": 3584.9,
+   "t1": 3586.9,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3585.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.37
+   ]
+  },
+  {
+   "t0": 3596.9,
+   "t1": 3599.0,
+   "sets": 1,
+   "drops": 1,
+   "period": 2.5,
+   "status": "ok",
+   "drop_times": [
+    3597.8
+   ],
+   "double_strip_times": [],
+   "sachet_size": [
+    0.35
+   ]
+  },
+  {
+   "t0": 3599.5,
+   "t1": 3600.0,
+   "sets": 1,
+   "drops": 0,
+   "period": 2.5,
+   "status": "partial",
+   "drop_times": [],
+   "double_strip_times": [],
+   "sachet_size": []
+  }
+ ],
+ "orphans": [
+  1625.5,
+  1667.8,
+  2329.3,
+  2903.2,
+  2904.9,
+  2906.5,
+  2912.3
+ ],
+ "drops": [
+  12.8,
+  19.9,
+  23.6,
+  27.5,
+  33.6,
+  36.0,
+  39.7,
+  43.4,
+  45.8,
+  53.4,
+  55.9,
+  58.9,
+  61.7,
+  66.4,
+  71.6,
+  75.1,
+  78.3,
+  80.7,
+  83.6,
+  88.2,
+  90.9,
+  97.5,
+  104.0,
+  162.6,
+  166.2,
+  168.8,
+  171.7,
+  174.2,
+  176.1,
+  178.7,
+  181.3,
+  184.0,
+  187.0,
+  189.7,
+  192.1,
+  194.8,
+  197.2,
+  199.4,
+  201.9,
+  204.7,
+  207.0,
+  209.4,
+  212.0,
+  214.7,
+  218.6,
+  221.4,
+  224.0,
+  226.2,
+  228.2,
+  231.2,
+  235.2,
+  237.7,
+  240.1,
+  242.9,
+  245.2,
+  247.4,
+  250.0,
+  252.4,
+  254.9,
+  257.5,
+  259.6,
+  262.0,
+  266.5,
+  268.7,
+  271.0,
+  273.6,
+  276.6,
+  279.1,
+  283.6,
+  285.9,
+  288.7,
+  290.6,
+  293.2,
+  295.7,
+  298.3,
+  300.6,
+  303.2,
+  307.8,
+  310.1,
+  312.6,
+  315.2,
+  317.6,
+  320.3,
+  322.8,
+  325.1,
+  327.5,
+  330.0,
+  332.4,
+  334.8,
+  337.5,
+  341.5,
+  344.0,
+  346.6,
+  349.2,
+  351.8,
+  354.2,
+  356.4,
+  358.7,
+  361.3,
+  365.3,
+  367.8,
+  370.2,
+  372.7,
+  375.1,
+  377.6,
+  379.9,
+  382.7,
+  385.1,
+  387.9,
+  391.5,
+  394.2,
+  396.6,
+  399.2,
+  401.8,
+  404.0,
+  406.6,
+  408.7,
+  413.3,
+  415.9,
+  418.5,
+  420.8,
+  423.2,
+  425.8,
+  428.2,
+  430.4,
+  433.0,
+  435.1,
+  437.8,
+  440.2,
+  442.6,
+  445.1,
+  447.5,
+  450.1,
+  454.7,
+  457.4,
+  460.5,
+  464.1,
+  489.7,
+  494.6,
+  506.1,
+  510.5,
+  513.9,
+  519.7,
+  524.4,
+  527.9,
+  530.0,
+  532.4,
+  534.9,
+  537.5,
+  544.8,
+  548.9,
+  551.8,
+  554.8,
+  560.0,
+  572.5,
+  579.5,
+  581.7,
+  584.1,
+  586.5,
+  596.6,
+  600.3,
+  611.2,
+  613.8,
+  618.2,
+  621.0,
+  623.5,
+  626.1,
+  628.8,
+  632.3,
+  634.7,
+  637.4,
+  640.1,
+  642.6,
+  644.9,
+  647.1,
+  649.9,
+  652.4,
+  655.2,
+  1171.8,
+  1178.0,
+  1181.6,
+  1192.2,
+  1194.4,
+  1196.7,
+  1199.2,
+  1202.1,
+  1210.2,
+  1215.1,
+  1220.1,
+  1224.7,
+  1228.7,
+  1231.4,
+  1234.0,
+  1236.2,
+  1240.3,
+  1243.7,
+  1246.1,
+  1248.3,
+  1250.8,
+  1253.2,
+  1255.9,
+  1261.7,
+  1264.3,
+  1267.5,
+  1270.4,
+  1272.9,
+  1275.1,
+  1277.0,
+  1279.4,
+  1281.8,
+  1284.8,
+  1287.4,
+  1289.9,
+  1292.2,
+  1294.8,
+  1297.3,
+  1300.2,
+  1302.5,
+  1328.9,
+  1332.5,
+  1335.0,
+  1337.1,
+  1339.7,
+  1342.3,
+  1347.1,
+  1351.2,
+  1353.8,
+  1379.4,
+  1390.5,
+  1395.5,
+  1398.6,
+  1401.2,
+  1404.0,
+  1407.2,
+  1413.2,
+  1417.7,
+  1420.1,
+  1423.0,
+  1429.0,
+  1433.0,
+  1436.5,
+  1439.1,
+  1443.7,
+  1446.4,
+  1451.0,
+  1453.3,
+  1455.7,
+  1458.1,
+  1460.7,
+  1463.1,
+  1465.9,
+  1476.0,
+  1495.1,
+  1499.0,
+  1531.5,
+  1534.4,
+  1538.6,
+  1541.4,
+  1546.7,
+  1551.6,
+  1554.3,
+  1556.9,
+  1559.0,
+  1561.3,
+  1565.9,
+  1569.9,
+  1572.2,
+  1575.5,
+  1581.0,
+  1583.2,
+  1585.9,
+  1588.8,
+  1591.7,
+  1594.2,
+  1596.7,
+  1599.2,
+  1601.4,
+  1603.5,
+  1606.2,
+  1608.6,
+  1611.2,
+  1613.7,
+  1616.1,
+  1618.7,
+  1621.2,
+  1623.5,
+  1625.5,
+  1628.6,
+  1667.8,
+  1751.2,
+  1755.1,
+  1759.1,
+  1762.9,
+  1766.0,
+  1768.5,
+  1770.8,
+  1776.1,
+  1781.1,
+  1785.0,
+  1787.3,
+  1789.9,
+  1792.0,
+  1799.0,
+  1803.2,
+  1807.5,
+  1811.8,
+  1813.8,
+  1816.3,
+  1818.6,
+  1821.1,
+  1823.5,
+  1825.9,
+  1828.3,
+  1830.7,
+  1833.5,
+  1835.8,
+  1838.3,
+  1840.7,
+  1842.9,
+  1845.3,
+  1847.8,
+  1850.8,
+  1862.8,
+  1879.9,
+  1898.5,
+  1900.7,
+  1903.4,
+  1906.3,
+  1910.0,
+  1912.6,
+  1915.4,
+  1917.7,
+  1920.1,
+  1922.5,
+  1924.8,
+  1927.4,
+  1931.3,
+  1933.9,
+  1936.3,
+  1938.9,
+  1941.2,
+  1943.9,
+  1946.3,
+  1948.5,
+  1950.8,
+  1953.3,
+  1956.1,
+  1958.4,
+  1960.7,
+  1963.4,
+  1965.6,
+  1967.7,
+  1969.9,
+  1972.3,
+  1974.9,
+  1977.1,
+  1979.5,
+  1981.8,
+  1984.2,
+  1986.6,
+  1989.2,
+  1991.6,
+  1994.1,
+  1996.5,
+  1998.9,
+  2001.1,
+  2003.5,
+  2006.1,
+  2008.6,
+  2011.3,
+  2013.6,
+  2016.0,
+  2018.4,
+  2020.9,
+  2025.3,
+  2027.7,
+  2030.1,
+  2032.4,
+  2034.8,
+  2037.2,
+  2039.7,
+  2041.7,
+  2044.8,
+  2047.1,
+  2049.5,
+  2051.7,
+  2053.8,
+  2056.1,
+  2058.6,
+  2060.8,
+  2063.5,
+  2065.7,
+  2073.1,
+  2085.5,
+  2089.0,
+  2092.8,
+  2097.2,
+  2145.0,
+  2162.6,
+  2243.6,
+  2250.2,
+  2261.8,
+  2314.9,
+  2321.3,
+  2325.0,
+  2329.3,
+  2333.0,
+  2344.0,
+  2362.3,
+  2366.3,
+  2369.8,
+  2372.3,
+  2378.1,
+  2382.5,
+  2385.0,
+  2387.5,
+  2389.8,
+  2392.8,
+  2395.7,
+  2398.9,
+  2403.4,
+  2406.1,
+  2408.5,
+  2411.0,
+  2413.7,
+  2416.3,
+  2419.8,
+  2422.2,
+  2424.6,
+  2427.1,
+  2429.6,
+  2432.1,
+  2434.7,
+  2439.3,
+  2441.9,
+  2444.4,
+  2446.8,
+  2449.1,
+  2451.4,
+  2454.0,
+  2456.4,
+  2459.1,
+  2461.7,
+  2464.0,
+  2466.4,
+  2468.5,
+  2471.1,
+  2473.6,
+  2475.7,
+  2495.2,
+  2498.6,
+  2501.8,
+  2506.2,
+  2510.3,
+  2514.9,
+  2517.4,
+  2522.3,
+  2529.9,
+  2539.3,
+  2559.4,
+  2566.1,
+  2570.3,
+  2573.3,
+  2576.4,
+  2578.6,
+  2580.9,
+  2583.1,
+  2585.1,
+  2587.7,
+  2589.8,
+  2592.5,
+  2596.8,
+  2599.1,
+  2601.9,
+  2604.6,
+  2607.1,
+  2609.8,
+  2612.0,
+  2614.5,
+  2616.7,
+  2619.1,
+  2621.2,
+  2623.3,
+  2626.1,
+  2628.6,
+  2631.2,
+  2634.9,
+  2637.4,
+  2639.9,
+  2642.4,
+  2645.0,
+  2647.5,
+  2650.1,
+  2652.4,
+  2654.7,
+  2657.6,
+  2661.3,
+  2663.5,
+  2666.2,
+  2668.4,
+  2670.9,
+  2673.3,
+  2675.8,
+  2678.3,
+  2680.7,
+  2683.4,
+  2685.9,
+  2690.0,
+  2692.5,
+  2695.0,
+  2697.6,
+  2700.1,
+  2702.5,
+  2705.0,
+  2707.2,
+  2709.4,
+  2711.6,
+  2714.4,
+  2716.6,
+  2719.1,
+  2721.6,
+  2724.2,
+  2726.3,
+  2728.8,
+  2731.4,
+  2735.7,
+  2737.9,
+  2740.3,
+  2742.8,
+  2745.6,
+  2747.9,
+  2750.3,
+  2753.2,
+  2757.2,
+  2759.5,
+  2761.9,
+  2764.3,
+  2766.6,
+  2768.8,
+  2771.3,
+  2773.8,
+  2776.3,
+  2778.6,
+  2780.9,
+  2783.2,
+  2785.6,
+  2788.0,
+  2790.4,
+  2795.6,
+  2798.2,
+  2800.2,
+  2803.7,
+  2807.5,
+  2809.9,
+  2812.2,
+  2814.4,
+  2816.9,
+  2819.5,
+  2821.8,
+  2824.5,
+  2828.6,
+  2830.8,
+  2833.9,
+  2836.2,
+  2839.0,
+  2841.1,
+  2845.5,
+  2847.9,
+  2850.3,
+  2852.5,
+  2855.0,
+  2857.7,
+  2860.6,
+  2863.3,
+  2865.6,
+  2868.2,
+  2870.3,
+  2873.3,
+  2875.4,
+  2877.8,
+  2880.0,
+  2882.2,
+  2884.6,
+  2903.2,
+  2904.9,
+  2906.5,
+  2912.3,
+  2915.4,
+  2918.9,
+  2922.5,
+  2925.2,
+  2928.6,
+  2932.6,
+  2935.5,
+  2939.0,
+  2957.8,
+  2974.3,
+  2981.0,
+  2986.7,
+  2995.9,
+  3006.6,
+  3017.9,
+  3028.6,
+  3063.3,
+  3071.9,
+  3076.8,
+  3080.9,
+  3083.5,
+  3085.9,
+  3088.2,
+  3090.9,
+  3093.4,
+  3095.8,
+  3098.0,
+  3100.4,
+  3102.9,
+  3105.2,
+  3107.4,
+  3109.7,
+  3112.0,
+  3114.3,
+  3116.7,
+  3119.2,
+  3121.6,
+  3124.2,
+  3126.5,
+  3128.8,
+  3131.2,
+  3133.7,
+  3136.1,
+  3138.5,
+  3140.8,
+  3143.2,
+  3145.5,
+  3147.9,
+  3150.6,
+  3153.0,
+  3183.6,
+  3205.3,
+  3220.0,
+  3224.5,
+  3227.2,
+  3230.0,
+  3232.1,
+  3234.6,
+  3237.5,
+  3241.0,
+  3244.4,
+  3246.7,
+  3249.4,
+  3251.6,
+  3253.7,
+  3257.9,
+  3260.3,
+  3262.9,
+  3265.0,
+  3267.5,
+  3271.0,
+  3273.4,
+  3276.0,
+  3278.2,
+  3280.9,
+  3283.2,
+  3285.6,
+  3289.0,
+  3291.1,
+  3293.8,
+  3296.3,
+  3299.0,
+  3301.4,
+  3303.9,
+  3307.0,
+  3309.8,
+  3312.2,
+  3316.8,
+  3318.9,
+  3321.3,
+  3323.4,
+  3325.7,
+  3328.1,
+  3330.4,
+  3333.1,
+  3335.6,
+  3337.9,
+  3340.1,
+  3342.4,
+  3344.6,
+  3346.9,
+  3349.0,
+  3351.4,
+  3353.9,
+  3356.2,
+  3358.7,
+  3361.3,
+  3364.2,
+  3366.2,
+  3368.6,
+  3371.1,
+  3373.3,
+  3375.6,
+  3378.2,
+  3380.5,
+  3383.5,
+  3385.9,
+  3387.8,
+  3390.5,
+  3394.2,
+  3399.5,
+  3404.6,
+  3439.3,
+  3443.6,
+  3446.3,
+  3450.3,
+  3452.9,
+  3455.6,
+  3458.2,
+  3460.5,
+  3463.9,
+  3467.9,
+  3470.7,
+  3473.6,
+  3478.1,
+  3482.8,
+  3486.3,
+  3490.6,
+  3493.6,
+  3497.1,
+  3499.2,
+  3502.2,
+  3504.8,
+  3507.5,
+  3510.0,
+  3512.4,
+  3514.8,
+  3517.0,
+  3519.3,
+  3521.8,
+  3526.1,
+  3528.5,
+  3531.1,
+  3533.6,
+  3536.0,
+  3538.4,
+  3540.8,
+  3543.7,
+  3546.3,
+  3548.8,
+  3551.1,
+  3553.8,
+  3556.6,
+  3559.1,
+  3562.0,
+  3565.7,
+  3568.1,
+  3570.6,
+  3573.0,
+  3575.5,
+  3578.0,
+  3580.8,
+  3582.9,
+  3585.8,
+  3597.8
+ ]
+}

@@ -1,0 +1,75 @@
+# Scavenger sachet check, FPL grind line, camera grind-04 (feed M3V7VSNQY14J2GS6N4MDTN84P4), 1920x1080 @ 10 fps.
+# Every box is [x0, y0, x1, y1] in full-resolution camera pixels. Times are in seconds.
+# The camera must not move: a shift of more than ~15 px means the boxes need re-drawing (docs/calibration.md).
+line: fpl-grind
+camera: grind-04
+fps: 10                      # used only when the stream does not report its own frame rate
+
+regions:
+  belt:  [935, 0, 1125, 365]     # sachet riding the blue belt before it falls
+  drop:  [900, 370, 1140, 720]   # chute guide + where the tray set sits when the sachet lands
+  left:  [380, 700, 670, 1010]   # side conveyor left of the bag (a sachet here missed the bag)
+  right: [1150, 720, 1500, 1010] # side conveyor right of the bag
+  chute: [905, 375, 1135, 470]   # slot just below the belt the sachet falls through
+
+colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
+  white:  {s_max: 50, v_min: 190}
+  meat:   {h_low_max: 12, h_high_min: 165, s_min: 70, v_min: 90}
+  motion_diff: 25            # grey-level change that counts as "moved" between frames
+
+drop:                        # a sachet falling off the belt = belt-white falls sharply
+  fall: 0.15                 # belt-white must fall by more than this ...
+  over_s: 0.3                # ... within this time
+  min_gap_s: 1.0             # two falls closer than this are one drop
+
+double:                      # two sachets still joined, dropped as one strip
+  size_abs: 0.60             # sachet size before the drop (fraction of the belt box); single ~0.38, double ~0.70
+  size_rel: 1.5              # ... and at least this many times the recent typical size
+  recent_drops: 40           # how many earlier drops make "recent typical"
+
+sets:                        # tray sets passing under the chute
+  meat_min: 0.02             # meat fraction in the drop box
+  motion_min: 0.06           # moving fraction in the drop box (a parked tray during a stop does not count)
+  motion_smooth_s: 0.5
+  merge_gap_s: 0.3
+  min_len_s: 0.5
+  set_len_s: 2.05            # time one set occupies the drop box
+  period_window_s: 30        # cycle time = median gap between drops over this window ...
+  period_clip_s: [2.0, 4.0]  # ... kept within this range
+  drop_window_s: [0.15, 0.3] # a drop belongs to a stretch if it falls within [start + a, end + b]
+
+landing:                     # did the sachet end up in the bag?
+  scale: 0.5                 # regions are downscaled by this for the background model
+  white: {s_max: 70, v_min: 150}
+  diff: 30                   # brightness change vs background that counts as "new"
+  bg_rate: 0.04              # background update per frame (fast for normal pixels ...)
+  bg_rate_fg: 0.004          # ... slow for pixels that look like a new object)
+  passed_min: 0.30           # new-white fraction in the chute slot that means the sachet went through
+  passed_window_s: [-0.3, 0.9]
+  outside_min: 0.06          # new-white fraction on a side conveyor ...
+  outside_hold_s: 1.0        # ... held this long ...
+  watch_s: 3.0               # ... starting within this long after the drop
+  stuck_min: 0.08            # chute slot still occupied ...
+  stuck_hold_s: 1.5          # ... for this long after the drop (tray present) = stuck
+  stuck_max_wait_s: 20       # give up waiting for the slot to clear and report STUCK
+  hang_next_s: 0.5           # if the NEXT drop comes before the slot clears + this, it was that one hanging
+  shape:                     # a new object on a side conveyor only counts if it is sachet-shaped
+    before_s: 1.5
+    after_s: 0.6
+    area: [8000, 35000]      # px at full resolution
+    rect_min: 0.72           # area / min-area-rectangle
+    aspect: [1.1, 2.5]
+
+alerts:                      # alert level attached to each result
+  sets:
+    ok: none
+    partial: none            # stream started or ended inside the stretch: not judged
+    MISSING: alarm
+    EXTRA: warn
+    DOUBLE: warn
+  sachet:
+    IN BAG: none
+    EMPTY BAG: warn          # sachet fell with no tray set under it
+    OUTSIDE BAG: alarm
+    STUCK IN CHUTE: alarm
+    NOT SEEN: warn

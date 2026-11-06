@@ -1,0 +1,7166 @@
+{
+ "summary": {
+  "IN BAG": 786,
+  "EMPTY BAG": 5,
+  "OUTSIDE BAG": 0,
+  "STUCK IN CHUTE": 0,
+  "NOT SEEN": 0,
+  "hung_then_fell": [
+   2937.1
+  ],
+  "drops": 791,
+  "unexplained_outside_objects": 0,
+  "rejected_not_sachet_shaped": 3
+ },
+ "drops": [
+  {
+   "t": 40.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 64.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 439.9,
+   "verdict": "EMPTY BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": true,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 441.3,
+   "verdict": "EMPTY BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": true,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 442.8,
+   "verdict": "EMPTY BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": true,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 444.3,
+   "verdict": "EMPTY BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": true,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 445.7,
+   "verdict": "EMPTY BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": true,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 729.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 731.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 734.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 739.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 783.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 795.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 798.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 802.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 805.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 808.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 813.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 816.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 820.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 823.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 828.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 831.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 835.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 837.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 840.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 843.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 845.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 849.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 852.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 854.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 857.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 861.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 864.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 866.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 869.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 871.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 874.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 876.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 879.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 883.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 886.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 941.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 943.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 948.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 951.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 955.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 964.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 966.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 969.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 971.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 974.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 977.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 982.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 986.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 989.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 991.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 994.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 996.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 999.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1002.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1005.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1007.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1010.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1013.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1015.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1019.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1022.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1029.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1031.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1034.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1037.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1039.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1042.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1044.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1047.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1051.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1054.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1056.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1059.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1063.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1066.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1068.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1071.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1075.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1077.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1080.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1082.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1085.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1087.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1092.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1094.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1097.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1099.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1102.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1104.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1107.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1111.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1113.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1116.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1119.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1123.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1126.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1128.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1131.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1133.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1135.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1138.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1142.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1144.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1147.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1150.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1152.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1154.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1157.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1159.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1162.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1164.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1167.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1171.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1173.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1176.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1178.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1181.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1183.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1186.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1188.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1190.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1193.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1197.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1200.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1202.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1205.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1207.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1209.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1212.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1214.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1217.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1219.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1221.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1224.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1227.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1230.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1233.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1235.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1238.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1240.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1242.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1245.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1250.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1252.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1254.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1257.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1260.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1262.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1265.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1268.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1271.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1273.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1276.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1278.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1281.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1283.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1286.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1289.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1293.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1296.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1413.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1416.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1420.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1422.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1425.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1427.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1430.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1434.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1439.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1443.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1446.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1452.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1457.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1460.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1463.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1466.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1469.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1471.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1474.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1476.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1479.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1481.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1483.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1486.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1488.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1491.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1494.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1497.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1499.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1502.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1504.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1507.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1509.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1512.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1515.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1518.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1521.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1523.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1526.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1529.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1531.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1534.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1537.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1540.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1542.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1545.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1547.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1550.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1552.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1555.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1557.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1560.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1562.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1564.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1567.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1570.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1573.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1576.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1579.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1581.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1584.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1586.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1590.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1593.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1595.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1598.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1600.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1602.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1605.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1607.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1610.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1612.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1615.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1619.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1621.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1624.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1627.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1629.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1631.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1634.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1637.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1642.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1644.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1647.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1649.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1651.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1654.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1656.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1658.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1661.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1663.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1666.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1668.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1671.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1674.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1677.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1680.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1682.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1684.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1687.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1689.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1692.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1695.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1697.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1699.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1702.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1704.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1707.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1709.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1713.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1715.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1718.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1721.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1723.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1725.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1729.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1733.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1737.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1740.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1742.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1745.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1747.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1750.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1752.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1755.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1757.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1761.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1764.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1767.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1770.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1773.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1776.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1778.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1782.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1784.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1787.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1789.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1792.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1794.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1796.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1799.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1801.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1804.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1806.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1809.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1811.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1814.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1817.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1819.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1822.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1825.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1828.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1830.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1833.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1836.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1839.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1842.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1844.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1847.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1849.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1852.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1856.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1932.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1968.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1976.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1978.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1982.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1986.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1989.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1992.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1995.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 1998.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2000.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2003.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2006.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2008.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2011.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2013.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2015.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2018.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2020.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2023.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2025.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2029.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2032.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2047.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2051.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2054.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2060.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2063.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2065.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2068.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2070.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2073.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2075.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2079.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2082.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2084.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2088.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2094.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2096.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2099.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2101.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2104.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2106.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2109.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2112.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2115.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2118.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2121.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2125.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2130.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2132.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2135.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2138.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2140.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2142.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2145.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2147.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2150.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2152.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2154.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2157.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2159.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2162.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2164.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2167.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2169.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2171.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2174.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2176.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2179.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2181.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2186.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2198.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2203.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2273.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2275.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2278.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2280.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2283.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2285.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2288.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2292.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2295.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2297.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2300.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2302.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2305.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2307.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2311.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2313.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2316.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2319.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2321.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2324.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2326.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2329.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2331.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2335.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2337.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2341.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2347.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2350.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2353.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2355.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2359.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2362.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2365.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2368.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2370.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2373.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2375.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2377.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2380.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2382.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2384.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2386.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2389.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2391.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2394.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2396.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2398.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2401.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2403.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2406.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2408.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2410.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2413.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2416.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2418.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2422.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2424.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2427.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2429.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2432.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2434.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2437.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2439.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2442.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2444.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2447.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2450.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2452.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2455.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2457.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2460.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2462.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2465.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2467.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2470.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2472.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2474.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2477.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2479.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2482.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2484.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2486.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2489.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2491.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2494.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2496.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2500.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2528.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2534.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2538.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2540.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2543.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2546.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2550.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2552.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2555.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2557.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2560.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2562.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2564.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2567.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2569.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2572.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2574.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2577.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2579.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2582.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2584.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2587.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2590.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2593.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2595.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2598.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2600.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2603.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2605.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2607.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2610.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2612.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2615.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2617.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2620.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2624.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2627.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2629.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2631.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2634.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2636.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2639.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2642.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2646.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2649.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2651.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2654.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2656.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2658.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2661.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2664.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2667.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2669.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2671.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2675.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2677.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2680.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2682.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2685.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2688.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2690.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2692.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2696.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2699.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2702.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2704.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2707.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2711.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2713.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2716.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2719.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2721.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2724.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2726.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2729.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2732.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2735.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2737.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2740.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2742.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2745.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2747.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2750.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2752.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2755.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2759.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2761.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2764.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2766.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2768.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2771.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2773.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2776.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2778.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2781.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2783.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2785.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2788.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2790.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2793.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2795.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2798.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2800.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2802.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2805.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2807.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2810.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2812.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2815.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2817.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2820.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2823.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2826.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2828.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2831.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2833.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2836.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2841.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2843.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2845.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2848.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2850.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2853.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2855.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2858.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2860.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2863.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2867.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2869.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2872.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2874.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2877.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2879.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2882.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2884.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2887.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2891.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2894.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2896.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2898.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2901.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2904.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2906.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2909.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2913.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2915.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2918.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2920.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2923.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2925.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2928.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2930.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2933.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2937.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": true,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2939.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2942.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2945.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2947.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2949.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2952.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2955.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2958.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2961.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2964.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2966.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2969.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2972.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2975.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2978.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2980.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2983.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2985.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2987.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 2990.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3045.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3047.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3050.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3052.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3055.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3058.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3066.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3069.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3073.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3076.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3082.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3086.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3088.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3091.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3095.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3097.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3100.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3102.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3105.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3107.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3110.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3112.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3115.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3118.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3121.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3123.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3126.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3128.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3131.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3133.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3136.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3140.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3142.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3145.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3148.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3150.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3153.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3156.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3159.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3161.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3164.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3167.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3169.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3171.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3174.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3177.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3179.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3182.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3184.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3188.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3191.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3193.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3196.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3198.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3201.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3203.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3206.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3210.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3212.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3215.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3217.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3220.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3222.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3263.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3276.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3321.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3378.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3381.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3386.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3389.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3391.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3394.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3396.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3399.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3404.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3407.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3412.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3419.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3435.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3444.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3448.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3451.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3455.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3458.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3460.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3463.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3465.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3468.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3471.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3473.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3476.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3478.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3482.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3485.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3487.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3490.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3492.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3495.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3497.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3500.2,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3502.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3505.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3509.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3511.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3514.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3516.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3519.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3521.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3524.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3526.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3529.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3532.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3535.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3537.7,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3540.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3542.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3545.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3548.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3551.0,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3554.3,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3556.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3559.8,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3562.5,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3564.9,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3569.1,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3573.4,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  },
+  {
+   "t": 3597.6,
+   "verdict": "IN BAG",
+   "hung_in_chute_before_falling": false,
+   "passed_slot": true,
+   "no_tray": false,
+   "outside_side": null,
+   "outside_at": null
+  }
+ ],
+ "other_outside": [],
+ "rejected": [
+  {
+   "t": 445.7,
+   "side": "L",
+   "at": 447.9,
+   "area": 86029,
+   "rect": 0.96,
+   "aspect": 1.07,
+   "touches_edge": true
+  },
+  {
+   "t": null,
+   "side": "L",
+   "at": 447.9,
+   "area": 86029,
+   "rect": 0.96,
+   "aspect": 1.07,
+   "touches_edge": true
+  },
+  {
+   "t": null,
+   "side": "L",
+   "at": 3236.0,
+   "area": 71586,
+   "rect": 0.92,
+   "aspect": 1.08,
+   "touches_edge": true
+  }
+ ]
+}
