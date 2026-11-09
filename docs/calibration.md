@@ -17,7 +17,7 @@ Everything line-specific is in `configs/<line>.yaml`. Copy `configs/fpl-grind-04
    `double.size_abs` to about halfway between that value and twice it, and no lower than the
    99th percentile of the singles.
 4. **Set length.** `sets.set_len_s` is how long one set takes to cross the drop box at normal speed.
-   It is the median `t1 - t0` of single-set stretches.
+   It is the median `moving_s` of single-set stretches.
 
 **Camera shifted?** Compare a new frame with `docs/regions.jpg`. On 5 Nov the grind-04 camera had moved
 2.8 px right and 4.4 px down since 29 Oct. That is well within tolerance, and the same boxes worked.

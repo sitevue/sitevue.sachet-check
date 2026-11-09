@@ -67,9 +67,12 @@ class SachetChecker:
         self.half = f(sc["motion_smooth_s"]) // 2
         self.win = 2 * self.half + 1
         self.merge_gap, self.min_len = f(sc["merge_gap_s"]), f(sc["min_len_s"])
+        self.hold_max = f(sc["hold_max_s"])
         self.mask_next = 0
         self.open_start = None
-        self.seg = None
+        self.seg = None                   # open stretch: dict(a0, a1, moving, paused) in frames
+        self.held = True                  # meat has stayed in the drop box since the open stretch stopped moving
+        self.gone = 0                     # consecutive frames without meat since then
         self.stretches: deque = deque()   # closed stretches waiting for their drops to be final
         self.next_set_id = 0
         # landing
@@ -182,28 +185,45 @@ class SachetChecker:
                 self.seg = None
 
     def _mask_step(self, i, v):
+        """Moving-meat runs -> stretches. Runs less than merge_gap apart are one stretch. A run that starts
+        while the drop box has held meat ever since the stretch stopped moving is the same tray set(s)
+        moving on after a stop (the tray never left), so it continues that stretch: its moving time is
+        added, the pause is not."""
         if v:
             if self.open_start is None:
                 self.open_start = i
             return
         if self.open_start is not None:
-            run = (self.open_start, i)
+            a0, a1 = self.open_start, i
             self.open_start = None
-            if self.seg and run[0] - self.seg[1] <= self.merge_gap:
-                self.seg = (self.seg[0], run[1])
+            s = self.seg
+            if s and a0 - s["a1"] <= self.merge_gap:
+                s["moving"] += a1 - s["a1"]
+                s["a1"] = a1
+            elif s and self.held:
+                s["paused"] += a0 - s["a1"]
+                s["moving"] += a1 - a0
+                s["a1"] = a1
             else:
-                if self.seg:
-                    self._close(self.seg)
-                self.seg = run
-        elif self.seg and i - self.seg[1] >= self.merge_gap:   # nothing can merge into it any more
-            self._close(self.seg)
-            self.seg = None
+                if s:
+                    self._close(s)
+                self.seg = dict(a0=a0, a1=a1, moving=a1 - a0, paused=0)
+            self.held, self.gone = True, 0
+            return
+        if self.seg:
+            meat = i < self.n and self.h.at("drop_meat", i) > self.cfg["sets"]["meat_min"]
+            self.gone = 0 if meat else self.gone + 1
+            if self.gone >= self.merge_gap:
+                self.held = False                             # the tray has left the drop box
+            since = i - self.seg["a1"]
+            if since >= self.merge_gap and (not self.held or since >= self.hold_max):
+                self._close(self.seg)                         # nothing can continue it any more
+                self.seg = None
 
     def _close(self, seg):
-        a0, a1 = seg
-        if a1 - a0 >= self.min_len:
-            edge = a0 <= 2 or (self.finished and a1 >= self.n - 2)
-            self.stretches.append(dict(a0=a0, a1=a1, edge=edge))
+        if seg["moving"] >= self.min_len:
+            edge = seg["a0"] <= 2 or (self.finished and seg["a1"] >= self.n - 2)
+            self.stretches.append(dict(seg, edge=edge))
 
     def _process_stretches(self) -> list[dict]:
         sc = self.cfg["sets"]
@@ -220,14 +240,19 @@ class SachetChecker:
             near = [d["t"] for d in self.drops if t0 - W < d["t"] < t1 + W]
             P = float(np.median(np.diff(near))) if len(near) > 3 else 2.5
             P = float(np.clip(P, *sc["period_clip_s"]))
-            nsets = 1 + max(0, int(round((t1 - t0 - sc["set_len_s"]) / P)))
+            moving = s["moving"] / self.fps
+            nsets = 1 + max(0, int(round((moving - sc["set_len_s"]) / P)))
             mine = [d for d in self.drops if t0 + w0 <= d["t"] <= t1 + w1 and not d["used"]]
             sid = self.next_set_id
             self.next_set_id += 1
             for d in mine:
                 d["used"], d["orphan"], d["set_id"] = True, False, sid
             k = len(mine)
-            if k == nsets:
+            if k == 0 and moving < sc["fragment_frac"] * sc["set_len_s"] and not s["edge"]:
+                nsets = 0                                     # far too short for a set passing, and nothing fell on it
+            if nsets == 0:
+                status = "fragment"
+            elif k == nsets:
                 status = "partial" if s["edge"] else "ok"
             else:
                 status = "partial" if s["edge"] else ("MISSING" if k < nsets else "EXTRA")
@@ -237,6 +262,7 @@ class SachetChecker:
             out.append(dict(
                 kind="sets", set_group_id=sid, frame_start=s["a0"], frame_end=s["a1"],
                 t0=round(t0, 2), t1=round(t1, 2), timestamp=self._wall(s["a0"]),
+                moving_s=round(moving, 2), paused_s=round(s["paused"] / self.fps, 2),
                 sets=nsets, sachets=k,
                 missing=max(0, nsets - k) if status == "MISSING" else 0,
                 extra=max(0, k - nsets) if status == "EXTRA" else 0,
@@ -252,7 +278,7 @@ class SachetChecker:
         w0 = self.cfg["sets"]["drop_window_s"][0]
         starts = [s["a0"] for s in self.stretches]
         if self.seg:
-            starts.append(self.seg[0])
+            starts.append(self.seg["a0"])
         if self.open_start is not None:
             starts.append(self.open_start)
         first_open = min(starts) if starts else None

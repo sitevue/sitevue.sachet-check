@@ -66,9 +66,13 @@ research/                   batch prototype the method was built with, and its r
 - **Missing sachet:** caught on a fault clip, plus one likely real miss on 5 Nov at 48:13. That one is not
   yet confirmed with the line.
 - **Landing outside the bag:** proven only on a synthetic test (3/3). No real case exists in the footage yet.
-- **Main false alarms, about 5 to 7 per hour:** `EXTRA`/`MISSING` pairs where the set count on long
-  back-to-back stretches is off by one, and `EMPTY BAG` from hard hats or bag film over the belt. Treat
-  `warn` as "review", not "fault".
+- **Short stretches around line stops** used to be counted as sets with no sachet (FPL's 11-09 hand count:
+  0 of 8 `MISSING` real). A set that stops under the chute is now one set, and blips under ~1 s with no
+  sachet are `fragment`s, not sets. On our recordings this took `MISSING` from 14 to 4
+  ([docs/method.md](docs/method.md)).
+- **Main false alarms:** false `EXTRA` where the set count on long back-to-back stretches is off by one
+  (about 5 per hour on 5 Nov), and `EMPTY BAG` from hard hats or bag film over the belt. Treat `warn` as
+  "review", not "fault".
 - **Hand-added sachets are not seen.** A set that gets its sachet by hand still reads `MISSING` ("No sachet
   from dispenser").
 - Not yet run against the live camera stream. Validated only on exported recordings.

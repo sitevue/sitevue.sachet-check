@@ -18,16 +18,19 @@ Times: `t`, `t0` and `t1` are seconds since the stream started (for a file, seco
 ## `kind: "sets"`: did every tray set get a sachet?
 
 Comes out about 1.5 s after the stretch leaves the drop box. Most stretches are one set. When the line
-runs fast, 2 to 4 sets can pass back to back as one stretch.
+runs fast, 2 to 4 sets can pass back to back as one stretch. When the line stops with a set under the
+chute, the result waits until the set has moved on and left the drop box (at most `hold_max_s`, 120 s).
 
 | Field | Type | Meaning |
 |---|---|---|
 | `set_group_id` | int | Running number of the stretch since the stream started |
 | `t0`, `t1` | float | When the stretch entered and left the drop box |
+| `moving_s` | float | Time it was moving under the chute. The set count uses this, not `t1 - t0` |
+| `paused_s` | float | Time it stood still under the chute during a line stop (0 normally) |
 | `timestamp` | float | Time of `t0` (Unix time when live) |
-| `sets` | int | Tray sets in the stretch, estimated from its length and the current cycle time |
+| `sets` | int | Tray sets in the stretch, estimated from `moving_s` and the current cycle time (0 for a `fragment`) |
 | `sachets` | int | Sachets that fell onto it |
-| `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE` or `partial` (see below) |
+| `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE`, `partial` or `fragment` (see below) |
 | `label` | str | Wording to show for `status` (see below) |
 | `alert` | str | `none` / `warn` / `alarm` |
 | `missing` | int | Sets the dispenser dropped no sachet on (only when `MISSING`) |
@@ -45,6 +48,7 @@ runs fast, 2 to 4 sets can pass back to back as one stretch.
 | `EXTRA` | Extra sachet | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
 | `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
 | `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
+| `fragment` | Not a set | Moved under the chute for less than half a set's time (`fragment_frac` x `set_len_s`, about 1 s) and no sachet fell on it: a tray nudged or handled, not a set passing. Not counted as a set | none |
 
 **`MISSING` means no sachet came from the dispenser, not that the bag has no sachet.** The check only sees
 sachets falling off the dispenser belt. A sachet added by hand (before, at or after the chute) is not

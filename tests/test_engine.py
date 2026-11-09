@@ -122,3 +122,73 @@ def test_results_are_streamed_not_held_to_the_end():
     lat_set = [v for (k, _), v in when.items() if k == "sets"]
     assert len(lat_s) >= 18 and max(lat_s) <= 5.0          # landing verdict ~4.5 s after the drop
     assert len(lat_set) >= 18 and max(lat_set) <= 2.0      # set verdict ~1.5 s after the set leaves
+
+
+# --- short stretches: a set stopped under the chute, and fragments
+
+
+def _line():
+    """Four normal sets (5-17 s), then room up to 50 s for the case under test."""
+    line = Line(50)
+    for k in range(4):
+        line.tray_set(5 + 3 * k)
+        line.sachet(5.8 + 3 * k)
+    return line
+
+
+def _moving(line, t0, t1):
+    line._set("drop_meat", t0, t1, 0.2)
+    line._set("drop_motion", t0, t1, 0.3)
+
+
+def _parked(line, t0, t1):
+    line._set("drop_meat", t0, t1, 0.2)      # tray still under the chute, not moving
+
+
+def test_set_stopped_under_chute_is_one_set():
+    """Line stops with a set half under the chute and restarts: one set, not a set plus a MISSING fragment."""
+    line = _line()
+    _moving(line, 20.0, 21.2)
+    line.sachet(20.6)
+    _parked(line, 21.2, 31.2)
+    _moving(line, 31.2, 32.1)
+    res = line.run()
+    s = [r for r in kinds(res, "sets") if r["t0"] >= 19.5]
+    assert len(s) == 1 and s[0]["status"] == "ok" and s[0]["sets"] == 1 and s[0]["sachets"] == 1
+    assert abs(s[0]["paused_s"] - 10.0) < 0.3 and abs(s[0]["moving_s"] - 2.1) < 0.3
+
+
+def test_stopped_set_that_never_got_a_sachet_is_still_missing():
+    line = _line()
+    _moving(line, 20.0, 21.2)
+    _parked(line, 21.2, 31.2)
+    _moving(line, 31.2, 32.1)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 19.5]
+    assert len(s) == 1 and s[0]["status"] == "MISSING" and s[0]["missing"] == 1
+
+
+def test_tray_that_left_is_not_continued():
+    """The drop box emptied in between: two separate stretches."""
+    line = _line()
+    line.tray_set(20.0)
+    line.sachet(20.8)
+    line.tray_set(26.0)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 19.5]
+    assert len(s) == 2 and s[1]["status"] == "MISSING" and s[1]["paused_s"] == 0
+
+
+def test_short_blip_with_no_sachet_is_a_fragment_not_a_set():
+    line = _line()
+    _moving(line, 22.0, 22.6)
+    res = line.run()
+    s = [r for r in kinds(res, "sets") if r["t0"] >= 21.5]
+    assert len(s) == 1 and s[0]["status"] == "fragment" and s[0]["sets"] == 0 and s[0]["alert"] == "none"
+    assert s[0]["label"] == "Not a set"
+
+
+def test_short_stretch_with_a_sachet_is_a_set():
+    line = _line()
+    _moving(line, 22.0, 22.8)
+    line.sachet(22.4)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 21.5]
+    assert len(s) == 1 and s[0]["status"] == "ok" and s[0]["sets"] == 1

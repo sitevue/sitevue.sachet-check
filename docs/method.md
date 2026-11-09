@@ -34,12 +34,22 @@ A **stretch** is a run of frames where the drop box holds meat (> 2%) **and** is
 changed, smoothed over 0.5 s). Gaps of 0.3 s or less are merged, and stretches shorter than 0.5 s are
 ignored. The motion condition matters: during a line stop a tray parked under the chute is not a new set.
 
-One set takes about 2.05 s to pass. When the line runs fast, sets come back to back and form one longer
-stretch. The number of sets in a stretch is
+**Line stops.** When the line stops with a set under the chute, the motion stops but the meat stays. When
+the line restarts, the same set moves on. So a new run of motion that starts while the drop box has held
+meat ever since the last stretch stopped moving **continues that stretch** (`paused_s` records the stop).
+Only the drop box emptying (no meat for 0.3 s) ends it, or 120 s without moving. Before this rule, the
+restart was counted as a new set with no sachet: most false `MISSING` were this.
 
-    sets = 1 + round((length - 2.05 s) / cycle time)
+One set takes about 2.05 s of movement to pass. When the line runs fast, sets come back to back and form
+one longer stretch. The number of sets in a stretch is
+
+    sets = 1 + round((moving time - 2.05 s) / cycle time)
 
 where the cycle time is the median gap between drops over the last 30 s, clipped to 2 to 4 s.
+
+**Fragments.** A stretch that moved for less than half a set's time (about 1 s) and got no sachet is a
+`fragment`, not a set: a tray nudged, handled or only partly seen. It is reported with `sets: 0` and no
+alert. A short stretch that did get a sachet still counts as a set, because a sachet fell onto a tray.
 
 The drops that fall between the stretch start + 0.15 s and its end + 0.3 s belong to it. Comparing the
 two counts gives `ok`, `MISSING` (fewer drops) or `EXTRA` (more drops). A double strip on an `ok` or
@@ -74,6 +84,9 @@ in the batch version looked into the future. The streaming version uses only the
 | Cycle time for the set count | Drops within ±30 s | Drops in the last 30 s, up to the end of the stretch |
 | Typical sachet size for double strips | 20 drops each side | Last 40 drops |
 
+The validation below compares the two **before** the line-stop and fragment rules were added (the batch
+prototype has neither). What those rules changed is in the next section.
+
 `tools/compare_with_batch.py` replays the saved signals of all four recordings through the streaming
 checker and compares the results with the batch output:
 
@@ -96,6 +109,29 @@ Running the whole package on the 5 Nov video gives exactly the same results as t
 `sachet run` decoded the video and computed the signals itself, so this run checks the signal code too.
 It took 7 min 53 s for the 60 min recording on a laptop (about 7.6× real time).
 
+## Line-stop and fragment rules (after the 11-09 hand count)
+
+FPL's hand count of 15 min on 11-09 (118 sets) found 0 of 8 `MISSING` real: all were stretches of
+0.5 to 1.6 s, around line stops, while a set takes about 2 s. Replaying our four recordings with the two
+rules above:
+
+| Recording | `MISSING` before | after | Changed into |
+|---|---|---|---|
+| 29 Oct rec1 | 4 | 2 | 2 restarts joined to their set (now `ok`); 1 joined but still `MISSING` (34:40) |
+| 29 Oct rec2 | 0 | 0 | |
+| 29 Oct rec3 | 3 | 0 | 2 restarts joined (now `ok`), 1 fragment (0.5 s) |
+| 5 Nov 4313d69a | 7 | 2 | 1 restart joined (now `ok`); 3 joined into two stretches still `MISSING` (27:05, 48:13); 2 fragments (0.6 and 0.7 s) |
+
+Every drop, no-tray drop and landing verdict is unchanged, and so are the fault clip (`MISSING` at
+63.7 s) and the missed-bag clip (2 `OUTSIDE BAG`, 1 `STUCK IN CHUTE`). Of the 4 `MISSING` left:
+
+- **rec1 34:40:** joined across a stop, 2 sets and 1 sachet. The video shows the dispenser stopped with a
+  sachet left on the belt while the second tray moved out, so it looks real.
+- **5 Nov 48:13:** the likely real miss. Still `MISSING`.
+- **5 Nov 27:05:** a long stop/restart, 3 sets and 1 sachet. Not checked by eye.
+- **rec1 32:34:** a full-length (2.7 s) stretch with no sachet, alone in a long pause. Not touched by
+  either rule. Not checked by eye.
+
 ## Results so far
 
 - **29 Oct (2.9 h, ~2,413 sets):** no confirmed set without a sachet; 4 double strips; 0 sachets outside the bag.
@@ -111,8 +147,9 @@ It took 7 min 53 s for the 60 min recording on a laptop (about 7.6× real time).
   by hand reads `MISSING` ("No sachet from dispenser").
 
 - **Set count on long stretches.** This is the main source of false `EXTRA`: about 5 per hour on
-  5 Nov. Each false `EXTRA` usually comes with a false `MISSING` next to it when a stop/restart splits
-  sets oddly.
+  5 Nov.
+- **Set count across a stop.** A set that crawls during a slow stop/restart has more moving time than
+  2.05 s, so a joined stretch can be counted as one set too many.
 - **Occlusion.** An operator's hard hat or bag film over the belt box can look like a drop with no tray.
   This gives a false `EMPTY BAG` (5 of the 9 on 29 Oct rec1).
 - **Two sachets stacked exactly on top of each other** look like one.

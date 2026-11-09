@@ -33,7 +33,9 @@ sets:                        # tray sets passing under the chute
   motion_smooth_s: 0.5
   merge_gap_s: 0.3
   min_len_s: 0.5
-  set_len_s: 2.05            # time one set occupies the drop box
+  hold_max_s: 120            # a stopped tray still in the drop box continues its stretch for at most this long
+  set_len_s: 2.05            # time one set occupies the drop box (moving time)
+  fragment_frac: 0.5         # a stretch moving less than this x set_len with no sachet is a fragment, not a set
   period_window_s: 30        # cycle time = median gap between drops over this window ...
   period_clip_s: [2.0, 4.0]  # ... kept within this range
   drop_window_s: [0.15, 0.3] # a drop belongs to a stretch if it falls within [start + a, end + b]
@@ -64,6 +66,7 @@ alerts:                      # alert level attached to each result
   sets:
     ok: none
     partial: none            # stream started or ended inside the stretch: not judged
+    fragment: none           # too short to be a set and nothing fell on it
     MISSING: alarm
     EXTRA: warn
     DOUBLE: warn
@@ -78,6 +81,7 @@ labels:                      # wording to show people (the `label` field); `stat
   sets:
     ok: OK
     partial: Not judged
+    fragment: Not a set
     MISSING: No sachet from dispenser   # the check only sees the dispenser: a sachet added by hand is not seen
     EXTRA: Extra sachet
     DOUBLE: Double sachet
