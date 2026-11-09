@@ -241,7 +241,8 @@ class SachetChecker:
                 missing=max(0, nsets - k) if status == "MISSING" else 0,
                 extra=max(0, k - nsets) if status == "EXTRA" else 0,
                 double_strips=len(dbl) if status == "DOUBLE" else 0,
-                status=status, alert=self.cfg["alerts"]["sets"][status],
+                status=status, label=self.cfg.get("labels", {}).get("sets", {}).get(status, status),
+                alert=self.cfg["alerts"]["sets"][status],
                 period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
                 drop_times=[round(d["t"], 2) for d in mine],
                 double_strip_times=[round(d["t"], 2) for d in dbl]))
@@ -345,7 +346,8 @@ class SachetChecker:
             L = d["landing"]
             out.append(dict(
                 kind="sachet", sachet_id=d["id"], frame_index=d["idx"], t=round(d["t"], 2),
-                timestamp=self._wall(d["idx"]), verdict=v, in_bag=v == "IN BAG",
+                timestamp=self._wall(d["idx"]), verdict=v, label=self.cfg.get("labels", {}).get("sachet", {}).get(v, v),
+                in_bag=v == "IN BAG",
                 alert=self.cfg["alerts"]["sachet"][v], no_tray=bool(d["orphan"]), set_group_id=d["set_id"],
                 double_strip=bool(d["strip"] and d["used"]), size=round(d["size"], 3),
                 passed_slot=L["passed"], outside_side={"L": "left", "R": "right"}.get(L["side"]),

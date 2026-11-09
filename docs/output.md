@@ -9,6 +9,9 @@ Every object has a `kind`:
 Each object has an `alert` of `none`, `warn` or `alarm`, mapped in the config under `alerts:`. Anything
 downstream can act on `alert` alone, without knowing the statuses.
 
+Each object also has a `label`: the wording to show people, mapped in the config under `labels:`. Show
+`label`, and use `status` / `verdict` in code: the codes never change, the wording can.
+
 Times: `t`, `t0` and `t1` are seconds since the stream started (for a file, seconds into the file).
 `timestamp` is Unix time for a live camera, and the same as `t`/`t0` for a file.
 
@@ -25,8 +28,9 @@ runs fast, 2 to 4 sets can pass back to back as one stretch.
 | `sets` | int | Tray sets in the stretch, estimated from its length and the current cycle time |
 | `sachets` | int | Sachets that fell onto it |
 | `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE` or `partial` (see below) |
+| `label` | str | Wording to show for `status` (see below) |
 | `alert` | str | `none` / `warn` / `alarm` |
-| `missing` | int | Sets without a sachet (only when `MISSING`) |
+| `missing` | int | Sets the dispenser dropped no sachet on (only when `MISSING`) |
 | `extra` | int | Sachets more than sets (only when `EXTRA`) |
 | `double_strips` | int | Sachets that were two joined sachets (only when `DOUBLE`) |
 | `sachet_ids` | list[int] | The `sachet` results that belong to this stretch |
@@ -34,13 +38,18 @@ runs fast, 2 to 4 sets can pass back to back as one stretch.
 | `period_s` | float | Cycle time used for the set count |
 | `frame_start`, `frame_end` | int | Frame numbers (diagnostics) |
 
-| `status` | Meaning | Default alert |
-|---|---|---|
-| `ok` | One sachet per set | none |
-| `MISSING` | Fewer sachets than sets: **a set went into the bag without a sachet** | alarm |
-| `EXTRA` | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
-| `DOUBLE` | A sachet was two joined sachets (the cutter missed a cut) | warn |
-| `partial` | The stream started or ended in the middle of the stretch, so it is not judged | none |
+| `status` | Default `label` | Meaning | Default alert |
+|---|---|---|---|
+| `ok` | OK | One sachet per set | none |
+| `MISSING` | No sachet from dispenser | Fewer sachets dropped than sets: **the dispenser dropped no sachet on a set** | alarm |
+| `EXTRA` | Extra sachet | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
+| `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
+| `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
+
+**`MISSING` means no sachet came from the dispenser, not that the bag has no sachet.** The check only sees
+sachets falling off the dispenser belt. A sachet added by hand (before, at or after the chute) is not
+seen, so that set still reads `MISSING`. During a dispenser stop where people add sachets by hand, every
+set reads `MISSING` even though the bags may be fine.
 
 ## `kind: "sachet"`: where did each sachet go?
 
@@ -52,6 +61,7 @@ a 1.5 s hold. It can take longer (up to 20 s) only when the chute slot stays occ
 | `sachet_id` | int | Running number since the stream started |
 | `t`, `timestamp` | float | When it fell off the belt |
 | `verdict` | str | See below |
+| `label` | str | Wording to show for `verdict`: `In bag`, `Empty bag`, `Outside bag`, `Stuck in chute`, `Not seen` |
 | `in_bag` | bool | `verdict == "IN BAG"` |
 | `alert` | str | `none` / `warn` / `alarm` |
 | `no_tray` | bool | No tray set was moving under the chute when it fell |
@@ -72,14 +82,14 @@ a 1.5 s hold. It can take longer (up to 20 s) only when the chute slot stays occ
 
 ## Summary
 
-`sachet run` prints counts at the end (`sachet_check.summary.summarize`): sets checked, sets missing a
-sachet, double strips, `sachet_on_every_set_pct`, landing verdict counts, alarms and warnings.
+`sachet run` prints counts at the end (`sachet_check.summary.summarize`): sets checked, sets with no sachet
+from the dispenser (`sets_missing_sachet`; `sachet_on_every_set_pct` is likewise "dispensed onto every set"), double strips, `sachet_on_every_set_pct`, landing verdict counts, alarms and warnings.
 
 ## Example
 
-From 5 Nov 2026, recording 4313d69a, at 48:13: a set went into its bag with no sachet, and the sachet then fell into an empty bag:
+From 5 Nov 2026, recording 4313d69a, at 48:13: the dispenser dropped no sachet on a set, and the sachet then fell into an empty bag:
 
 ```json
-{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
-{"kind": "sachet", "sachet_id": 583, "frame_index": 29032, "t": 2903.2, "timestamp": 2903.2, "verdict": "EMPTY BAG", "in_bag": false, "alert": "warn", "no_tray": true, "set_group_id": null, "double_strip": false, "size": 0.431, "passed_slot": true, "outside_side": null, "outside_t": null, "hung_in_chute_before_falling": false, "rejected_outside": []}
+{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "label": "No sachet from dispenser", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
+{"kind": "sachet", "sachet_id": 583, "frame_index": 29032, "t": 2903.2, "timestamp": 2903.2, "verdict": "EMPTY BAG", "label": "Empty bag", "in_bag": false, "alert": "warn", "no_tray": true, "set_group_id": null, "double_strip": false, "size": 0.431, "passed_slot": true, "outside_side": null, "outside_t": null, "hung_in_chute_before_falling": false, "rejected_outside": []}
 ```

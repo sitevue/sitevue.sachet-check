@@ -107,6 +107,9 @@ It took 7 min 53 s for the 60 min recording on a laptop (about 7.6× real time).
 
 ## Known weak points
 
+- **Hand-added sachets.** Only sachets falling off the dispenser belt are seen. A set that gets its sachet
+  by hand reads `MISSING` ("No sachet from dispenser").
+
 - **Set count on long stretches.** This is the main source of false `EXTRA`: about 5 per hour on
   5 Nov. Each false `EXTRA` usually comes with a false `MISSING` next to it when a stop/restart splits
   sets oddly.

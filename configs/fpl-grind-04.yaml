@@ -73,3 +73,17 @@ alerts:                      # alert level attached to each result
     OUTSIDE BAG: alarm
     STUCK IN CHUTE: alarm
     NOT SEEN: warn
+
+labels:                      # wording to show people (the `label` field); `status` / `verdict` codes stay fixed
+  sets:
+    ok: OK
+    partial: Not judged
+    MISSING: No sachet from dispenser   # the check only sees the dispenser: a sachet added by hand is not seen
+    EXTRA: Extra sachet
+    DOUBLE: Double sachet
+  sachet:
+    IN BAG: In bag
+    EMPTY BAG: Empty bag
+    OUTSIDE BAG: Outside bag
+    STUCK IN CHUTE: Stuck in chute
+    NOT SEEN: Not seen

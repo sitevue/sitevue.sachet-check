@@ -19,7 +19,7 @@ def _cfg(path):
 
 def _line(r):
     if r["kind"] == "sets":
-        return (f"{r['t0']:9.1f}s  sets   {r['status']:8s} sets={r['sets']} sachets={r['sachets']}"
+        return (f"{r['t0']:9.1f}s  sets   {r['label']:25s} sets={r['sets']} sachets={r['sachets']}"
                 f"{'  ALERT ' + r['alert'] if r['alert'] != 'none' else ''}")
     return (f"{r['t']:9.1f}s  sachet {r['verdict']:14s}{'  no tray' if r['no_tray'] else ''}"
             f"{'  double strip' if r['double_strip'] else ''}{'  hung first' if r['hung_in_chute_before_falling'] else ''}"

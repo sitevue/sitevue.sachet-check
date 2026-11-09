@@ -5,7 +5,7 @@ oxygen-scavenger sachet before it goes into the bag. For every set and every sac
 
 | Question | Result | Alarm when |
 |---|---|---|
-| Did every tray set get a sachet? | `sets` result: `ok` / `MISSING` / `EXTRA` / `DOUBLE` | a set got no sachet |
+| Did the dispenser drop a sachet on every tray set? | `sets` result: `ok` / `MISSING` (shown as "No sachet from dispenser") / `EXTRA` / `DOUBLE` | the dispenser dropped no sachet on a set |
 | Did the sachet land in the bag? | `sachet` result: `IN BAG` / `EMPTY BAG` / `OUTSIDE BAG` / `STUCK IN CHUTE` / `NOT SEEN` | it landed outside the bag or jammed in the chute |
 
 It works from fixed boxes in the camera image: a white sachet on the belt, red meat moving under the
@@ -69,4 +69,6 @@ research/                   batch prototype the method was built with, and its r
 - **Main false alarms, about 5 to 7 per hour:** `EXTRA`/`MISSING` pairs where the set count on long
   back-to-back stretches is off by one, and `EMPTY BAG` from hard hats or bag film over the belt. Treat
   `warn` as "review", not "fault".
+- **Hand-added sachets are not seen.** A set that gets its sachet by hand still reads `MISSING` ("No sachet
+  from dispenser").
 - Not yet run against the live camera stream. Validated only on exported recordings.
