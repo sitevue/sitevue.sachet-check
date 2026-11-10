@@ -6,7 +6,12 @@ that travels down into the bag with it. Two shapes are seen from grind-04:
 
   slab   lying flat on the meat: sachet-sized, roughly rectangular, with meat around it
   strip  tucked at the seam between two trays, partly under the next one: a thin white band, much
-         wider than tall, with tray rim (not meat) around it
+         wider than tall and spanning most of the tray width (glare on glossy tray overwrap also
+         moves with the tray, but is narrower)
+
+A slab must also be shaped like a sachet lying across the tray (wide) or standing upright (tall), in at
+least half of its frames: a white product label on the tray (11-10 sandbox, 17:00-19:07, ~120x160 px)
+is sachet-sized and sits on the meat, but is neither.
 
 Either only counts when it MOVES DOWN WITH THE TRAYS over several frames. That is what rejects white
 steel, bag film glare and labels: they stay put, or (film) are tall rather than flat.
@@ -72,12 +77,21 @@ class TraySachets:
     def is_slab(self, b):
         r = self.slab_r
         cy = b[Y] + b[H] / 2
-        return (r["area"][0] <= b[A] <= r["area"][1] and r["aspect"][0] <= b[ASPECT] <= r["aspect"][1]
-                and b[RECT] >= r["rect_min"] and b[MEAT] >= r["meat_ring_min"] and r["y"][0] <= cy <= r["y"][1])
+        if not (r["area"][0] <= b[A] <= r["area"][1] and r["aspect"][0] <= b[ASPECT] <= r["aspect"][1]
+                and b[RECT] >= r["rect_min"] and b[MEAT] >= r["meat_ring_min"] and r["y"][0] <= cy <= r["y"][1]):
+            return False
+        # a sachet lies across the tray (wide) or stands upright (tall); a product label is in between
+        wd, up = r.get("wide"), r.get("upright")
+        if wd is None and up is None:
+            return True
+        wide = wd is not None and b[W] >= wd["w_over_h"] * b[H] and b[W] >= wd["w_min"] and b[H] <= wd["h_max"]
+        upright = up is not None and b[H] >= up["h_min"] and b[W] <= up["w_max"]
+        return wide or upright
 
     def is_strip(self, b):
         r = self.strip_r
-        return b[W] >= r["w_over_h"] * b[H] and b[H] <= r["h_max"] and r["area"][0] <= b[A] <= r["area"][1]
+        return (b[W] >= r.get("w_min", 0) and b[W] >= r["w_over_h"] * b[H] and b[H] <= r["h_max"]
+                and r["area"][0] <= b[A] <= r["area"][1])
 
     def qualifies(self, tr) -> str | None:
         """'slab' / 'strip' if the track is a sachet riding down with the trays, else None."""
@@ -87,7 +101,7 @@ class TraySachets:
         cy = lambda b: b[Y] + b[H] / 2
         if cy(tr[-1][1]) - cy(tr[0][1]) < t["min_drop_px"]:
             return None                                       # did not move down: machine, glare, label
-        if any(self.is_slab(b) for _, b in tr):
+        if sum(self.is_slab(b) for _, b in tr) >= self.slab_r.get("frac", 0.0) * len(tr) and any(self.is_slab(b) for _, b in tr):
             return "slab"
         if sum(self.is_strip(b) for _, b in tr) >= self.strip_r["frac"] * len(tr):
             return "strip"

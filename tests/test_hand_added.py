@@ -7,6 +7,9 @@ from sachet_check.tray import TraySachets
 SLAB = (17000, 800, 0, 200, 120, 0.75, 1.9, 0.15)        # flat on the meat
 STRIP = (7000, 800, 0, 190, 40, 0.72, 4.8, 0.0)          # tucked at the seam between two trays
 FILM = (20000, 1030, 0, 120, 230, 0.6, 2.0, 0.0)         # bag film glare: tall, no meat
+GLOSS = (3500, 810, 0, 120, 64, 0.55, 2.0, 0.05)         # glare on glossy tray overwrap (11-10 sandbox)
+LABEL = (15300, 930, 0, 118, 160, 0.83, 1.4, 0.10)       # white product label on every tray (11-10 sandbox)
+UPRIGHT = (16000, 960, 0, 115, 210, 0.78, 1.9, 0.12)     # sachet standing upright on the tray
 
 
 def _at(b, y):
@@ -72,6 +75,29 @@ def test_moving_film_glare_is_not_a_sachet():
     line = _line()
     ride(line, 20.5, FILM)
     assert _last_set(line.run())["status"] == "MISSING"
+
+
+def test_glare_on_tray_overwrap_is_not_a_sachet():
+    """Glossy overwrap catches the light in a small flat patch that rides down with the tray for a few
+    frames: strip-shaped but far narrower than a sachet tucked across the tray (sandbox, 11-10)."""
+    line = _line()
+    ride(line, 20.5, GLOSS, frames=8)
+    assert _last_set(line.run())["status"] == "MISSING"
+
+
+def test_white_product_label_is_not_a_sachet():
+    """A white label on every tray: sachet-sized, on the meat, rides down with the tray, but it is
+    neither lying across the tray nor standing upright like a sachet (sandbox, 11-10 17:00-19:07)."""
+    line = _line()
+    ride(line, 20.5, LABEL, frames=9)
+    assert _last_set(line.run())["status"] == "MISSING"
+
+
+def test_upright_sachet_is_hand_added():
+    line = _line()
+    ride(line, 20.5, UPRIGHT)
+    s = _last_set(line.run())
+    assert s["status"] == "hand_added" and s["hand_added_kinds"] == ["slab"]
 
 
 def test_only_checked_when_nothing_fell_from_the_belt():

@@ -41,7 +41,7 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `period_s` | float | Cycle time used for the set count |
 | `hand` | float | Largest white blob (a worker's sleeve) in the reach box beside the chute during the stretch, as a share of the box (diagnostics; over `hand_min` 0.25 with no sachet gives `by_hand`) |
 | `hand_added` | int | Sachets seen riding into the bag on the trays when nothing fell from the belt (sachets added by hand; 0 when a sachet fell) |
-| `hand_added_kinds` | list[str] | How each was seen: `slab` (flat on the meat) or `strip` (tucked at the seam between two trays) |
+| `hand_added_kinds` | list[str] | How each was seen: `slab` (lying across the tray or upright on it) or `strip` (tucked at the seam between two trays) |
 | `frame_start`, `frame_end` | int | Frame numbers (diagnostics) |
 
 | `status` | Default `label` | Meaning | Default alert |

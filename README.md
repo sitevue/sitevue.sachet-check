@@ -79,6 +79,7 @@ research/                   batch prototype the method was built with, and its r
   (flat on top, or tucked at the seam between trays, and moving down with them) makes the set `hand_added`
   ("Sachet added by hand", no alert) instead of `MISSING`. On the 11-10 dispenser stop: 70 of 70 hand-added
   sets caught, 24 of 24 real misses left `MISSING`. A sachet fully hidden under a tray is not seen. Tuned on
-  that one export ([docs/method.md](docs/method.md)).
+  that one export, then corrected after a full-day shadow review on the sandbox (overwrap glare and a white
+  product label had been taken for sachets) ([docs/method.md](docs/method.md)).
 - **720p exports** are resized to 1920x1080 before measuring, so the boxes still fit.
 - Not yet run against the live camera stream. Validated only on exported recordings.

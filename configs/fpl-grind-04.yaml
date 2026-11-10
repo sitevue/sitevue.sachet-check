@@ -87,7 +87,14 @@ hand_added:                  # nothing fell from the belt, but a sachet rides in
     rect_min: 0.5
     meat_ring_min: 0.06      # meat around it (bag film and empty bag have none)
     y: [450, 950]            # blob centre, full-res
+    # shape: lying across the tray, or standing upright. A white product label (110-132 x 155-165 px on
+    # the 11-10 sandbox) is neither, so it is not taken for a sachet; hand-placed sachets are ~200 x 110
+    wide: {w_over_h: 1.2, w_min: 150, h_max: 160}
+    upright: {h_min: 190, w_max: 140}
+    frac: 0.5                # share of the track's frames with a slab shape
   strip:                     # tucked at the seam between two trays: thin, much wider than tall
+    w_min: 160               # px wide: a tucked sachet spans the tray (185-225 px); glare on glossy overwrap
+                             # moves with the tray too but is 90-136 px (11-10 sandbox, red-label trays)
     w_over_h: 1.4
     h_max: 120
     area: [3000, 20000]

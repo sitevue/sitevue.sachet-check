@@ -69,22 +69,38 @@ links them frame to frame into tracks that move down with the trays (≤ 30 px s
 per frame, similar size). A track is a sachet when it lasts at least 3 frames, moves down at least 60 px
 overall, and has one of the two shapes seen on grind-04:
 
-- **slab**, lying flat on the meat: 6k to 32k px, aspect 1.1 to 4.5, at least 50% rectangular, and meat
-  around it (at least 6% of a 15 px ring);
-- **strip**, tucked at the seam between two trays, partly under the next one: at least 1.4 times wider
-  than tall, at most 120 px tall, 3k to 20k px, in at least 60% of its frames.
+- **slab**, lying on the meat: 6k to 32k px, aspect 1.1 to 4.5, at least 50% rectangular, meat around it
+  (at least 6% of a 15 px ring), and in at least half of its frames either **across the tray** (at least
+  1.2 times wider than tall, ≥ 150 px wide, ≤ 160 px tall) or **upright** (≥ 190 px tall, ≤ 140 px wide);
+- **strip**, tucked at the seam between two trays, partly under the next one: at least 160 px wide, at
+  least 1.4 times wider than tall, at most 120 px tall, 3k to 20k px, in at least 60% of its frames.
 
-Moving down is what rejects the steel right of the chute (white in 5 Nov's lighting, with meat next to
-it) and labels; the shape rules reject bag film glare, which moves with the trays but is tall and has no
-meat around it. One track per set seen gives `hand_added`; fewer stays `MISSING` with the shortfall.
+What each rule rejects:
+
+| Lookalike | Why it is not a sachet |
+|---|---|
+| Steel right of the chute (white in 5 Nov's lighting, meat next to it) | does not move down |
+| Bag film glare (moves with the trays) | tall, no meat around it |
+| Glare on glossy tray overwrap (red-label trays, 11-10 sandbox) | rides down with the tray, strip-like, but only 90-136 px wide; a tucked sachet spans the tray (185-225 px) |
+| White product label on every tray (11-10 sandbox, 17:00-19:07) | sachet-sized, on the meat, rides down, but ~120 x 160 px: neither across the tray (sachets ~200 x 110) nor upright (200-220 px tall) |
+
+One track per set seen gives `hand_added`; fewer stays `MISSING` with the shortfall.
 
 On the 11-10 export (15:58-16:24 UTC, 26 min, a dispenser stop) the check gave 94 `MISSING`. By eye, 70 of
 those sets had a sachet added by hand, flat on top or tucked at a seam; 24 had none (21 in a row at the
 start, plus 3 later; confirmed by FPL). With this rule: 70 `hand_added`, 24 `MISSING`, no real miss
 cleared. On 5 Nov (60 min, dispenser running) it changes nothing: every set there had a belt drop, and
 the 48:13 likely real miss stays `MISSING`. There the tracks it finds, checked by eye on about 100 sets,
-were all real sachets (dispenser sachets that landed on top of the trays). Not yet tested on a second day
-with a dispenser stop.
+were all real sachets (dispenser sachets that landed on top of the trays).
+
+**Shadow review, 11-10 sandbox (05:00-22:20 UTC, 6,539 stretches, re-scored from the recorder).** The
+first version cleared 57 sets outside the 15:58-16:24 outage; by eye only ~4 were real. 22 were overwrap
+glare taken for strips (06:47-06:48 and 22:25-22:26 dispenser stops among them) and ~30 the white product
+label taken for slabs, i.e. real misses posted as "Sachet added by hand". With the width, across/upright
+and frame-share rules above, the same day gives 5 `hand_added` outside the outage (4 seen by eye as real
+sachets on the tray, 1 a sachet standing at the tray's edge) and 67 in the outage (71 before). On the
+11-10 export the cost is 3 of 70 hand-added sachets now read `MISSING`: one standing upright beside the
+tray, one diagonal, and one (1420) that was only ever matched by a glare track. 5 Nov is unchanged.
 
 **Fragments.** A stretch that moved for less than half a set's time (about 1 s) and got no sachet is a
 `fragment`, not a set: a tray nudged, handled or only partly seen. It is reported with `sets: 0` and no
@@ -182,9 +198,12 @@ Every drop, no-tray drop and landing verdict is unchanged, and so are the fault 
 
 ## Known weak points
 
-- **Hand-added sachets** are seen only when some of the sachet shows as it rides down: flat on top or
-  tucked at a seam. One pushed fully under or between trays is not seen, and that set reads `MISSING`.
-  The rule was tuned on one 26 min export; it has not yet been checked on a second dispenser stop.
+- **Hand-added sachets** are seen only when some of the sachet shows as it rides down: across the tray,
+  upright, or tucked at a seam. One pushed fully under or between trays, or lying at an odd angle, is not
+  seen, and that set reads `MISSING` (3 of 70 on the 11-10 export).
+- **Product changes.** The rules reject the white label and the glossy overwrap seen on 11-10. A product
+  whose label is ~200 x 110 px and white, or a tray film that glares in wide bands, could still be taken
+  for a sachet. Check a new product's no-drop sets by eye before trusting `hand_added` for it.
 - **A worker's white sleeve** moving down past the trays could be tracked like a sachet and turn a real
   miss into `hand_added`. Not seen on 11-10 (0 of 24 real misses cleared), but the 11-09 stop where a
   worker built a set by hand was not available to test.
