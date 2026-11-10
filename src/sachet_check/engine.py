@@ -6,7 +6,8 @@ Push one frame's signals at a time (`SachetChecker.push`). Two kinds of result c
                  OUTSIDE BAG, STUCK IN CHUTE, NOT SEEN), whether a tray set was under it, double strip.
                  Ready ~4.5 s after the drop (the landing check watches the conveyors for 3 s + 1.5 s hold).
   kind "sets"    one per stretch of tray sets passing under the chute (usually a single set): how many
-                 sets, how many sachets fell on them -> ok / MISSING / EXTRA / DOUBLE / partial.
+                 sets, how many sachets fell on them -> ok / MISSING / EXTRA / DOUBLE / partial
+                 (or fragment / by_hand: not a set passing).
                  Ready ~1.5 s after the stretch leaves the drop box.
 
 This is the batch method from research/prototype (match3.py + landing_verdict.py) run online. It gives
@@ -86,7 +87,7 @@ class SachetChecker:
         """Add one frame. `crops` = (left, right) full-res side-conveyor crops for the shape check;
         `wall` = Unix time of the frame for live cameras (None for files). Returns new results."""
         i = self.h.n
-        self.h.push([sig[k] for k in KEYS] + [np.nan if wall is None else wall])
+        self.h.push([sig.get(k, 0.0) for k in KEYS] + [np.nan if wall is None else wall])
         if crops is not None:
             self.crops[i] = crops
             self.crops.pop(i - self.crop_keep, None)
@@ -248,10 +249,14 @@ class SachetChecker:
             for d in mine:
                 d["used"], d["orphan"], d["set_id"] = True, False, sid
             k = len(mine)
+            hand = float(self.h.get("hand", s["a0"], s["a1"] + 1).max(initial=0.0))
+            by_hand = k == 0 and hand > sc["hand_min"] and not s["edge"]
             if k == 0 and moving < sc["fragment_frac"] * sc["set_len_s"] and not s["edge"]:
                 nsets = 0                                     # far too short for a set passing, and nothing fell on it
             if nsets == 0:
                 status = "fragment"
+            elif by_hand:
+                nsets, status = 0, "by_hand"                  # a worker moved trays under the chute: not a set passing
             elif k == nsets:
                 status = "partial" if s["edge"] else "ok"
             else:
@@ -269,7 +274,7 @@ class SachetChecker:
                 double_strips=len(dbl) if status == "DOUBLE" else 0,
                 status=status, label=self.cfg.get("labels", {}).get("sets", {}).get(status, status),
                 alert=self.cfg["alerts"]["sets"][status],
-                period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
+                hand=round(hand, 3), period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
                 drop_times=[round(d["t"], 2) for d in mine],
                 double_strip_times=[round(d["t"], 2) for d in dbl]))
         return out

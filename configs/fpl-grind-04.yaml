@@ -11,6 +11,7 @@ regions:
   left:  [380, 700, 670, 1010]   # side conveyor left of the bag (a sachet here missed the bag)
   right: [1150, 720, 1500, 1010] # side conveyor right of the bag
   chute: [905, 375, 1135, 470]   # slot just below the belt the sachet falls through
+  reach: [380, 380, 900, 800]    # beside the chute, where a worker's arm reaches in (white sleeve)
 
 colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
   white:  {s_max: 50, v_min: 190}
@@ -36,6 +37,9 @@ sets:                        # tray sets passing under the chute
   hold_max_s: 120            # a stopped tray still in the drop box continues its stretch for at most this long
   set_len_s: 2.05            # time one set occupies the drop box (moving time)
   fragment_frac: 0.5         # a stretch moving less than this x set_len with no sachet is a fragment, not a set
+  hand_min: 0.25             # a stretch with no sachet while a white blob this big (share of the reach box) was
+                             # in the reach box is a worker moving trays by hand (by_hand), not a set passing.
+                             # Normal sets reach <= 0.18 on 11-09; a sleeve reaching in is 0.33-0.71
   period_window_s: 30        # cycle time = median gap between drops over this window ...
   period_clip_s: [2.0, 4.0]  # ... kept within this range
   drop_window_s: [0.15, 0.3] # a drop belongs to a stretch if it falls within [start + a, end + b]
@@ -67,6 +71,7 @@ alerts:                      # alert level attached to each result
     ok: none
     partial: none            # stream started or ended inside the stretch: not judged
     fragment: none           # too short to be a set and nothing fell on it
+    by_hand: warn            # a worker moved trays under the chute by hand and no sachet fell: not counted as a set
     MISSING: alarm
     EXTRA: warn
     DOUBLE: warn
@@ -82,6 +87,7 @@ labels:                      # wording to show people (the `label` field); `stat
     ok: OK
     partial: Not judged
     fragment: Not a set
+    by_hand: Trays moved by hand
     MISSING: No sachet from dispenser   # the check only sees the dispenser: a sachet added by hand is not seen
     EXTRA: Extra sachet
     DOUBLE: Double sachet

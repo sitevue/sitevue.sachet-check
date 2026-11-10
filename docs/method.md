@@ -47,6 +47,20 @@ one longer stretch. The number of sets in a stretch is
 
 where the cycle time is the median gap between drops over the last 30 s, clipped to 2 to 4 s.
 
+**Trays moved by hand.** During a stop a worker may put trays under the chute by hand (on 11-09 at
+16:10 one built a set tray by tray). Each tray placed is a full-length stretch with no sachet, so it read
+`MISSING`. The **reach** box (380,380)-(900,800), beside the chute, measures the largest white blob each
+frame: the worker's white sleeve. A stretch that got no sachet while that blob covered more than 25% of
+the box is `by_hand`: not a set passing, not counted, `warn` instead of `alarm`. Normal sets reach at most
+0.17 (bag film, labels); a sleeve reaching in is 0.33 to 0.71. A stretch that did get a sachet is judged
+as usual, hand or not, and a short blip stays a `fragment`.
+
+On FPL's hand-counted 15 min (11-09 16:00-16:15 UTC, recorder segments from the Grind box), the engine
+before this rule gives 2 `MISSING` (16:10:13.9 and 16:10:16.0, both inside the 16:09:36-16:10:57 stop);
+with it, 0 `MISSING` and 2 `by_hand`. The 103 `ok` sets and 3 fragments are unchanged. The sets that got
+a sachet reach at most 0.18 in the reach box, so the 0.25 cut-off has a modest margin, checked on this
+window only.
+
 **Fragments.** A stretch that moved for less than half a set's time (about 1 s) and got no sachet is a
 `fragment`, not a set: a tray nudged, handled or only partly seen. It is reported with `sets: 0` and no
 alert. A short stretch that did get a sachet still counts as a set, because a sachet fell onto a tray.
@@ -154,7 +168,9 @@ Every drop, no-tray drop and landing verdict is unchanged, and so are the fault 
   This gives a false `EMPTY BAG` (5 of the 9 on 29 Oct rec1).
 - **Two sachets stacked exactly on top of each other** look like one.
 - **Hands at the chute.** An operator clearing a jam by hand can produce drops and alerts that are real
-  events but not machine faults.
+  events but not machine faults. The other way round, a set that really got no sachet while a worker's
+  sleeve was beside the chute reads `by_hand` (`warn`), not `MISSING`. The sleeve check needs a white
+  sleeve: a bare or dark-sleeved arm is not seen.
 - **OUTSIDE BAG** has only been proven on the synthetic test. No real missed-bag case exists in the
   footage so far.
 - **Camera movement.** The boxes are fixed pixels. A camera bump of more than ~15 px needs new boxes

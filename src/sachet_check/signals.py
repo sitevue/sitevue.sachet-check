@@ -1,12 +1,14 @@
 """Per-frame pixel measurements in fixed boxes of the camera image. No model, CPU only.
 
-Each frame gives six numbers:
+Each frame gives seven numbers:
 
   belt_white   fraction of the belt box that is white (a sachet on the belt)
   drop_meat    fraction of the drop box that is red meat (a tray set under the chute)
   drop_motion  fraction of the drop box that changed since the last frame (the set is moving)
   L_fg, R_fg   fraction of each side-conveyor box covered by a NEW white object
   CH_fg        fraction of the chute slot covered by a NEW white object (a sachet falling through)
+  hand         largest white blob in the reach box, as a fraction of the box (a worker's white sleeve
+               reaching in beside the chute)
 
 "New" = differs from a slow running background, so the conveyors, bag film and steel do not count
 but a sachet that lands and stays does.
@@ -18,7 +20,7 @@ import numpy as np
 
 from .config import Config
 
-KEYS = ("belt_white", "drop_meat", "drop_motion", "L_fg", "R_fg", "CH_fg")
+KEYS = ("belt_white", "drop_meat", "drop_motion", "L_fg", "R_fg", "CH_fg", "hand")
 
 
 def _crop(frame, box):
@@ -30,7 +32,7 @@ class FrameSignals:
     def __init__(self, cfg: Config):
         self.cfg = cfg
         r = cfg["regions"]
-        self.boxes = dict(belt=r["belt"], drop=r["drop"], L=r["left"], R=r["right"], CH=r["chute"])
+        self.boxes = dict(belt=r["belt"], drop=r["drop"], L=r["left"], R=r["right"], CH=r["chute"], reach=r["reach"])
         self.prev_drop_grey = None
         self.bg: dict[str, np.ndarray] = {}
 
@@ -57,6 +59,11 @@ class FrameSignals:
         else:
             out["drop_motion"] = float((cv2.absdiff(grey, self.prev_drop_grey) > c["motion_diff"]).mean())
         self.prev_drop_grey = grey
+
+        hsv = cv2.cvtColor(_crop(frame, self.boxes["reach"]), cv2.COLOR_BGR2HSV)
+        white = ((hsv[..., 1] < c["white"]["s_max"]) & (hsv[..., 2] > c["white"]["v_min"])).astype(np.uint8)
+        n, _, st, _ = cv2.connectedComponentsWithStats(white, connectivity=8)
+        out["hand"] = float(st[1:, cv2.CC_STAT_AREA].max() / white.size) if n > 1 else 0.0
 
         lc = self.cfg["landing"]
         for k in ("L", "R", "CH"):

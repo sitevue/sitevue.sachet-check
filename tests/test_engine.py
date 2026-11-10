@@ -2,7 +2,7 @@
 from sachet_check import Config, SachetChecker
 
 CFG = Config.load().with_fps(10)
-QUIET = dict(belt_white=0.0, drop_meat=0.0, drop_motion=0.0, L_fg=0.0, R_fg=0.0, CH_fg=0.0)
+QUIET = dict(belt_white=0.0, drop_meat=0.0, drop_motion=0.0, L_fg=0.0, R_fg=0.0, CH_fg=0.0, hand=0.0)
 
 
 class Line:
@@ -192,3 +192,51 @@ def test_short_stretch_with_a_sachet_is_a_set():
     line.sachet(22.4)
     s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 21.5]
     assert len(s) == 1 and s[0]["status"] == "ok" and s[0]["sets"] == 1
+
+
+# --- a worker moving trays by hand under the chute (11-09 16:10 line stop)
+
+
+def test_trays_moved_by_hand_with_no_sachet_are_not_missing():
+    """During a stop a worker builds a set by hand, tray by tray: two full-length stretches, no sachet."""
+    line = _line()
+    _moving(line, 25.0, 26.7)
+    line._set("hand", 24.5, 26.5, 0.4)
+    _moving(line, 27.1, 29.5)
+    line._set("hand", 27.0, 29.0, 0.7)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 2 and all(r["status"] == "by_hand" and r["sets"] == 0 and r["missing"] == 0 for r in s)
+    assert all(r["alert"] == "warn" and r["label"] == "Trays moved by hand" and r["hand"] >= 0.4 for r in s)
+
+
+def test_hand_in_view_does_not_hide_a_sachet_that_fell():
+    line = _line()
+    _moving(line, 25.0, 27.0)
+    line.sachet(25.8)
+    line._set("hand", 25.0, 27.0, 0.5)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["status"] == "ok" and s[0]["sets"] == 1
+
+
+def test_small_white_blob_is_not_a_hand():
+    line = _line()
+    _moving(line, 25.0, 27.0)
+    line._set("hand", 25.0, 27.0, 0.17)                                  # what normal sets reach (bag film, labels)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["status"] == "MISSING"
+
+
+def test_old_signals_without_hand_still_work():
+    eng = SachetChecker(CFG)
+    row = {k: v for k, v in QUIET.items() if k != "hand"}
+    for _ in range(50):
+        eng.push(row)
+    eng.finish()
+
+
+def test_short_blip_with_a_hand_stays_a_fragment():
+    line = _line()
+    _moving(line, 22.0, 22.6)
+    line._set("hand", 22.0, 22.6, 0.4)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 21.5]
+    assert len(s) == 1 and s[0]["status"] == "fragment" and s[0]["alert"] == "none"

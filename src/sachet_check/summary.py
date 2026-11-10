@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from collections import Counter
 
-SET_STATUSES = ("ok", "MISSING", "EXTRA", "DOUBLE", "partial", "fragment")
+SET_STATUSES = ("ok", "MISSING", "EXTRA", "DOUBLE", "partial", "fragment", "by_hand")
 VERDICTS = ("IN BAG", "EMPTY BAG", "OUTSIDE BAG", "STUCK IN CHUTE", "NOT SEEN")
 
 
@@ -12,7 +12,7 @@ def summarize(results, since: float | None = None) -> dict:
     rs = [r for r in results if since is None or r["timestamp"] >= since]
     sets = [r for r in rs if r["kind"] == "sets"]
     sach = [r for r in rs if r["kind"] == "sachet"]
-    judged = [r for r in sets if r["status"] not in ("partial", "fragment")]
+    judged = [r for r in sets if r["status"] not in ("partial", "fragment", "by_hand")]
     st, vd = Counter(r["status"] for r in sets), Counter(r["verdict"] for r in sach)
     n_sets = sum(r["sets"] for r in judged)
     missing = sum(r["missing"] for r in judged)

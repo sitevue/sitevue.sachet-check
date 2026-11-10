@@ -30,7 +30,7 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `timestamp` | float | Time of `t0` (Unix time when live) |
 | `sets` | int | Tray sets in the stretch, estimated from `moving_s` and the current cycle time (0 for a `fragment`) |
 | `sachets` | int | Sachets that fell onto it |
-| `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE`, `partial` or `fragment` (see below) |
+| `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE`, `partial`, `fragment` or `by_hand` (see below) |
 | `label` | str | Wording to show for `status` (see below) |
 | `alert` | str | `none` / `warn` / `alarm` |
 | `missing` | int | Sets the dispenser dropped no sachet on (only when `MISSING`) |
@@ -39,6 +39,7 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `sachet_ids` | list[int] | The `sachet` results that belong to this stretch |
 | `drop_times`, `double_strip_times` | list[float] | When those sachets fell |
 | `period_s` | float | Cycle time used for the set count |
+| `hand` | float | Largest white blob (a worker's sleeve) in the reach box beside the chute during the stretch, as a share of the box (diagnostics; over `hand_min` 0.25 with no sachet gives `by_hand`) |
 | `frame_start`, `frame_end` | int | Frame numbers (diagnostics) |
 
 | `status` | Default `label` | Meaning | Default alert |
@@ -49,6 +50,7 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
 | `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
 | `fragment` | Not a set | Moved under the chute for less than half a set's time (`fragment_frac` x `set_len_s`, about 1 s) and no sachet fell on it: a tray nudged or handled, not a set passing. Not counted as a set | none |
+| `by_hand` | Trays moved by hand | No sachet fell, and a worker's arm (white sleeve) reached in beside the chute during the stretch: trays moved or placed by hand, e.g. a set built by hand during a stop. Not counted as a set. A stretch that got a sachet is judged as usual | warn |
 
 **`MISSING` means no sachet came from the dispenser, not that the bag has no sachet.** The check only sees
 sachets falling off the dispenser belt. A sachet added by hand (before, at or after the chute) is not

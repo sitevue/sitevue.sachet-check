@@ -69,7 +69,8 @@ research/                   batch prototype the method was built with, and its r
 - **Short stretches around line stops** used to be counted as sets with no sachet (FPL's 11-09 hand count:
   0 of 8 `MISSING` real). A set that stops under the chute is now one set, and blips under ~1 s with no
   sachet are `fragment`s, not sets. On our recordings this took `MISSING` from 14 to 4
-  ([docs/method.md](docs/method.md)).
+  ([docs/method.md](docs/method.md)). Stretches where a worker moved trays under the chute by hand (white
+  sleeve beside the chute) and no sachet fell are `by_hand` (`warn`), not `MISSING`.
 - **Main false alarms:** false `EXTRA` where the set count on long back-to-back stretches is off by one
   (about 5 per hour on 5 Nov), and `EMPTY BAG` from hard hats or bag film over the belt. Treat `warn` as
   "review", not "fault".
