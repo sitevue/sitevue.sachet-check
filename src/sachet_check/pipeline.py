@@ -49,6 +49,7 @@ class SachetPipeline:
                     if lag > 0:
                         time.sleep(lag)
                 t0 = time.perf_counter()
+                frame = sig.fit(frame)
                 s = sig.compute(frame)
                 crops = sig.side_crops(frame)
                 t1 = time.perf_counter()
@@ -58,7 +59,7 @@ class SachetPipeline:
                 self.stats["signal_ms"] += 1000 * (t1 - t0)
                 self.stats["engine_ms"] += 1000 * (t2 - t1)
                 if with_signals:
-                    yield dict(kind="frame", frame_index=n, t=round(offset + n / cfg.fps, 2), **{k: round(v, 4) for k, v in s.items()})
+                    yield dict(kind="frame", frame_index=n, t=round(offset + n / cfg.fps, 2), **{k: round(v, 4) for k, v in s.items() if k != "tray_blobs"})
                 for r in res:
                     yield _shift(r, offset)
                 n += 1

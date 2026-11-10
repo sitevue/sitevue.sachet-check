@@ -61,6 +61,31 @@ with it, 0 `MISSING` and 2 `by_hand`. The 103 `ok` sets and 3 fragments are unch
 a sachet reach at most 0.18 in the reach box, so the 0.25 cut-off has a modest margin, checked on this
 window only.
 
+**Sachets added by hand.** When the dispenser is stopped, workers put sachets on the trays by hand. Those
+never fall off the belt, so the set read `MISSING`. So when **nothing fell from the belt** onto a stretch,
+the check looks for sachets riding into the bag on its trays, in the **tray** box (700,380)-(1220,1060),
+from the stretch start to 0.5 s after it ends (`tray.py`). Each frame it lists the white blobs there; it
+links them frame to frame into tracks that move down with the trays (≤ 30 px sideways, 8 to 140 px down
+per frame, similar size). A track is a sachet when it lasts at least 3 frames, moves down at least 60 px
+overall, and has one of the two shapes seen on grind-04:
+
+- **slab**, lying flat on the meat: 6k to 32k px, aspect 1.1 to 4.5, at least 50% rectangular, and meat
+  around it (at least 6% of a 15 px ring);
+- **strip**, tucked at the seam between two trays, partly under the next one: at least 1.4 times wider
+  than tall, at most 120 px tall, 3k to 20k px, in at least 60% of its frames.
+
+Moving down is what rejects the steel right of the chute (white in 5 Nov's lighting, with meat next to
+it) and labels; the shape rules reject bag film glare, which moves with the trays but is tall and has no
+meat around it. One track per set seen gives `hand_added`; fewer stays `MISSING` with the shortfall.
+
+On the 11-10 export (15:58-16:24 UTC, 26 min, a dispenser stop) the check gave 94 `MISSING`. By eye, 70 of
+those sets had a sachet added by hand, flat on top or tucked at a seam; 24 had none (21 in a row at the
+start, plus 3 later; confirmed by FPL). With this rule: 70 `hand_added`, 24 `MISSING`, no real miss
+cleared. On 5 Nov (60 min, dispenser running) it changes nothing: every set there had a belt drop, and
+the 48:13 likely real miss stays `MISSING`. There the tracks it finds, checked by eye on about 100 sets,
+were all real sachets (dispenser sachets that landed on top of the trays). Not yet tested on a second day
+with a dispenser stop.
+
 **Fragments.** A stretch that moved for less than half a set's time (about 1 s) and got no sachet is a
 `fragment`, not a set: a tray nudged, handled or only partly seen. It is reported with `sets: 0` and no
 alert. A short stretch that did get a sachet still counts as a set, because a sachet fell onto a tray.
@@ -157,8 +182,12 @@ Every drop, no-tray drop and landing verdict is unchanged, and so are the fault 
 
 ## Known weak points
 
-- **Hand-added sachets.** Only sachets falling off the dispenser belt are seen. A set that gets its sachet
-  by hand reads `MISSING` ("No sachet from dispenser").
+- **Hand-added sachets** are seen only when some of the sachet shows as it rides down: flat on top or
+  tucked at a seam. One pushed fully under or between trays is not seen, and that set reads `MISSING`.
+  The rule was tuned on one 26 min export; it has not yet been checked on a second dispenser stop.
+- **A worker's white sleeve** moving down past the trays could be tracked like a sachet and turn a real
+  miss into `hand_added`. Not seen on 11-10 (0 of 24 real misses cleared), but the 11-09 stop where a
+  worker built a set by hand was not available to test.
 
 - **Set count on long stretches.** This is the main source of false `EXTRA`: about 5 per hour on
   5 Nov.

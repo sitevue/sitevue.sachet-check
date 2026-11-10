@@ -10,7 +10,7 @@ oxygen-scavenger sachet before it goes into the bag. For every set and every sac
 
 It works from fixed boxes in the camera image: a white sachet on the belt, red meat moving under the
 chute, and new white objects in the chute slot and on the side conveyors. There is no learned model and
-no GPU. One CPU core runs it several times faster than the 10 fps camera. Results stream out about
+no GPU. One CPU core keeps up with the 10 fps camera with room to spare (about 2.3x real time on a 6-core laptop). Results stream out about
 1.5 s (sets) and 4.5 s (sachets) after the event.
 
 ## Quick start
@@ -49,6 +49,7 @@ src/sachet_check/
   signals.py                per-frame pixel fractions in the boxes (+ running background for "new" objects)
   engine.py                 SachetChecker: signals in, `sets` and `sachet` results out as soon as they are certain
   shape.py                  is a new object on a side conveyor shaped like a sachet?
+  tray.py                   sachets riding into the bag on the trays (added by hand when nothing fell)
   pipeline.py               SachetPipeline: video file / RTSP / camera -> results
   summary.py                counts over a list of results
   cli.py                    `sachet run | bench`
@@ -74,6 +75,10 @@ research/                   batch prototype the method was built with, and its r
 - **Main false alarms:** false `EXTRA` where the set count on long back-to-back stretches is off by one
   (about 5 per hour on 5 Nov), and `EMPTY BAG` from hard hats or bag film over the belt. Treat `warn` as
   "review", not "fault".
-- **Hand-added sachets are not seen.** A set that gets its sachet by hand still reads `MISSING` ("No sachet
-  from dispenser").
+- **Sachets added by hand:** when nothing falls from the belt, a sachet seen riding into the bag on the trays
+  (flat on top, or tucked at the seam between trays, and moving down with them) makes the set `hand_added`
+  ("Sachet added by hand", no alert) instead of `MISSING`. On the 11-10 dispenser stop: 70 of 70 hand-added
+  sets caught, 24 of 24 real misses left `MISSING`. A sachet fully hidden under a tray is not seen. Tuned on
+  that one export ([docs/method.md](docs/method.md)).
+- **720p exports** are resized to 1920x1080 before measuring, so the boxes still fit.
 - Not yet run against the live camera stream. Validated only on exported recordings.

@@ -4,6 +4,7 @@
 line: fpl-grind
 camera: grind-04
 fps: 10                      # used only when the stream does not report its own frame rate
+frame_size: [1920, 1080]     # frames of another size (e.g. 1280x720 exports) are resized to this first
 
 regions:
   belt:  [935, 0, 1125, 365]     # sachet riding the blue belt before it falls
@@ -12,6 +13,7 @@ regions:
   right: [1150, 720, 1500, 1010] # side conveyor right of the bag
   chute: [905, 375, 1135, 470]   # slot just below the belt the sachet falls through
   reach: [380, 380, 900, 800]    # beside the chute, where a worker's arm reaches in (white sleeve)
+  tray:  [700, 380, 1220, 1060]  # the trays below the chute on their way into the bag (sachets riding on them)
 
 colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
   white:  {s_max: 50, v_min: 190}
@@ -66,11 +68,37 @@ landing:                     # did the sachet end up in the bag?
     rect_min: 0.72           # area / min-area-rectangle
     aspect: [1.1, 2.5]
 
+hand_added:                  # nothing fell from the belt, but a sachet rides into the bag on the trays (added by hand)
+  after_s: 0.5               # look from the stretch start to this long after it ends
+  open_px: 5                 # white mask opening (removes specks)
+  ring_px: 15                # width of the ring around a blob checked for meat
+  min_blob_px: 2500
+  blob: {area: [3000, 32000], w: [60, 300], h: [25, 260], y_min: 400}   # sachet-sized white blob, full-res px
+  track:                     # frame-to-frame: a sachet moves down with the trays
+    dx_px: 30                # sideways drift allowed per step
+    dy_px: [8, 140]          # downward movement per frame
+    size_ratio: 0.6          # area may change by at most this factor per step
+    max_gap_frames: 2        # a track survives this many frames without a match
+    min_frames: 3
+    min_drop_px: 60          # must move at least this far down overall (steel, labels, glare stay put)
+  slab:                      # lying flat on the meat
+    area: [6000, 32000]
+    aspect: [1.1, 4.5]
+    rect_min: 0.5
+    meat_ring_min: 0.06      # meat around it (bag film and empty bag have none)
+    y: [450, 950]            # blob centre, full-res
+  strip:                     # tucked at the seam between two trays: thin, much wider than tall
+    w_over_h: 1.4
+    h_max: 120
+    area: [3000, 20000]
+    frac: 0.6                # share of the track's frames with this shape
+
 alerts:                      # alert level attached to each result
   sets:
     ok: none
     partial: none            # stream started or ended inside the stretch: not judged
     fragment: none           # too short to be a set and nothing fell on it
+    hand_added: none         # nothing fell from the belt, but a sachet rode into the bag on the trays
     by_hand: warn            # a worker moved trays under the chute by hand and no sachet fell: not counted as a set
     MISSING: alarm
     EXTRA: warn
@@ -87,6 +115,7 @@ labels:                      # wording to show people (the `label` field); `stat
     ok: OK
     partial: Not judged
     fragment: Not a set
+    hand_added: Sachet added by hand
     by_hand: Trays moved by hand
     MISSING: No sachet from dispenser   # the check only sees the dispenser: a sachet added by hand is not seen
     EXTRA: Extra sachet

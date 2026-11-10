@@ -10,6 +10,11 @@ Each frame gives seven numbers:
   hand         largest white blob in the reach box, as a fraction of the box (a worker's white sleeve
                reaching in beside the chute)
 
+plus `tray_blobs`: the white blobs in the tray box (tray.py), for sachets added by hand.
+
+Frames of another size (e.g. a 1280x720 export) are resized to the configured `frame_size` first, so
+the boxes, which are in full-resolution pixels, still fit (`fit`).
+
 "New" = differs from a slow running background, so the conveyors, bag film and steel do not count
 but a sachet that lands and stays does.
 """
@@ -19,6 +24,7 @@ import cv2
 import numpy as np
 
 from .config import Config
+from .tray import tray_blobs
 
 KEYS = ("belt_white", "drop_meat", "drop_motion", "L_fg", "R_fg", "CH_fg", "hand")
 
@@ -36,11 +42,19 @@ class FrameSignals:
         self.prev_drop_grey = None
         self.bg: dict[str, np.ndarray] = {}
 
+    def fit(self, frame):
+        """The frame at the configured frame_size (the boxes are in those pixels)."""
+        w, h = self.cfg.get("frame_size", [frame.shape[1], frame.shape[0]])
+        if frame.shape[1] != w or frame.shape[0] != h:
+            frame = cv2.resize(frame, (int(w), int(h)), interpolation=cv2.INTER_LINEAR)
+        return frame
+
     def side_crops(self, frame):
         """Full-resolution crops of the side conveyors, kept for the sachet-shape check."""
         return _crop(frame, self.boxes["L"]).copy(), _crop(frame, self.boxes["R"]).copy()
 
-    def compute(self, frame) -> dict[str, float]:
+    def compute(self, frame) -> dict:
+        """Pass frames through `fit` first (the pipeline does)."""
         c = self.cfg["colors"]
         out = {}
 
@@ -79,4 +93,6 @@ class FrameSignals:
             rate = np.where(fg, lc["bg_rate_fg"], lc["bg_rate"]).astype(np.float32)   # a new object is absorbed slowly
             self.bg[k] += rate * (v - self.bg[k])
             out[f"{k}_fg"] = float(fg.mean())
+        if "hand_added" in self.cfg:
+            out["tray_blobs"] = tray_blobs(frame, self.cfg)
         return out

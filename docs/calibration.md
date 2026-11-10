@@ -10,6 +10,8 @@ Everything line-specific is in `configs/<line>.yaml`. Copy `configs/fpl-grind-04
    - **chute**: the slot directly below the belt end that every sachet falls through.
    - **left / right**: the conveyors or plates beside the bag where a missed sachet would come to rest.
      Keep them clear of places where operators stand.
+   - **tray**: below the chute, the trays on their way into the bag, from just under the chute to the
+     bottom of the bag. Sachets added by hand are looked for here.
 2. **Check the curves.** Run `sachet run VIDEO --out out.jsonl -v` on 10 minutes of normal running and
    compare it with the video. Every sachet should come out `IN BAG` and every set `ok`. If the drop count
    is short, lower `drop.fall`. If parked trays count as sets, raise `sets.motion_min`.

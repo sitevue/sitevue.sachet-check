@@ -24,6 +24,7 @@ import numpy as np
 from .config import Config
 from .shape import blob_shape, sachet_like
 from .signals import KEYS
+from .tray import TraySachets
 
 
 class _Ring:
@@ -80,6 +81,11 @@ class SachetChecker:
         self.watch = f(lc["watch_s"])
         self.crop_keep = self.watch + f(lc["stuck_hold_s"]) + f(lc["shape"]["before_s"]) + 20
         self.emit_q: deque = deque()      # sachets in drop order, emitted strictly in order
+        # sachets riding on the trays (added by hand)
+        ha = cfg.get("hand_added")
+        self.tray = TraySachets(cfg) if ha else None
+        self.tray_after = f(ha["after_s"]) if ha else 0          # look this long past the stretch end
+        self.tray_wait = self.tray_after + (ha["track"]["max_gap_frames"] + 1 if ha else 0)
         self.finished = False
 
     # ------------------------------------------------------------------ input
@@ -88,6 +94,8 @@ class SachetChecker:
         `wall` = Unix time of the frame for live cameras (None for files). Returns new results."""
         i = self.h.n
         self.h.push([sig.get(k, 0.0) for k in KEYS] + [np.nan if wall is None else wall])
+        if self.tray is not None:
+            self.tray.push(i, sig.get("tray_blobs"))
         if crops is not None:
             self.crops[i] = crops
             self.crops.pop(i - self.crop_keep, None)
@@ -235,6 +243,8 @@ class SachetChecker:
             reach = s["a1"] + self.cfg.frames(w1) + 1
             if not self.finished and (self.scan <= reach or (self.cand and self.cand[0] <= reach)):
                 break                                         # a drop belonging to it may not be final yet
+            if not self.finished and self.n <= s["a1"] + self.tray_wait:
+                break                                         # a sachet riding on its trays may still be in view
             self.stretches.popleft()
             t0, t1 = self._t(s["a0"]), self._t(s["a1"])
             W = sc["period_window_s"]
@@ -251,10 +261,15 @@ class SachetChecker:
             k = len(mine)
             hand = float(self.h.get("hand", s["a0"], s["a1"] + 1).max(initial=0.0))
             by_hand = k == 0 and hand > sc["hand_min"] and not s["edge"]
+            # nothing fell from the belt: did sachets ride through on the trays (added by hand)?
+            riding = self.tray.seen(s["a0"], s["a1"] + self.tray_after) if (self.tray is not None and k == 0) else []
+            hand_added = len(riding)
             if k == 0 and moving < sc["fragment_frac"] * sc["set_len_s"] and not s["edge"]:
                 nsets = 0                                     # far too short for a set passing, and nothing fell on it
             if nsets == 0:
                 status = "fragment"
+            elif hand_added and not s["edge"]:
+                status = "hand_added" if hand_added >= nsets else "MISSING"
             elif by_hand:
                 nsets, status = 0, "by_hand"                  # a worker moved trays under the chute: not a set passing
             elif k == nsets:
@@ -269,12 +284,13 @@ class SachetChecker:
                 t0=round(t0, 2), t1=round(t1, 2), timestamp=self._wall(s["a0"]),
                 moving_s=round(moving, 2), paused_s=round(s["paused"] / self.fps, 2),
                 sets=nsets, sachets=k,
-                missing=max(0, nsets - k) if status == "MISSING" else 0,
+                missing=max(0, nsets - k - hand_added) if status == "MISSING" else 0,
                 extra=max(0, k - nsets) if status == "EXTRA" else 0,
                 double_strips=len(dbl) if status == "DOUBLE" else 0,
                 status=status, label=self.cfg.get("labels", {}).get("sets", {}).get(status, status),
                 alert=self.cfg["alerts"]["sets"][status],
-                hand=round(hand, 3), period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
+                hand=round(hand, 3), hand_added=hand_added,
+                hand_added_kinds=[kd for kd, _ in riding], period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
                 drop_times=[round(d["t"], 2) for d in mine],
                 double_strip_times=[round(d["t"], 2) for d in dbl]))
         return out
@@ -388,6 +404,10 @@ class SachetChecker:
         return out
 
     def _prune(self):
+        if self.tray is not None:
+            starts = [s["a0"] for s in self.stretches] + ([self.seg["a0"]] if self.seg else []) \
+                + ([self.open_start] if self.open_start is not None else [])
+            self.tray.prune(min(starts + [self.n]) - 1)
         keep_t = self._t(self.n) - 2 * self.cfg["sets"]["period_window_s"] - 30
         while len(self.drops) > 2 and self.drops[0]["verdict"] is not None and self.drops[0]["t"] < keep_t:
             self.drops.pop(0)

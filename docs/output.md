@@ -30,7 +30,7 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `timestamp` | float | Time of `t0` (Unix time when live) |
 | `sets` | int | Tray sets in the stretch, estimated from `moving_s` and the current cycle time (0 for a `fragment`) |
 | `sachets` | int | Sachets that fell onto it |
-| `status` | str | `ok`, `MISSING`, `EXTRA`, `DOUBLE`, `partial`, `fragment` or `by_hand` (see below) |
+| `status` | str | `ok`, `hand_added`, `MISSING`, `EXTRA`, `DOUBLE`, `partial`, `fragment` or `by_hand` (see below) |
 | `label` | str | Wording to show for `status` (see below) |
 | `alert` | str | `none` / `warn` / `alarm` |
 | `missing` | int | Sets the dispenser dropped no sachet on (only when `MISSING`) |
@@ -40,22 +40,26 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 | `drop_times`, `double_strip_times` | list[float] | When those sachets fell |
 | `period_s` | float | Cycle time used for the set count |
 | `hand` | float | Largest white blob (a worker's sleeve) in the reach box beside the chute during the stretch, as a share of the box (diagnostics; over `hand_min` 0.25 with no sachet gives `by_hand`) |
+| `hand_added` | int | Sachets seen riding into the bag on the trays when nothing fell from the belt (sachets added by hand; 0 when a sachet fell) |
+| `hand_added_kinds` | list[str] | How each was seen: `slab` (flat on the meat) or `strip` (tucked at the seam between two trays) |
 | `frame_start`, `frame_end` | int | Frame numbers (diagnostics) |
 
 | `status` | Default `label` | Meaning | Default alert |
 |---|---|---|---|
 | `ok` | OK | One sachet per set | none |
-| `MISSING` | No sachet from dispenser | Fewer sachets dropped than sets: **the dispenser dropped no sachet on a set** | alarm |
+| `hand_added` | Sachet added by hand | Nothing fell from the belt, but a sachet rode into the bag on the trays, one per set: the sachets were added by hand. Counted as sets with a sachet | none |
+| `MISSING` | No sachet from dispenser | Fewer sachets dropped than sets, and no sachet seen riding on the trays to make up the difference: **the set went in without a sachet** as far as the camera can tell | alarm |
 | `EXTRA` | Extra sachet | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
 | `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
 | `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
 | `fragment` | Not a set | Moved under the chute for less than half a set's time (`fragment_frac` x `set_len_s`, about 1 s) and no sachet fell on it: a tray nudged or handled, not a set passing. Not counted as a set | none |
 | `by_hand` | Trays moved by hand | No sachet fell, and a worker's arm (white sleeve) reached in beside the chute during the stretch: trays moved or placed by hand, e.g. a set built by hand during a stop. Not counted as a set. A stretch that got a sachet is judged as usual | warn |
 
-**`MISSING` means no sachet came from the dispenser, not that the bag has no sachet.** The check only sees
-sachets falling off the dispenser belt. A sachet added by hand (before, at or after the chute) is not
-seen, so that set still reads `MISSING`. During a dispenser stop where people add sachets by hand, every
-set reads `MISSING` even though the bags may be fine.
+**When nothing falls from the belt**, the check looks for sachets riding on the trays (added by hand): a
+white sachet-shaped object that moves down into the bag with them. If it sees one per set the stretch is
+`hand_added`; if not, it stays `MISSING`. Only when nothing fell from the belt: a stretch with a dispenser
+drop is judged on the drops alone. A sachet completely hidden under or between trays is not seen, so that
+set still reads `MISSING`.
 
 ## `kind: "sachet"`: where did each sachet go?
 
@@ -89,7 +93,9 @@ a 1.5 s hold. It can take longer (up to 20 s) only when the chute slot stays occ
 ## Summary
 
 `sachet run` prints counts at the end (`sachet_check.summary.summarize`): sets checked, sets with no sachet
-from the dispenser (`sets_missing_sachet`; `sachet_on_every_set_pct` is likewise "dispensed onto every set"), double strips, `sachet_on_every_set_pct`, landing verdict counts, alarms and warnings.
+from the dispenser and none seen added by hand (`sets_missing_sachet`), sets whose sachet was added by hand
+(`sets_sachet_added_by_hand`), double strips, `sachet_on_every_set_pct` (sets with a sachet, dispensed or
+added by hand), landing verdict counts, alarms and warnings.
 
 ## Example
 

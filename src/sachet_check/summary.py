@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from collections import Counter
 
-SET_STATUSES = ("ok", "MISSING", "EXTRA", "DOUBLE", "partial", "fragment", "by_hand")
+SET_STATUSES = ("ok", "hand_added", "MISSING", "EXTRA", "DOUBLE", "partial", "fragment", "by_hand")
 VERDICTS = ("IN BAG", "EMPTY BAG", "OUTSIDE BAG", "STUCK IN CHUTE", "NOT SEEN")
 
 
@@ -20,6 +20,7 @@ def summarize(results, since: float | None = None) -> dict:
     return dict(
         sets_checked=n_sets,
         sets_missing_sachet=missing,
+        sets_sachet_added_by_hand=sum(min(r.get("hand_added", 0), r["sets"]) for r in judged),
         sets_with_double_sachet=sum(r["double_strips"] for r in judged),
         extra_sachets=sum(r["extra"] for r in judged),
         sachet_on_every_set_pct=round(100.0 * (n_sets - missing) / n_sets, 2) if n_sets else None,
