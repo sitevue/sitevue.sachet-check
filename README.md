@@ -5,7 +5,7 @@ oxygen-scavenger sachet before it goes into the bag. For every set and every sac
 
 | Question | Result | Alarm when |
 |---|---|---|
-| Did the dispenser drop a sachet on every tray set? | `sets` result: `ok` / `MISSING` (shown as "No sachet from dispenser") / `EXTRA` / `DOUBLE` | the dispenser dropped no sachet on a set |
+| Did the dispenser drop a sachet on every tray set? | `sets` result: `ok` / `MISSING` (shown as "No sachet / hidden") / `EXTRA` / `DOUBLE` | the dispenser dropped no sachet on a set |
 | Did the sachet land in the bag? | `sachet` result: `IN BAG` / `EMPTY BAG` / `OUTSIDE BAG` / `STUCK IN CHUTE` / `NOT SEEN` | it landed outside the bag or jammed in the chute |
 
 It works from fixed boxes in the camera image: a white sachet on the belt, red meat moving under the
@@ -77,7 +77,7 @@ research/                   batch prototype the method was built with, and its r
   "review", not "fault".
 - **Sachets added by hand:** when nothing falls from the belt, a sachet seen riding into the bag on the trays
   (flat on top, or tucked at the seam between trays, and moving down with them) makes the set `hand_added`
-  ("Sachet added by hand", no alert) instead of `MISSING`. On the 11-10 dispenser stop: 70 of 70 hand-added
+  ("Added by hand", no alert) instead of `MISSING`. On the 11-10 dispenser stop: 70 of 70 hand-added
   sets caught, 24 of 24 real misses left `MISSING`. A sachet fully hidden under a tray is not seen. Tuned on
   that one export, then corrected after a full-day shadow review on the sandbox (overwrap glare and a white
   product label had been taken for sachets) ([docs/method.md](docs/method.md)).

@@ -120,17 +120,17 @@ alerts:                      # alert level attached to each result
 
 labels:                      # wording to show people (the `label` field); `status` / `verdict` codes stay fixed
   sets:
-    ok: OK
+    ok: Added automatically          # the dispenser (blue belt) dropped a sachet on each set
     partial: Not judged
     fragment: Not a set
-    hand_added: Sachet added by hand
+    hand_added: Added by hand            # nothing fell from the belt, but a sachet was seen riding on the trays
     by_hand: Trays moved by hand
-    MISSING: No sachet from dispenser   # the check only sees the dispenser: a sachet added by hand is not seen
+    MISSING: No sachet / hidden          # no belt drop and no sachet seen on the trays: none, or hidden by the tray wall
     EXTRA: Extra sachet
     DOUBLE: Double sachet
   sachet:
     IN BAG: In bag
-    EMPTY BAG: Empty bag
+    EMPTY BAG: Not dropped on tray       # the sachet fell with no tray set under it
     OUTSIDE BAG: Outside bag
     STUCK IN CHUTE: Stuck in chute
     NOT SEEN: Not seen

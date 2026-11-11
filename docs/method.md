@@ -96,7 +96,7 @@ were all real sachets (dispenser sachets that landed on top of the trays).
 **Shadow review, 11-10 sandbox (05:00-22:20 UTC, 6,539 stretches, re-scored from the recorder).** The
 first version cleared 57 sets outside the 15:58-16:24 outage; by eye only ~4 were real. 22 were overwrap
 glare taken for strips (06:47-06:48 and 22:25-22:26 dispenser stops among them) and ~30 the white product
-label taken for slabs, i.e. real misses posted as "Sachet added by hand". With the width, across/upright
+label taken for slabs, i.e. real misses posted as hand-added. With the width, across/upright
 and frame-share rules above, the same day gives 5 `hand_added` outside the outage (4 seen by eye as real
 sachets on the tray, 1 a sachet standing at the tray's edge) and 67 in the outage (71 before). On the
 11-10 export the cost is 3 of 70 hand-added sachets now read `MISSING`: one standing upright beside the

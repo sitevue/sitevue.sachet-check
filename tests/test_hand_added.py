@@ -48,7 +48,7 @@ def test_slab_riding_on_the_tray_is_hand_added():
     ride(line, 20.5, SLAB)
     s = _last_set(line.run())
     assert s["status"] == "hand_added" and s["hand_added"] == 1 and s["missing"] == 0
-    assert s["alert"] == "none" and s["label"] == "Sachet added by hand" and s["hand_added_kinds"] == ["slab"]
+    assert s["alert"] == "none" and s["label"] == "Added by hand" and s["hand_added_kinds"] == ["slab"]
 
 
 def test_strip_tucked_between_trays_is_hand_added():

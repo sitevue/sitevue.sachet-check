@@ -61,7 +61,7 @@ def test_missing_sachet_raises_alarm():
     res = line.run()
     bad = [s for s in kinds(res, "sets") if s["status"] != "ok"]
     assert len(bad) == 1 and bad[0]["status"] == "MISSING" and bad[0]["missing"] == 1 and bad[0]["alert"] == "alarm"
-    assert bad[0]["label"] == "No sachet from dispenser"
+    assert bad[0]["label"] == "No sachet / hidden"
     assert abs(bad[0]["t0"] - 17.0) < 0.2
 
 

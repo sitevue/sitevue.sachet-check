@@ -46,9 +46,9 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 
 | `status` | Default `label` | Meaning | Default alert |
 |---|---|---|---|
-| `ok` | OK | One sachet per set | none |
-| `hand_added` | Sachet added by hand | Nothing fell from the belt, but a sachet rode into the bag on the trays, one per set: the sachets were added by hand. Counted as sets with a sachet | none |
-| `MISSING` | No sachet from dispenser | Fewer sachets dropped than sets, and no sachet seen riding on the trays to make up the difference: **the set went in without a sachet** as far as the camera can tell | alarm |
+| `ok` | Added automatically | The dispenser (blue belt) dropped one sachet per set | none |
+| `hand_added` | Added by hand | Nothing fell from the belt, but a sachet was seen riding into the bag on the trays, one per set. Counted as sets with a sachet | none |
+| `MISSING` | No sachet / hidden | Fewer sachets dropped than sets, and no sachet seen riding on the trays to make up the difference: either **the set went in without a sachet**, or one is hidden (e.g. against the tray wall, under the next tray) where the camera cannot see it | alarm |
 | `EXTRA` | Extra sachet | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
 | `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
 | `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
@@ -71,7 +71,7 @@ a 1.5 s hold. It can take longer (up to 20 s) only when the chute slot stays occ
 | `sachet_id` | int | Running number since the stream started |
 | `t`, `timestamp` | float | When it fell off the belt |
 | `verdict` | str | See below |
-| `label` | str | Wording to show for `verdict`: `In bag`, `Empty bag`, `Outside bag`, `Stuck in chute`, `Not seen` |
+| `label` | str | Wording to show for `verdict`: `In bag`, `Not dropped on tray` (for `EMPTY BAG`), `Outside bag`, `Stuck in chute`, `Not seen` |
 | `in_bag` | bool | `verdict == "IN BAG"` |
 | `alert` | str | `none` / `warn` / `alarm` |
 | `no_tray` | bool | No tray set was moving under the chute when it fell |
@@ -102,6 +102,6 @@ added by hand), landing verdict counts, alarms and warnings.
 From 5 Nov 2026, recording 4313d69a, at 48:13: the dispenser dropped no sachet on a set, and the sachet then fell into an empty bag:
 
 ```json
-{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "label": "No sachet from dispenser", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
-{"kind": "sachet", "sachet_id": 583, "frame_index": 29032, "t": 2903.2, "timestamp": 2903.2, "verdict": "EMPTY BAG", "label": "Empty bag", "in_bag": false, "alert": "warn", "no_tray": true, "set_group_id": null, "double_strip": false, "size": 0.431, "passed_slot": true, "outside_side": null, "outside_t": null, "hung_in_chute_before_falling": false, "rejected_outside": []}
+{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "label": "No sachet / hidden", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
+{"kind": "sachet", "sachet_id": 583, "frame_index": 29032, "t": 2903.2, "timestamp": 2903.2, "verdict": "EMPTY BAG", "label": "Not dropped on tray", "in_bag": false, "alert": "warn", "no_tray": true, "set_group_id": null, "double_strip": false, "size": 0.431, "passed_slot": true, "outside_side": null, "outside_t": null, "hung_in_chute_before_falling": false, "rejected_outside": []}
 ```
