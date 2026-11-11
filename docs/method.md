@@ -70,7 +70,7 @@ per frame, similar size). A track is a sachet when it lasts at least 3 frames, m
 overall, and has one of the two shapes seen on grind-04:
 
 - **slab**, lying on the meat: 6k to 32k px, aspect 1.1 to 4.5, at least 50% rectangular, meat around it
-  (at least 6% of a 15 px ring), and in at least half of its frames either **across the tray** (at least
+  (at least 6% of a 15 px ring), and in at least a third of its frames either **across the tray** (at least
   1.2 times wider than tall, ≥ 150 px wide, ≤ 160 px tall) or **upright** (≥ 190 px tall, ≤ 140 px wide);
 - **strip**, tucked at the seam between two trays, partly under the next one: at least 160 px wide, at
   least 1.4 times wider than tall, at most 120 px tall, 3k to 20k px, in at least 60% of its frames.
@@ -101,6 +101,13 @@ and frame-share rules above, the same day gives 5 `hand_added` outside the outag
 sachets on the tray, 1 a sachet standing at the tray's edge) and 67 in the outage (71 before). On the
 11-10 export the cost is 3 of 70 hand-added sachets now read `MISSING`: one standing upright beside the
 tray, one diagonal, and one (1420) that was only ever matched by a glare track. 5 Nov is unchanged.
+
+**Second day (11-10 22:20 - 11-11 16:41 UTC, live, previous version).** It posted 30 `hand_added`. With the
+rules above (slab frame share one third): 8 stay `hand_added`, all real sachets by eye; 22 go back to
+`MISSING`. Of those, 19 had clean trays (real misses, including runs at 04:51 and 05:10) and 3 were real
+hand-added sachets the rule cannot see: one squarish and tilted (~150 x 160), one flat across the tray
+for too few frames, one standing on the bag film beside the tray (no meat around it). Re-judged with the
+one-third frame share, 11-10 gains one real hand add in the outage and nothing else.
 
 **Fragments.** A stretch that moved for less than half a set's time (about 1 s) and got no sachet is a
 `fragment`, not a set: a tray nudged, handled or only partly seen. It is reported with `sets: 0` and no
@@ -200,7 +207,7 @@ Every drop, no-tray drop and landing verdict is unchanged, and so are the fault 
 
 - **Hand-added sachets** are seen only when some of the sachet shows as it rides down: across the tray,
   upright, or tucked at a seam. One pushed fully under or between trays, or lying at an odd angle, is not
-  seen, and that set reads `MISSING` (3 of 70 on the 11-10 export).
+  seen, and that set reads `MISSING` (2-3 of 70 on the 11-10 export, 3 of 11 in the 11-11 night stop).
 - **Product changes.** The rules reject the white label and the glossy overwrap seen on 11-10. A product
   whose label is ~200 x 110 px and white, or a tray film that glares in wide bands, could still be taken
   for a sachet. Check a new product's no-drop sets by eye before trusting `hand_added` for it.

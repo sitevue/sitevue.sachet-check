@@ -91,7 +91,8 @@ hand_added:                  # nothing fell from the belt, but a sachet rides in
     # the 11-10 sandbox) is neither, so it is not taken for a sachet; hand-placed sachets are ~200 x 110
     wide: {w_over_h: 1.2, w_min: 150, h_max: 160}
     upright: {h_min: 190, w_max: 140}
-    frac: 0.5                # share of the track's frames with a slab shape
+    frac: 0.34               # share of the track's frames with a slab shape (a tilting sachet is only
+                             # across/upright part of the way; the label is almost never)
   strip:                     # tucked at the seam between two trays: thin, much wider than tall
     w_min: 160               # px wide: a tucked sachet spans the tray (185-225 px); glare on glossy overwrap
                              # moves with the tray too but is 90-136 px (11-10 sandbox, red-label trays)
