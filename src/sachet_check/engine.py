@@ -260,6 +260,8 @@ class SachetChecker:
                 d["used"], d["orphan"], d["set_id"] = True, False, sid
             k = len(mine)
             hand = float(self.h.get("hand", s["a0"], s["a1"] + 1).max(initial=0.0))
+            # no sachet fell and a worker's hand was at the chute: a person reviews it (the trays may have been
+            # placed by hand, or gone in empty while someone reached in), so it is not judged automatically
             by_hand = k == 0 and hand > sc["hand_min"] and not s["edge"]
             # nothing fell from the belt: did sachets ride through on the trays (added by hand)?
             riding = self.tray.seen(s["a0"], s["a1"] + self.tray_after) if (self.tray is not None and k == 0) else []
@@ -271,7 +273,7 @@ class SachetChecker:
             elif hand_added and not s["edge"]:
                 status = "hand_added" if hand_added >= nsets else "MISSING"
             elif by_hand:
-                nsets, status = 0, "by_hand"                  # a worker moved trays under the chute: not a set passing
+                nsets, status = 0, "by_hand"                  # a hand at the chute and no sachet: review needed
             elif k == nsets:
                 status = "partial" if s["edge"] else "ok"
             else:

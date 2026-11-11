@@ -5,7 +5,7 @@ oxygen-scavenger sachet before it goes into the bag. For every set and every sac
 
 | Question | Result | Alarm when |
 |---|---|---|
-| Did the dispenser drop a sachet on every tray set? | `sets` result: `ok` / `MISSING` (shown as "No sachet / hidden") / `EXTRA` / `DOUBLE` | the dispenser dropped no sachet on a set |
+| Did the dispenser drop a sachet on every tray set? | `sets` result: `ok` / `MISSING` (shown as "Empty tray") / `EXTRA` / `DOUBLE` | the dispenser dropped no sachet on a set |
 | Did the sachet land in the bag? | `sachet` result: `IN BAG` / `EMPTY BAG` / `OUTSIDE BAG` / `STUCK IN CHUTE` / `NOT SEEN` | it landed outside the bag or jammed in the chute |
 
 It works from fixed boxes in the camera image: a white sachet on the belt, red meat moving under the
@@ -82,4 +82,6 @@ research/                   batch prototype the method was built with, and its r
   that one export, then corrected after a full-day shadow review on the sandbox (overwrap glare and a white
   product label had been taken for sachets) ([docs/method.md](docs/method.md)).
 - **720p exports** are resized to 1920x1080 before measuring, so the boxes still fit.
+- **Pale products:** tray detection no longer depends on a red label (11-11 white-label hour: 191 false
+  "Not dropped on tray" → 0). A hand at the chute with no sachet reads "Review needed".
 - Not yet run against the live camera stream. Validated only on exported recordings.

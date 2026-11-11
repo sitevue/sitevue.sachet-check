@@ -18,6 +18,11 @@ regions:
 colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
   white:  {s_max: 50, v_min: 190}
   meat:   {h_low_max: 12, h_high_min: 165, s_min: 70, v_min: 90}
+  # meat in the DROP BOX (is a tray set under the chute?). Lower saturation floor than `meat`: under the
+  # film the meat is pale pink (saturation ~40-70). With s_min 70 the drop box mostly saw the red product
+  # label, so a white-label product read as "no tray" (11-11 19:00-20:00: 15% of drops "Not dropped on tray",
+  # 75 sets unjudged). At 45: white-label trays 0.04-0.22, empty drop box ~0.001.
+  tray_meat: {h_low_max: 12, h_high_min: 165, s_min: 45, v_min: 90}
   motion_diff: 25            # grey-level change that counts as "moved" between frames
 
 drop:                        # a sachet falling off the belt = belt-white falls sharply
@@ -107,7 +112,7 @@ alerts:                      # alert level attached to each result
     partial: none            # stream started or ended inside the stretch: not judged
     fragment: none           # too short to be a set and nothing fell on it
     hand_added: none         # nothing fell from the belt, but a sachet rode into the bag on the trays
-    by_hand: warn            # a worker moved trays under the chute by hand and no sachet fell: not counted as a set
+    by_hand: warn            # no sachet fell and a worker's hand was at the chute: a person reviews it
     MISSING: alarm
     EXTRA: warn
     DOUBLE: warn
@@ -124,8 +129,8 @@ labels:                      # wording to show people (the `label` field); `stat
     partial: Not judged
     fragment: Not a set
     hand_added: Added by hand            # nothing fell from the belt, but a sachet was seen riding on the trays
-    by_hand: Trays moved by hand
-    MISSING: No sachet / hidden          # no belt drop and no sachet seen on the trays: none, or hidden by the tray wall
+    by_hand: Review needed               # no sachet fell and a worker's hand was at the chute
+    MISSING: Empty tray                  # no sachet fell from the belt, none seen on the trays, no hand at the chute
     EXTRA: Extra sachet
     DOUBLE: Double sachet
   sachet:

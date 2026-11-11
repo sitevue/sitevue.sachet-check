@@ -48,12 +48,12 @@ chute, the result waits until the set has moved on and left the drop box (at mos
 |---|---|---|---|
 | `ok` | Added automatically | The dispenser (blue belt) dropped one sachet per set | none |
 | `hand_added` | Added by hand | Nothing fell from the belt, but a sachet was seen riding into the bag on the trays, one per set. Counted as sets with a sachet | none |
-| `MISSING` | No sachet / hidden | Fewer sachets dropped than sets, and no sachet seen riding on the trays to make up the difference: either **the set went in without a sachet**, or one is hidden (e.g. against the tray wall, under the next tray) where the camera cannot see it | alarm |
+| `MISSING` | Empty tray | No sachet fell from the belt onto the set, none was seen riding on its trays, and no worker's hand was at the chute: **the tray went into the bag without a sachet**. (Rarely a sachet is hidden from the camera, e.g. fully under the next tray; a set counted across a line stop can also be one too many.) | alarm |
 | `EXTRA` | Extra sachet | More sachets than sets. Usually the set count is off by one on a long stretch, so check it | warn |
 | `DOUBLE` | Double sachet | A sachet was two joined sachets (the cutter missed a cut) | warn |
 | `partial` | Not judged | The stream started or ended in the middle of the stretch, so it is not judged | none |
 | `fragment` | Not a set | Moved under the chute for less than half a set's time (`fragment_frac` x `set_len_s`, about 1 s) and no sachet fell on it: a tray nudged or handled, not a set passing. Not counted as a set | none |
-| `by_hand` | Trays moved by hand | No sachet fell, and a worker's arm (white sleeve) reached in beside the chute during the stretch: trays moved or placed by hand, e.g. a set built by hand during a stop. Not counted as a set. A stretch that got a sachet is judged as usual | warn |
+| `by_hand` | Review needed | No sachet fell, and a worker's arm (white sleeve) was beside the chute during the stretch. A person should look: the trays may have been placed by hand (11-09 16:11, a set built by hand during a stop), or gone in empty while someone reached in (11-11 01:26:59). Not judged automatically and not counted as a set, so **it must be shown for review, not dropped**. A stretch that got a sachet is judged as usual | warn |
 
 **When nothing falls from the belt**, the check looks for sachets riding on the trays (added by hand): a
 white sachet-shaped object that moves down into the bag with them. If it sees one per set the stretch is
@@ -102,6 +102,6 @@ added by hand), landing verdict counts, alarms and warnings.
 From 5 Nov 2026, recording 4313d69a, at 48:13: the dispenser dropped no sachet on a set, and the sachet then fell into an empty bag:
 
 ```json
-{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "label": "No sachet / hidden", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
+{"kind": "sets", "set_group_id": 370, "frame_start": 28933, "frame_end": 28951, "t0": 2893.3, "t1": 2895.1, "timestamp": 2893.3, "sets": 1, "sachets": 0, "missing": 1, "extra": 0, "double_strips": 0, "status": "MISSING", "label": "Empty tray", "alert": "alarm", "period_s": 2.3, "sachet_ids": [], "drop_times": [], "double_strip_times": []}
 {"kind": "sachet", "sachet_id": 583, "frame_index": 29032, "t": 2903.2, "timestamp": 2903.2, "verdict": "EMPTY BAG", "label": "Not dropped on tray", "in_bag": false, "alert": "warn", "no_tray": true, "set_group_id": null, "double_strip": false, "size": 0.431, "passed_slot": true, "outside_side": null, "outside_t": null, "hung_in_chute_before_falling": false, "rejected_outside": []}
 ```

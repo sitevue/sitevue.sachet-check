@@ -61,7 +61,7 @@ def test_missing_sachet_raises_alarm():
     res = line.run()
     bad = [s for s in kinds(res, "sets") if s["status"] != "ok"]
     assert len(bad) == 1 and bad[0]["status"] == "MISSING" and bad[0]["missing"] == 1 and bad[0]["alert"] == "alarm"
-    assert bad[0]["label"] == "No sachet / hidden"
+    assert bad[0]["label"] == "Empty tray"
     assert abs(bad[0]["t0"] - 17.0) < 0.2
 
 
@@ -206,7 +206,7 @@ def test_trays_moved_by_hand_with_no_sachet_are_not_missing():
     line._set("hand", 27.0, 29.0, 0.7)
     s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
     assert len(s) == 2 and all(r["status"] == "by_hand" and r["sets"] == 0 and r["missing"] == 0 for r in s)
-    assert all(r["alert"] == "warn" and r["label"] == "Trays moved by hand" and r["hand"] >= 0.4 for r in s)
+    assert all(r["alert"] == "warn" and r["label"] == "Review needed" and r["hand"] >= 0.4 for r in s)
 
 
 def test_hand_in_view_does_not_hide_a_sachet_that_fell():

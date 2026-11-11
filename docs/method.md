@@ -13,7 +13,9 @@ There is no learned model and no GPU.
 | **chute** (905,375)-(1135,470) | New-white fraction: a sachet falling through the slot |
 | **left / right** conveyors | New-white fraction: a sachet that missed the bag and landed beside it |
 
-"White" means saturation < 50 and brightness > 190 in HSV. "Meat" means a red hue with saturation > 70.
+"White" means saturation < 50 and brightness > 190 in HSV. "Meat" means a red hue with saturation > 70. In the drop box (is a tray there?) the
+saturation floor is 45 instead (`colors.tray_meat`): seen through the film, pink meat is pale, and with 70
+the drop box mostly saw the red product label. On a white-label product it then saw no tray at all.
 "New white" means white AND more than 30 grey levels different from a slow running background. That
 way the steel, the conveyors and the bag film do not count, but an object that arrives and stays does.
 
@@ -54,6 +56,10 @@ frame: the worker's white sleeve. A stretch that got no sachet while that blob c
 the box is `by_hand`: not a set passing, not counted, `warn` instead of `alarm`. Normal sets reach at most
 0.17 (bag film, labels); a sleeve reaching in is 0.33 to 0.71. A stretch that did get a sachet is judged
 as usual, hand or not, and a short blip stays a `fragment`.
+
+`by_hand` is shown as **"Review needed"**: a hand at the chute with no sachet can mean a set built by hand
+(11-09 16:11) or trays going in empty while someone reached in (11-11 01:26:59, a run of empty trays and a
+glove at the end). The check does not try to tell these apart; a person looks.
 
 On FPL's hand-counted 15 min (11-09 16:00-16:15 UTC, recorder segments from the Grind box), the engine
 before this rule gives 2 `MISSING` (16:10:13.9 and 16:10:16.0, both inside the 16:09:36-16:10:57 stop);
@@ -193,6 +199,26 @@ Every drop, no-tray drop and landing verdict is unchanged, and so are the fault 
 - **5 Nov 27:05:** a long stop/restart, 3 sets and 1 sachet. Not checked by eye.
 - **rec1 32:34:** a full-length (2.7 s) stretch with no sachet, alone in a long pause. Not touched by
   either rule. Not checked by eye.
+
+## Drop box on a white-label product (11-11)
+
+On 11-11 from about 19:00 to 20:00 UTC the line ran a white-label product. With the drop box looking for
+strongly red pixels (saturation > 70) it found 1.1% "meat" with a full tray under the chute, because what it
+had been counting was mostly the red product label. 191 of 963 drops (20%) read `EMPTY BAG` ("Not dropped on
+tray") and 100 stretches were unjudged `fragment`s, while the video shows a tray under every drop.
+
+With `colors.tray_meat` (saturation > 45): white-label trays read 0.04-0.22, an empty drop box ~0.001.
+Same footage, old vs new code (box re-runs of the recorder segments):
+
+| Recording | `EMPTY BAG` | Fragments | Sets | Other changes |
+|---|---|---|---|---|
+| 11-11 19:00-20:00, white label | 191 → 0 | 100 → 0 | 773 → 962 (963 drops) | 2 false `MISSING` → `ok` |
+| 11-11 night, red label (1 h) | 2 → 2 | — | 699 → 698 | trays back to back merge into longer stretches; 1 new `MISSING` over a stop (set count) |
+| 11-09 16:00-16:15 hand count | 5 → 5 | 3 → 4 | 154 → 153 | still 0 `MISSING`; 1 new `EXTRA` (set count) |
+| 11-10 15:58-16:24 outage | 5 → 5 | 3 → 1 | 114 → 117 | 2 trays not seen before now `MISSING` (no sachet) |
+
+Because pale meat between touching trays is now seen, back-to-back trays merge into longer stretches more
+often, so the set count is estimated from the stretch length a little more often (the known weak point).
 
 ## Results so far
 

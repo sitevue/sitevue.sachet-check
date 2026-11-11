@@ -63,7 +63,7 @@ class FrameSignals:
 
         drop = _crop(frame, self.boxes["drop"])
         hsv = cv2.cvtColor(drop, cv2.COLOR_BGR2HSV)
-        m = c["meat"]
+        m = c.get("tray_meat", c["meat"])          # tray presence: also pale meat under film (white-label product)
         h = hsv[..., 0]
         meat = ((h < m["h_low_max"]) | (h > m["h_high_min"])) & (hsv[..., 1] > m["s_min"]) & (hsv[..., 2] > m["v_min"])
         out["drop_meat"] = float(meat.mean())
