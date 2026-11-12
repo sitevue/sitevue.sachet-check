@@ -252,17 +252,24 @@ class SachetChecker:
             P = float(np.median(np.diff(near))) if len(near) > 3 else 2.5
             P = float(np.clip(P, *sc["period_clip_s"]))
             moving = s["moving"] / self.fps
-            nsets = 1 + max(0, int(round((moving - sc["set_len_s"]) / P)))
+            nf = 1 + max(0.0, (moving - sc["set_len_s"]) / P)          # sets, before rounding
+            nsets = 1 + max(0, int(round(nf - 1)))
             mine = [d for d in self.drops if t0 + w0 <= d["t"] <= t1 + w1 and not d["used"]]
             sid = self.next_set_id
             self.next_set_id += 1
             for d in mine:
                 d["used"], d["orphan"], d["set_id"] = True, False, sid
             k = len(mine)
+            stopped = s["paused"] / self.fps >= sc.get("stop_min_s", float("inf"))
+            if stopped and 1 <= k < nsets and nf - k < sc["stop_tol"]:
+                nsets = k                                     # the creep into and out of a stop, not another set
             hand = float(self.h.get("hand", s["a0"], s["a1"] + 1).max(initial=0.0))
-            # no sachet fell and a worker's hand was at the chute: a person reviews it (the trays may have been
-            # placed by hand, or gone in empty while someone reached in), so it is not judged automatically
-            by_hand = k == 0 and hand > sc["hand_min"] and not s["edge"]
+            glove = float(self.h.get("glove", s["a0"], s["a1"] + 1 + self.tray_after).max(initial=0.0))
+            hand_seen = hand > sc["hand_min"] or glove > sc.get("glove_min", float("inf"))
+            # a worker's hand (white sleeve or blue glove) was at the chute or the trays and the set would read
+            # MISSING: a person reviews it (trays placed, pulled or filled by hand, or gone in empty while someone
+            # reached in), so it is not judged automatically
+            by_hand = hand_seen and k < nsets and not s["edge"]
             # nothing fell from the belt: did sachets ride through on the trays (added by hand)?
             riding = self.tray.seen(s["a0"], s["a1"] + self.tray_after) if (self.tray is not None and k == 0) else []
             hand_added = len(riding)
@@ -271,9 +278,11 @@ class SachetChecker:
             if nsets == 0:
                 status = "fragment"
             elif hand_added and not s["edge"]:
-                status = "hand_added" if hand_added >= nsets else "MISSING"
+                status = "hand_added" if hand_added >= nsets else ("by_hand" if by_hand else "MISSING")
             elif by_hand:
-                nsets, status = 0, "by_hand"                  # a hand at the chute and no sachet: review needed
+                status = "by_hand"                            # a hand in view and too few sachets: review needed
+                if k == 0:
+                    nsets = 0                                 # no set judged (the trays may have been moved by hand)
             elif k == nsets:
                 status = "partial" if s["edge"] else "ok"
             else:
@@ -291,7 +300,7 @@ class SachetChecker:
                 double_strips=len(dbl) if status == "DOUBLE" else 0,
                 status=status, label=self.cfg.get("labels", {}).get("sets", {}).get(status, status),
                 alert=self.cfg["alerts"]["sets"][status],
-                hand=round(hand, 3), hand_added=hand_added,
+                hand=round(hand, 3), glove=round(glove, 4), hand_added=hand_added,
                 hand_added_kinds=[kd for kd, _ in riding], period_s=round(P, 2), sachet_ids=[d["id"] for d in mine],
                 drop_times=[round(d["t"], 2) for d in mine],
                 double_strip_times=[round(d["t"], 2) for d in dbl]))

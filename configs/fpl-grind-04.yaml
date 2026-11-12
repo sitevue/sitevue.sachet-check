@@ -14,6 +14,7 @@ regions:
   chute: [905, 375, 1135, 470]   # slot just below the belt the sachet falls through
   reach: [380, 380, 900, 800]    # beside the chute, where a worker's arm reaches in (white sleeve)
   tray:  [700, 380, 1220, 1060]  # the trays below the chute on their way into the bag (sachets riding on them)
+  glove: [380, 375, 1500, 1080]  # below the belt: chute, trays, bag mouth (a worker's blue glove anywhere here)
 
 colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
   white:  {s_max: 50, v_min: 190}
@@ -23,6 +24,9 @@ colors:                      # OpenCV HSV (H 0-179, S and V 0-255)
   # label, so a white-label product read as "no tray" (11-11 19:00-20:00: 15% of drops "Not dropped on tray",
   # 75 sets unjudged). At 45: white-label trays 0.04-0.22, empty drop box ~0.001.
   tray_meat: {h_low_max: 12, h_high_min: 165, s_min: 45, v_min: 90}
+  # a worker's blue nitrile glove: the same blue as the belt (H 96-103, S ~240, V ~220), so it is only looked
+  # for below the belt. The steel frame's blue is dark (V < 160) and the trays/meat have none (11-12 frames)
+  glove: {h: [90, 112], s_min: 170, v_min: 150}
   motion_diff: 25            # grey-level change that counts as "moved" between frames
 
 drop:                        # a sachet falling off the belt = belt-white falls sharply
@@ -47,9 +51,20 @@ sets:                        # tray sets passing under the chute
   hand_min: 0.25             # a stretch with no sachet while a white blob this big (share of the reach box) was
                              # in the reach box is a worker moving trays by hand (by_hand), not a set passing.
                              # Normal sets reach <= 0.18 on 11-09; a sleeve reaching in is 0.33-0.71
+  glove_min: 0.0125          # ... or a blue glove blob this big (share of the glove box, ~10k full-res px) anywhere
+                             # below the belt. 11-12: gloves at the chute/bag 0.015-0.23; 294 random frames of ok
+                             # sets: median 0, 99th pct 0.0065. With a hand in view, a set that would read
+                             # MISSING reads by_hand (Review needed) even if some sachets fell: the worker may
+                             # have pulled, swapped or filled trays (11-12 02:01, 03:27, 13:53 read Empty tray)
   period_window_s: 30        # cycle time = median gap between drops over this window ...
   period_clip_s: [2.0, 4.0]  # ... kept within this range
   drop_window_s: [0.15, 0.3] # a drop belongs to a stretch if it falls within [start + a, end + b]
+  stop_min_s: 2.0            # a stretch whose line stopped for at least this long (paused) ...
+  stop_tol: 0.75             # ... and whose moving time is within this many sets of the sachets that fell is
+                             # counted as that many sets. Creeping to a stop and starting again adds moving time,
+                             # so one set with its sachet and a stop read as 1.6 sets -> 2 -> MISSING (11-12
+                             # 04:29, 04:52, 13:43, 13:53, 01:13: a sachet fell on the tray, then the line stopped).
+                             # Short slowdowns (< 2 s) are left alone: they are normal between sets
 
 landing:                     # did the sachet end up in the bag?
   scale: 0.5                 # regions are downscaled by this for the background model
@@ -112,7 +127,7 @@ alerts:                      # alert level attached to each result
     partial: none            # stream started or ended inside the stretch: not judged
     fragment: none           # too short to be a set and nothing fell on it
     hand_added: none         # nothing fell from the belt, but a sachet rode into the bag on the trays
-    by_hand: warn            # no sachet fell and a worker's hand was at the chute: a person reviews it
+    by_hand: warn            # too few sachets and a worker's hand (sleeve or glove) in view: a person reviews it
     MISSING: alarm
     EXTRA: warn
     DOUBLE: warn
@@ -129,8 +144,8 @@ labels:                      # wording to show people (the `label` field); `stat
     partial: Not judged
     fragment: Not a set
     hand_added: Added by hand            # nothing fell from the belt, but a sachet was seen riding on the trays
-    by_hand: Review needed               # no sachet fell and a worker's hand was at the chute
-    MISSING: Empty tray                  # no sachet fell from the belt, none seen on the trays, no hand at the chute
+    by_hand: Review needed               # too few sachets and a worker's hand (sleeve or glove) in view
+    MISSING: Empty tray                  # too few sachets fell, none seen on the trays, no hand in view
     EXTRA: Extra sachet
     DOUBLE: Double sachet
   sachet:
