@@ -1,6 +1,6 @@
 """Per-frame pixel measurements in fixed boxes of the camera image. No model, CPU only.
 
-Each frame gives seven numbers:
+Each frame gives eight numbers:
 
   belt_white   fraction of the belt box that is white (a sachet on the belt)
   drop_meat    fraction of the drop box that is red meat (a tray set under the chute)
@@ -9,6 +9,9 @@ Each frame gives seven numbers:
   CH_fg        fraction of the chute slot covered by a NEW white object (a sachet falling through)
   hand         largest white blob in the reach box, as a fraction of the box (a worker's white sleeve
                reaching in beside the chute)
+  glove        largest bright-blue blob in the glove box, as a fraction of the box (a worker's blue
+               glove anywhere around the chute, trays or bag mouth). The gloves are the same blue as the
+               belt, so the box starts below the belt; the steel frame's blue is dark navy and does not count
 
 plus `tray_blobs`: the white blobs in the tray box (tray.py), for sachets added by hand.
 
@@ -26,7 +29,7 @@ import numpy as np
 from .config import Config
 from .tray import tray_blobs
 
-KEYS = ("belt_white", "drop_meat", "drop_motion", "L_fg", "R_fg", "CH_fg", "hand")
+KEYS = ("belt_white", "drop_meat", "drop_motion", "L_fg", "R_fg", "CH_fg", "hand", "glove")
 
 
 def _crop(frame, box):
@@ -34,11 +37,24 @@ def _crop(frame, box):
     return frame[y0:y1, x0:x1]
 
 
+def glove_blob(frame, box, gc) -> float:
+    """Largest bright, saturated blue blob in `box` (measured at half resolution), as a fraction of the box."""
+    small = cv2.resize(_crop(frame, box), None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
+    hsv = cv2.cvtColor(small, cv2.COLOR_BGR2HSV)
+    h = hsv[..., 0]
+    m = ((h >= gc["h"][0]) & (h <= gc["h"][1]) & (hsv[..., 1] > gc["s_min"]) & (hsv[..., 2] > gc["v_min"])).astype(np.uint8)
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+    n, _, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
+    return float(st[1:, cv2.CC_STAT_AREA].max() / m.size) if n > 1 else 0.0
+
+
 class FrameSignals:
     def __init__(self, cfg: Config):
         self.cfg = cfg
         r = cfg["regions"]
         self.boxes = dict(belt=r["belt"], drop=r["drop"], L=r["left"], R=r["right"], CH=r["chute"], reach=r["reach"])
+        if "glove" in r:
+            self.boxes["glove"] = r["glove"]
         self.prev_drop_grey = None
         self.bg: dict[str, np.ndarray] = {}
 
@@ -78,6 +94,8 @@ class FrameSignals:
         white = ((hsv[..., 1] < c["white"]["s_max"]) & (hsv[..., 2] > c["white"]["v_min"])).astype(np.uint8)
         n, _, st, _ = cv2.connectedComponentsWithStats(white, connectivity=8)
         out["hand"] = float(st[1:, cv2.CC_STAT_AREA].max() / white.size) if n > 1 else 0.0
+
+        out["glove"] = glove_blob(frame, self.boxes["glove"], c["glove"]) if "glove" in self.boxes else 0.0
 
         lc = self.cfg["landing"]
         for k in ("L", "R", "CH"):

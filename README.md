@@ -83,5 +83,6 @@ research/                   batch prototype the method was built with, and its r
   product label had been taken for sachets) ([docs/method.md](docs/method.md)).
 - **720p exports** are resized to 1920x1080 before measuring, so the boxes still fit.
 - **Pale products:** tray detection no longer depends on a red label (11-11 white-label hour: 191 false
-  "Not dropped on tray" → 0). A hand at the chute with no sachet reads "Review needed".
+  "Not dropped on tray" → 0). A hand in view (white sleeve or blue glove) on a set short of sachets reads "Review needed"; a sachet
+  that fell just before a line stop no longer adds a phantom empty set (11-12 shift review).
 - Not yet run against the live camera stream. Validated only on exported recordings.

@@ -220,6 +220,34 @@ Same footage, old vs new code (box re-runs of the recorder segments):
 Because pale meat between touching trays is now seen, back-to-back trays merge into longer stretches more
 often, so the set count is estimated from the stretch length a little more often (the known weak point).
 
+## Blue gloves and line stops (11-12 full-shift review)
+
+Every `MISSING` ("Empty tray") of the first full shift on the live version (11-11 23:00 to 11-12 17:13 UTC,
+93 results, 138 sets) was checked by eye on recorder frames. About 82 were real: dispenser stalls (01:18,
+12:36), sachets reaching the end of the belt too late, chute jams (05:28), the dispenser running out (04:12).
+Two kinds were wrong:
+
+- **A hand in view, but not a white sleeve in the reach box.** Workers wear blue nitrile gloves; at 01:14,
+  02:01, 03:27 and 13:53 a gloved hand was at the chute or the bag mouth and the set read `MISSING`. The
+  gloves are the same blue as the belt (H 96-103, S ~240, V ~220), so the new `glove` signal looks only below
+  the belt (box (380,375)-(1500,1080)) for the largest bright, saturated blue blob; the steel frame's blue is
+  dark (V < 160). Glove frames: 0.015-0.23 of the box; 294 random frames of `ok` sets: median 0, 99th
+  percentile 0.0065 (one 0.05, likely a real hand). Cut-off 0.0125. A set that would read `MISSING` while a
+  sleeve or glove is in view now reads `by_hand` ("Review needed") even if some sachets fell; a set that got
+  all its sachets is judged as usual. Before, `by_hand` needed no sachet at all.
+- **A sachet falls, then the line stops.** The creep into and out of a stop adds moving time, so one set
+  with its sachet read 1.6 sets, rounded to 2, `MISSING` 1 (04:29, 04:52, 13:43, 13:53, 01:13; paused 3.8-23
+  s). When the line stopped for at least `stop_min_s` (2 s) and the unrounded set count is within `stop_tol`
+  (0.75) of the sachets that fell, the set count is the sachets that fell. Short slowdowns are left alone: a
+  flat time allowance on every pause turned 25 `ok` stretches with normal 0.4 s slowdowns into `EXTRA`. On the
+  shift's results this rule changes exactly those 5 `MISSING` and nothing else.
+
+Re-run of all 99 flagged results (93 `MISSING`, 5 `by_hand`, 1 `hand_added`) on 80 s windows of recorder
+footage, new code against the live code on the same windows: 4 `MISSING` -> `ok` (01:13:40, 04:52:52,
+13:43:32, 13:53:40), 3 `MISSING` -> `by_hand` (00:24:56, 01:14:01, 03:27:06), nothing else changed by the
+fix. 02:01:46 reads `ok` with both codes on its short window (its drop is matched there); its glove reading
+(0.23) is far over the cut-off. 00:24:27 (a drop, a stop, 3 sets counted for 2 drops) is not touched.
+
 ## Results so far
 
 - **29 Oct (2.9 h, ~2,413 sets):** no confirmed set without a sachet; 4 double strips; 0 sachets outside the bag.
@@ -244,14 +272,15 @@ often, so the set count is estimated from the stretch length a little more often
 - **Set count on long stretches.** This is the main source of false `EXTRA`: about 5 per hour on
   5 Nov.
 - **Set count across a stop.** A set that crawls during a slow stop/restart has more moving time than
-  2.05 s, so a joined stretch can be counted as one set too many.
+  2.05 s, so a joined stretch can be counted as one set too many. Corrected when the count is within 0.75 of
+  the sachets that fell (11-12); a stretch further off (00:24:27: 2.9 sets, 2 sachets) still reads `MISSING`.
 - **Occlusion.** An operator's hard hat or bag film over the belt box can look like a drop with no tray.
   This gives a false `EMPTY BAG` (5 of the 9 on 29 Oct rec1).
 - **Two sachets stacked exactly on top of each other** look like one.
 - **Hands at the chute.** An operator clearing a jam by hand can produce drops and alerts that are real
   events but not machine faults. The other way round, a set that really got no sachet while a worker's
-  sleeve was beside the chute reads `by_hand` (`warn`), not `MISSING`. The sleeve check needs a white
-  sleeve: a bare or dark-sleeved arm is not seen.
+  sleeve or blue glove was in view reads `by_hand` (`warn`), not `MISSING`. A bare hand or a glove of
+  another colour is not seen.
 - **OUTSIDE BAG** has only been proven on the synthetic test. No real missed-bag case exists in the
   footage so far.
 - **Camera movement.** The boxes are fixed pixels. A camera bump of more than ~15 px needs new boxes

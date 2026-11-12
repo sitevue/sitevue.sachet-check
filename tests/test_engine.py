@@ -240,3 +240,78 @@ def test_short_blip_with_a_hand_stays_a_fragment():
     line._set("hand", 22.0, 22.6, 0.4)
     s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 21.5]
     assert len(s) == 1 and s[0]["status"] == "fragment" and s[0]["alert"] == "none"
+
+
+# --- a blue glove in view (11-12: hands at the chute or bag read Empty tray)
+
+
+def test_blue_glove_with_no_sachet_is_review_needed():
+    line = _line()
+    _moving(line, 25.0, 27.0)
+    line._set("glove", 25.2, 26.5, 0.05)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["status"] == "by_hand" and s[0]["label"] == "Review needed" and s[0]["missing"] == 0
+    assert s[0]["glove"] >= 0.05
+
+
+def test_glove_and_too_few_sachets_is_review_needed_not_empty_tray():
+    """Two sets, one sachet, a worker's glove at the bag (11-12 13:53: a tray pulled out by hand)."""
+    line = _line()
+    _moving(line, 25.0, 30.0)
+    line.sachet(25.8)
+    line._set("glove", 28.0, 29.0, 0.06)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["sachets"] == 1 and s[0]["sets"] == 2
+    assert s[0]["status"] == "by_hand" and s[0]["missing"] == 0 and s[0]["alert"] == "warn"
+
+
+def test_glove_does_not_hide_a_set_that_got_its_sachet():
+    line = _line()
+    _moving(line, 25.0, 27.0)
+    line.sachet(25.8)
+    line._set("glove", 25.0, 27.0, 0.2)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["status"] == "ok"
+
+
+def test_small_blue_patch_is_not_a_glove():
+    line = _line()
+    _moving(line, 25.0, 27.0)
+    line._set("glove", 25.0, 27.0, 0.006)                                # what normal sets reach (99th pct)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 24.5]
+    assert len(s) == 1 and s[0]["status"] == "MISSING"
+
+
+# --- a sachet falls, then the line stops (11-12: 1 set + a stop read as 2 sets -> Empty tray)
+
+
+def test_sachet_then_line_stop_is_one_set():
+    line = _line()
+    _moving(line, 20.0, 21.8)
+    line.sachet(20.6)
+    _parked(line, 21.8, 29.8)
+    _moving(line, 29.8, 31.6)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 19.5]
+    assert len(s) == 1 and s[0]["paused_s"] >= 7.5 and s[0]["moving_s"] > 3.3
+    assert s[0]["status"] == "ok" and s[0]["sets"] == 1 and s[0]["sachets"] == 1
+
+
+def test_short_slowdown_keeps_the_set_count():
+    """A 1 s slowdown is normal between sets: the moving time still counts as two sets."""
+    line = _line()
+    _moving(line, 20.0, 21.8)
+    line.sachet(20.6)
+    _parked(line, 21.8, 22.8)
+    _moving(line, 22.8, 24.6)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 19.5]
+    assert len(s) == 1 and s[0]["status"] == "MISSING" and s[0]["sets"] == 2 and s[0]["missing"] == 1
+
+
+def test_stop_with_clearly_two_sets_and_one_sachet_is_still_missing():
+    line = _line()
+    _moving(line, 20.0, 23.0)
+    line.sachet(20.6)
+    _parked(line, 23.0, 31.0)
+    _moving(line, 31.0, 34.0)
+    s = [r for r in kinds(line.run(), "sets") if r["t0"] >= 19.5]
+    assert len(s) == 1 and s[0]["status"] == "MISSING" and s[0]["sets"] >= 2
